@@ -1,12 +1,13 @@
 <template>
     <div v-if="page">
-        <div v-html="page.content.rendered"></div>
+        <post-content :content="page.content.rendered"/>
     </div>
 </template>
 
 <script>
+  import PostContent from "../components/content/PostContent";
   export default {
-    components: {},
+    components: {PostContent},
     data() {
       return {
         page: null

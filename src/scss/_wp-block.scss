@@ -1,20 +1,23 @@
-.wp-block-separator {
-//  border-color: $color-goldenrod;
-  border-width: .5px;
-  margin: 2rem 0;
-  @media (min-width: 640px) {
-    margin: 4rem 0;
+.wp-block {
+  &-separator {
+    border-color: #999999;
+    border-width: .5px;
   }
-}
 
-.wp-block-image {
-  margin: 2rem 0;
-  @media (min-width: 640px) {
-    margin: 4rem 0;
+  &-image {
+    margin: 2rem 0;
+    @media (min-width: 640px) {
+      margin: 4rem 0;
+    }
   }
-}
 
-figcaption {
-//  color: $color-arrowtown;
-  font-style: italic;
+  &-columns {}
+
+  &-column {}
+
+  &-block-quote {}
+
+  &-group {
+    &__inner-container {}
+  }
 }

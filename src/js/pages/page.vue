@@ -1,42 +1,33 @@
 <template>
-    <div v-if="page">
-
+    <div v-if="page" class="page">
         <h1 v-html="page.title.rendered"/>
-        <div v-html="page.content.rendered"></div>
+        <post-content :content="page.content.rendered"/>
     </div>
 </template>
 
 <script>
+  import store from '../store'
+  import PostContent from "../components/content/PostContent";
+
   export default {
     name: 'page',
-    components: {},
-    data() {
-      return {
-        page: null
-      }
-    },
-
-    mounted() {
-      this.$store.dispatch('GET_PAGE', this.$route.params.slug).then(page => {
-        if (!page) {
-          return false;
-        }
-        this.page = page;
-        const metaTags = [
-          {
-            name: 'description',
-            content: page.excerpt.rendered
-          },
-          {
-            property: 'og:description',
-            content: page.excerpt.rendered
-          }
-        ];
-        this.$store.dispatch('SET_META_TITLE', `${page.title.rendered}`);
-        // this.$store.dispatch('SET_META_TAGS', metaTags);
-        this.$store.dispatch('WRITE_PAGE_META');
-        this.$store.dispatch('GA_PAGE_TRACK');
+    components: {PostContent},
+    beforeRouteEnter(to, from, next) {
+      store.dispatch('GET_PAGE', to.params.slug).then((page) => {
+        store.dispatch('SET_PAGE_META', page);
       });
+      next();
+    },
+    beforeRouteUpdate(to, from, next) {
+      store.dispatch('GET_PAGE', to.params.slug).then((page) => {
+        store.dispatch('SET_PAGE_META', page);
+      });
+      next();
+    },
+    computed: {
+      page() {
+        return this.$store.getters.PAGE(this.$route.params.slug);
+      }
     }
   }
 </script>

@@ -10,9 +10,7 @@
         </v-app-bar>
         <v-content>
             <v-container>
-                <v-fade-transition>
-                    <router-view></router-view>
-                </v-fade-transition>
+                <router-view></router-view>
             </v-container>
         </v-content>
         <v-footer fixed class="font-weight-light caption">

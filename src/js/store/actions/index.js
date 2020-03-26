@@ -3,6 +3,26 @@ import Factory from '../../repository/Factory';
 const WpRepository = Factory.get('wp');
 
 const generic = {
+  SET_PAGE_META: ({dispatch}, page) => {
+    if (!page) {
+      return false;
+    }
+    this.page = page;
+    const metaTags = [
+      {
+        name: 'description',
+        content: page.excerpt.rendered
+      },
+      {
+        property: 'og:description',
+        content: page.excerpt.rendered
+      }
+    ];
+    dispatch('SET_META_TITLE', `${page.title.rendered}`);
+    dispatch('SET_META_TAGS', metaTags);
+    dispatch('WRITE_PAGE_META');
+    dispatch('GA_PAGE_TRACK');
+  },
   SET_META_TAGS: ({commit}, value) => {
     commit('MUTATE_PROP_KEY', {prop: 'meta', key: 'metaTags', value});
   },
@@ -26,18 +46,18 @@ const generic = {
       resolve(false);
     });
   },
-  GET_PAGE: ({commit, getters}, value) => {
-    const page = getters.PAGE(value);
+  GET_PAGE: ({commit, getters}, slug) => {
+    const page = getters.PAGE(slug);
     if (page) {
       return page;
     }
     return new Promise(async resolve => {
-      const response = await WpRepository.get_post_slug('pages', value);
+      const response = await WpRepository.get_post_slug('pages', slug);
       if (response.status === 200) {
         const page = response.data && response.data[0]
           ? response.data[0]
           : false;
-        commit('MUTATE_PROP_KEY', {prop: 'page', key: value.slug, value: page});
+        commit('MUTATE_PROP_KEY', {prop: 'pages', key: slug, value: page});
         resolve(page);
         return true;
       }
