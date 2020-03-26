@@ -7,7 +7,6 @@ const generic = {
     if (!page) {
       return false;
     }
-    this.page = page;
     const metaTags = [
       {
         name: 'description',

@@ -63501,8 +63501,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _repository_Factory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../repository/Factory */ "./src/js/repository/Factory.js");
 
 
-var _this = undefined;
-
 function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -63519,7 +63517,6 @@ var generic = {
       return false;
     }
 
-    _this.page = page;
     var metaTags = [{
       name: 'description',
       content: page.excerpt.rendered
