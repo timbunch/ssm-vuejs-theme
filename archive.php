@@ -1,3 +1,3 @@
 <?php get_header(); ?>
-<wrapper></wrapper>
+<layout-default></layout-default>
 <?php get_footer();

@@ -4,7 +4,7 @@ import VueRouter from 'vue-router';
 import store from './js/store';
 import vuetify from './js/plugins/vuetify';
 const infiniteScroll =  require('vue-infinite-scroll');
-import Wrapper from './js/layouts/default';
+import layoutDefault from './js/layouts/default';
 import routes from './routes';
 
 Vue.use(VueAxios, VueRouter, infiniteScroll);
@@ -27,6 +27,6 @@ if (document.getElementById('app')) {
     el: '#app',
     store,
     vuetify,
-    components: {Wrapper}
+    components: {layoutDefault}
   });
 }

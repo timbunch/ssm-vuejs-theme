@@ -32,7 +32,7 @@
   Vue.use(VueRouter);
 
   export default {
-    name: 'wrapper',
+    name: 'layout-default',
     components: {PrimaryNav},
     beforeMount() {
       this.$store.dispatch('GET_MENUS');
