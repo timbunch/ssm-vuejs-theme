@@ -1,18 +1,4 @@
-body {
-  --color-dune: #37332F;
-  --color-armadillo: #4D4740;
-  --color-soya-bean: #665847;
-  --color-arrowtown: #97836A;
-  --color-citrine-white: #FCFBF8;
-  --color-goldenrod: #FEDA6A;
-  --color-tangerine : #E29900;
-}
 @import './scss/vars';
 @import './scss/base';
-@import './scss/typography';
-@import './scss/grid';
-@import "./scss/deal-grid";
-@import "./scss/price-block";
-@import "./scss/page-card";
-@import "./scss/tab-badge";
-@import "./scss/wp-block";
+// @import './scss/typography';
+//@import "./scss/wp-block";

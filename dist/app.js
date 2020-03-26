@@ -2033,7 +2033,7 @@ __webpack_require__.r(__webpack_exports__);
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'wrapper',
+  name: 'layout-default',
   components: {
     PrimaryNav: _components_menus_PrimaryNav__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
@@ -62859,7 +62859,7 @@ if (document.getElementById('app')) {
     store: _js_store__WEBPACK_IMPORTED_MODULE_2__["default"],
     vuetify: _js_plugins_vuetify__WEBPACK_IMPORTED_MODULE_3__["default"],
     components: {
-      Wrapper: _js_layouts_default__WEBPACK_IMPORTED_MODULE_4__["default"]
+      layoutDefault: _js_layouts_default__WEBPACK_IMPORTED_MODULE_4__["default"]
     }
   });
 }

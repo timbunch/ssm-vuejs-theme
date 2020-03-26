@@ -14,6 +14,6 @@ export default new Vuetify({
         accent: '#E29900',
         error: '#b71c1c',
       },
-    },
+    }
   }
 });
