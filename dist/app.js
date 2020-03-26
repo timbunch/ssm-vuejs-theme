@@ -2118,6 +2118,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'page',
   components: {},
@@ -2129,7 +2130,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    this.$store.dispatch('GET_PAGE', this.route.params.slug).then(function (page) {
+    this.$store.dispatch('GET_PAGE', this.$route.params.slug).then(function (page) {
       if (!page) {
         return false;
       }
@@ -63439,7 +63440,7 @@ var generic = {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return WpRepository.get('menus', 'locations');
+                return WpRepository.get('menus');
 
               case 2:
                 response = _context.sent;
@@ -63494,7 +63495,7 @@ var generic = {
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return WpRepository.get('pages', value);
+                return WpRepository.get_post_slug('pages', value);
 
               case 2:
                 response = _context2.sent;

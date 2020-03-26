@@ -17,7 +17,7 @@ const generic = {
   },
   GET_MENUS: ({commit}) => {
     return new Promise(async resolve => {
-      const response = await WpRepository.get('menus', 'locations');
+      const response = await WpRepository.get('menus');
       if (response.status === 200) {
         commit('MUTATE_PROP', {prop: 'menus', value: response.data});
         resolve(true);
@@ -32,7 +32,7 @@ const generic = {
       return page;
     }
     return new Promise(async resolve => {
-      const response = await WpRepository.get('pages', value);
+      const response = await WpRepository.get_post_slug('pages', value);
       if (response.status === 200) {
         const page = response.data && response.data[0]
           ? response.data[0]

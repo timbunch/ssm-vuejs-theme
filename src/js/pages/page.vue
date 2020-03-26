@@ -1,5 +1,6 @@
 <template>
     <div v-if="page">
+
         <h1 v-html="page.title.rendered"/>
         <div v-html="page.content.rendered"></div>
     </div>
@@ -14,8 +15,9 @@
         page: null
       }
     },
+
     mounted() {
-      this.$store.dispatch('GET_PAGE', this.route.params.slug).then(page => {
+      this.$store.dispatch('GET_PAGE', this.$route.params.slug).then(page => {
         if (!page) {
           return false;
         }
