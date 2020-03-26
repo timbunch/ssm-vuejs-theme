@@ -2064,7 +2064,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
@@ -2082,7 +2081,6 @@ __webpack_require__.r(__webpack_exports__);
         }
 
         _this.page = page;
-        window.ssmSettings.frontPage = page.slug;
         var metaTags = [{
           name: 'description',
           content: page.excerpt.rendered
@@ -2116,12 +2114,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'page',
-  computed: {
-    page: function page() {
-      return this.$store.getters.PROP('page');
-    }
+  components: {},
+  data: function data() {
+    return {
+      page: null
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    this.$store.dispatch('GET_PAGE', this.route.params.slug).then(function (page) {
+      if (!page) {
+        return false;
+      }
+
+      _this.page = page;
+      var metaTags = [{
+        name: 'description',
+        content: page.excerpt.rendered
+      }, {
+        property: 'og:description',
+        content: page.excerpt.rendered
+      }];
+
+      _this.$store.dispatch('SET_META_TITLE', "".concat(page.title.rendered)); // this.$store.dispatch('SET_META_TAGS', metaTags);
+
+
+      _this.$store.dispatch('WRITE_PAGE_META');
+
+      _this.$store.dispatch('GA_PAGE_TRACK');
+    });
   }
 });
 
@@ -6160,8 +6188,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _vm.page
     ? _c("div", [
-        _c("h1", { domProps: { innerHTML: _vm._s(_vm.page.title.rendered) } }),
-        _vm._v(" "),
         _c("div", {
           domProps: { innerHTML: _vm._s(_vm.page.content.rendered) }
         })
@@ -6190,7 +6216,15 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("A PAGE")])
+  return _vm.page
+    ? _c("div", [
+        _c("h1", { domProps: { innerHTML: _vm._s(_vm.page.title.rendered) } }),
+        _vm._v(" "),
+        _c("div", {
+          domProps: { innerHTML: _vm._s(_vm.page.content.rendered) }
+        })
+      ])
+    : _vm._e()
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -63334,8 +63368,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Repository__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Repository */ "./src/js/repository/Repository.js");
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  get: function get(type, slug) {
-    return _Repository__WEBPACK_IMPORTED_MODULE_0__["Repository"].get("".concat(type, "/").concat(slug));
+  get: function get(type) {
+    return _Repository__WEBPACK_IMPORTED_MODULE_0__["Repository"].get("".concat(type));
+  },
+  get_post_slug: function get_post_slug(type, slug) {
+    return _Repository__WEBPACK_IMPORTED_MODULE_0__["Repository"].get("".concat(type, "/?slug=").concat(slug));
   }
 });
 
@@ -63438,7 +63475,6 @@ var generic = {
   GET_PAGE: function GET_PAGE(_ref7, value) {
     var commit = _ref7.commit,
         getters = _ref7.getters;
-    // todo: see if page already exists in the state, if it does, return it instead of fetching it again
     var page = getters.PAGE(value);
 
     if (page) {
@@ -63468,7 +63504,7 @@ var generic = {
                   break;
                 }
 
-                _page = response.data;
+                _page = response.data && response.data[0] ? response.data[0] : false;
                 commit('MUTATE_PROP_KEY', {
                   prop: 'page',
                   key: value.slug,
@@ -63698,8 +63734,12 @@ __webpack_require__.r(__webpack_exports__);
   name: 'home'
 }, {
   component: _js_pages_page__WEBPACK_IMPORTED_MODULE_1__["default"],
-  name: 'single',
+  name: 'page',
   path: '/:slug/'
+}, {
+  component: _js_pages_page__WEBPACK_IMPORTED_MODULE_1__["default"],
+  name: 'page',
+  path: '/:parent/:slug/'
 }]);
 
 /***/ }),
@@ -63711,8 +63751,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Volumes/FAST_STORAGE/github/ssm-vue-theme/src/app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! /Volumes/FAST_STORAGE/github/ssm-vue-theme/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Volumes/FAST_STORAGE/github/ssm-vuejs-theme/src/app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! /Volumes/FAST_STORAGE/github/ssm-vuejs-theme/src/app.scss */"./src/app.scss");
 
 
 /***/ })

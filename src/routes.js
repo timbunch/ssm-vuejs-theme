@@ -9,7 +9,12 @@ export default [
   },
   {
     component: Page,
-    name: 'single',
+    name: 'page',
     path: '/:slug/',
+  },
+  {
+    component: Page,
+    name: 'page',
+    path: '/:parent/:slug/',
   }
 ]

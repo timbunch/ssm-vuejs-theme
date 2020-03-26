@@ -1,6 +1,5 @@
 <template>
     <div v-if="page">
-        <h1 v-html="page.title.rendered"/>
         <div v-html="page.content.rendered"></div>
     </div>
 </template>
@@ -20,7 +19,6 @@
             return false;
           }
           this.page = page;
-          window.ssmSettings.frontPage = page.slug;
           const metaTags = [
             {
               name: 'description',

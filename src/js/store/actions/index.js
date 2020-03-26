@@ -27,7 +27,6 @@ const generic = {
     });
   },
   GET_PAGE: ({commit, getters}, value) => {
-    // todo: see if page already exists in the state, if it does, return it instead of fetching it again
     const page = getters.PAGE(value);
     if (page) {
       return page;
@@ -35,7 +34,9 @@ const generic = {
     return new Promise(async resolve => {
       const response = await WpRepository.get('pages', value);
       if (response.status === 200) {
-        const page = response.data;
+        const page = response.data && response.data[0]
+          ? response.data[0]
+          : false;
         commit('MUTATE_PROP_KEY', {prop: 'page', key: value.slug, value: page});
         resolve(page);
         return true;
