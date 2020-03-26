@@ -1,0 +1,127 @@
+@keyframes bubbles {
+  0%, 100% {
+    background-size: 20%;
+  }
+  50% {
+    background-size: 21%;
+  }
+}
+.fade-in {
+  animation: fadeIn 400ms ease;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body .v-application {
+  &.theme--light {
+    background-color: transparent;
+  }
+
+  .v-card__title {
+    word-break: normal;
+  }
+
+  .v-card__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    word-break: normal;
+    @media(min-width: 800px) {
+      font-size: 1.125rem;
+    }
+  }
+
+  .tab-app-bar {
+    text-align: center;
+    background: linear-gradient(45deg,
+            var(--color-tangerine) 0%,
+            #fcca35 60%,
+            var(--color-tangerine) 0%
+    );
+
+    .v-toolbar__content {
+      background-image: url('//theaudiobrew-uploads.s3-us-west-2.amazonaws.com/uploads/2019/11/bubbles.png');
+      background-size: contain;
+      background-repeat: repeat;
+      background-position: center;
+      animation: bubbles 10s infinite ease;
+      transition: background-position ease 5s;
+      &:hover {
+        background-position: center -2rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &-inner {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      justify-content: space-between;
+    }
+  }
+
+  .v-sheet {
+    ul, ol {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .toolbar-home-link {
+    color: var(--color-dune);
+    text-decoration: none;
+    font-family: Lobster, cursive;
+    font-size: 2.275rem;
+    line-height: 1.2;
+    position: relative;
+    overflow: visible;
+    text-shadow: .5px .5px 0 #fff;
+    top: 1rem;
+    z-index: 11;
+
+    small {
+      display: block;
+      font-size: 1.2rem;
+      line-height: 1;
+      position: absolute;
+      top: -.7rem;
+      left: 1.675rem;
+    }
+
+    &.drawer {
+      top: 0;
+      font-size: 2rem;
+      small {
+        font-size: .8rem;
+        top: 0;
+      }
+    }
+  }
+
+  .v-tabs-bar.theme--dark .v-tab:not(.v-tab--active):not(.v-tab--disabled) {
+    opacity: 1;
+  }
+
+  .wp-block-embed-youtube {
+    width:100%;
+    max-width: 640px;
+    margin: 2rem 0;
+    iframe {
+      max-width: 100%;
+    }
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+}
+

@@ -1,0 +1,17 @@
+.page-card {
+  &-whitesmoke {
+    background-color: whitesmoke;
+    color: var(--color-dune) !important;
+  }
+  &-title {
+    background: linear-gradient(45deg,
+            var(--color-goldenrod) 0%,
+            #fcca35 60%,
+            var(--color-tangerine) 100%
+    );
+
+    h1 {
+      text-shadow: 0 0 2px rgba(10, 10, 10, .05);
+    }
+  }
+}

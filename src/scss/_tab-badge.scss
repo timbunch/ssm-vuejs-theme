@@ -1,0 +1,25 @@
+.tab-badges {
+  display: flex;
+
+  .tab-badge-sponsored {
+    .tab-badge-name {
+      color: var(--color-citrine-white);
+      font-size: 14px;
+    }
+  }
+
+}
+
+.tab-badge-name {
+  color: var(--color-armadillo);
+}
+
+.tab-badge-icon {
+  margin-right: .5rem;
+  display: flex;
+
+  > svg {
+    margin: auto 0;
+  }
+}
+
