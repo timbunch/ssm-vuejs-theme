@@ -2014,6 +2014,42 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/page-elements/PageHero.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/page-elements/PageHero.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'page-hero',
+  props: {
+    page: {
+      type: Object,
+      required: true
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/layouts/default.vue?vue&type=script&lang=js&":
 /*!****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./src/js/layouts/default.vue?vue&type=script&lang=js& ***!
@@ -2027,8 +2063,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _components_menus_PrimaryNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/menus/PrimaryNav */ "./src/js/components/menus/PrimaryNav.vue");
-//
-//
 //
 //
 //
@@ -2082,6 +2116,29 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_content_PostContent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/content/PostContent */ "./src/js/components/content/PostContent.vue");
+/* harmony import */ var _components_page_elements_PageHero__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/page-elements/PageHero */ "./src/js/components/page-elements/PageHero.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2089,8 +2146,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
+    PageHero: _components_page_elements_PageHero__WEBPACK_IMPORTED_MODULE_1__["default"],
     PostContent: _components_content_PostContent__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   data: function data() {
@@ -2762,7 +2821,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".theme--light.v-data-table {\n  background-color: #FFFFFF;\n  color: rgba(0, 0, 0, 0.87);\n}\n.theme--light.v-data-table .v-data-table__divider {\n  border-right: thin solid rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table.v-data-table--fixed-header thead th {\n  background: #FFFFFF;\n  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table thead tr:last-child th {\n  border-bottom: thin solid rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table thead tr th {\n  color: rgba(0, 0, 0, 0.6);\n}\n.theme--light.v-data-table tbody tr:not(:last-child) td:not(.v-data-table__mobile-row),\n.theme--light.v-data-table tbody tr:not(:last-child) th:not(.v-data-table__mobile-row) {\n  border-bottom: thin solid rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table tbody tr:not(:last-child) td:last-child,\n.theme--light.v-data-table tbody tr:not(:last-child) th:last-child {\n  border-bottom: thin solid rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table tbody tr.active {\n  background: #f5f5f5;\n}\n.theme--light.v-data-table tbody tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {\n  background: #eeeeee;\n}\n\n.theme--dark.v-data-table {\n  background-color: #1E1E1E;\n  color: #FFFFFF;\n}\n.theme--dark.v-data-table .v-data-table__divider {\n  border-right: thin solid rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table.v-data-table--fixed-header thead th {\n  background: #1E1E1E;\n  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table thead tr:last-child th {\n  border-bottom: thin solid rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table thead tr th {\n  color: rgba(255, 255, 255, 0.7);\n}\n.theme--dark.v-data-table tbody tr:not(:last-child) td:not(.v-data-table__mobile-row),\n.theme--dark.v-data-table tbody tr:not(:last-child) th:not(.v-data-table__mobile-row) {\n  border-bottom: thin solid rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table tbody tr:not(:last-child) td:last-child,\n.theme--dark.v-data-table tbody tr:not(:last-child) th:last-child {\n  border-bottom: thin solid rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table tbody tr.active {\n  background: #505050;\n}\n.theme--dark.v-data-table tbody tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {\n  background: #616161;\n}\n\n.v-data-table table {\n  width: 100%;\n  border-spacing: 0;\n}\n.v-data-table td, .v-data-table th {\n  padding: 0 16px;\n}\n.v-data-table th {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  font-size: 0.75rem;\n  height: 48px;\n}\n.v-application--is-ltr .v-data-table th {\n  text-align: left;\n}\n.v-application--is-rtl .v-data-table th {\n  text-align: right;\n}\n.v-data-table td {\n  font-size: 0.875rem;\n  height: 48px;\n}\n\n.v-data-table__wrapper {\n  overflow-x: auto;\n  overflow-y: hidden;\n}\n\n.v-data-table__progress {\n  height: auto !important;\n}\n.v-data-table__progress .v-progress-linear {\n  position: absolute;\n}\n.v-data-table__progress th {\n  height: auto !important;\n  border: none !important;\n  padding: 0;\n  position: relative;\n}\n\n.v-data-table--dense td {\n  height: 24px;\n}\n.v-data-table--dense th {\n  height: 32px;\n}\n\n.v-data-table--fixed-height .v-data-table__wrapper {\n  overflow-y: auto;\n}\n\n.v-data-table--fixed-header .v-data-table__wrapper {\n  overflow-y: auto;\n}\n.v-data-table--fixed-header thead th {\n  border-bottom: 0px !important;\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n  z-index: 2;\n}\n.v-data-table--fixed-header thead tr:nth-child(2) th {\n  top: 48px;\n}\n.v-application--is-ltr .v-data-table--fixed-header .v-data-footer {\n  margin-right: 17px;\n}\n.v-application--is-rtl .v-data-table--fixed-header .v-data-footer {\n  margin-left: 17px;\n}\n\n.v-data-table--fixed.v-data-table--dense thead tr:nth-child(2) th {\n  top: 32px;\n}", ""]);
+exports.push([module.i, ".theme--light.v-data-table {\n  background-color: #FFFFFF;\n  color: rgba(0, 0, 0, 0.87);\n}\n.theme--light.v-data-table .v-data-table__divider {\n  border-right: thin solid rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table.v-data-table--fixed-header thead th {\n  background: #FFFFFF;\n  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table thead tr:last-child th {\n  border-bottom: thin solid rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table thead tr th {\n  color: rgba(0, 0, 0, 0.6);\n}\n.theme--light.v-data-table tbody tr:not(:last-child) td:not(.v-data-table__mobile-row),\n.theme--light.v-data-table tbody tr:not(:last-child) th:not(.v-data-table__mobile-row) {\n  border-bottom: thin solid rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table tbody tr:not(:last-child) td:last-child,\n.theme--light.v-data-table tbody tr:not(:last-child) th:last-child {\n  border-bottom: thin solid rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table tbody tr.active {\n  background: #f5f5f5;\n}\n.theme--light.v-data-table tbody tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {\n  background: #eeeeee;\n}\n\n.theme--dark.v-data-table {\n  background-color: #1E1E1E;\n  color: #FFFFFF;\n}\n.theme--dark.v-data-table .v-data-table__divider {\n  border-right: thin solid rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table.v-data-table--fixed-header thead th {\n  background: #1E1E1E;\n  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table thead tr:last-child th {\n  border-bottom: thin solid rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table thead tr th {\n  color: rgba(255, 255, 255, 0.7);\n}\n.theme--dark.v-data-table tbody tr:not(:last-child) td:not(.v-data-table__mobile-row),\n.theme--dark.v-data-table tbody tr:not(:last-child) th:not(.v-data-table__mobile-row) {\n  border-bottom: thin solid rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table tbody tr:not(:last-child) td:last-child,\n.theme--dark.v-data-table tbody tr:not(:last-child) th:last-child {\n  border-bottom: thin solid rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table tbody tr.active {\n  background: #505050;\n}\n.theme--dark.v-data-table tbody tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {\n  background: #616161;\n}\n\n.v-data-table {\n  max-width: 100%;\n}\n.v-data-table table {\n  width: 100%;\n  border-spacing: 0;\n}\n.v-data-table td, .v-data-table th {\n  padding: 0 16px;\n}\n.v-data-table th {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  font-size: 0.75rem;\n  height: 48px;\n}\n.v-application--is-ltr .v-data-table th {\n  text-align: left;\n}\n.v-application--is-rtl .v-data-table th {\n  text-align: right;\n}\n.v-data-table td {\n  font-size: 0.875rem;\n  height: 48px;\n}\n\n.v-data-table__wrapper {\n  overflow-x: auto;\n  overflow-y: hidden;\n}\n\n.v-data-table__progress {\n  height: auto !important;\n}\n.v-data-table__progress .v-progress-linear {\n  position: absolute;\n}\n.v-data-table__progress th {\n  height: auto !important;\n  border: none !important;\n  padding: 0;\n  position: relative;\n}\n\n.v-data-table--dense td {\n  height: 24px;\n}\n.v-data-table--dense th {\n  height: 32px;\n}\n\n.v-data-table--fixed-height .v-data-table__wrapper {\n  overflow-y: auto;\n}\n\n.v-data-table--fixed-header .v-data-table__wrapper {\n  overflow-y: auto;\n}\n.v-data-table--fixed-header thead th {\n  border-bottom: 0px !important;\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n  z-index: 2;\n}\n.v-data-table--fixed-header thead tr:nth-child(2) th {\n  top: 48px;\n}\n.v-application--is-ltr .v-data-table--fixed-header .v-data-footer {\n  margin-right: 17px;\n}\n.v-application--is-rtl .v-data-table--fixed-header .v-data-footer {\n  margin-left: 17px;\n}\n\n.v-data-table--fixed.v-data-table--dense thead tr:nth-child(2) th {\n  top: 32px;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -3320,7 +3379,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".theme--light.v-progress-linear {\n  color: rgba(0, 0, 0, 0.87);\n}\n\n.theme--dark.v-progress-linear {\n  color: #FFFFFF;\n}\n\n.v-progress-linear {\n  background: transparent;\n  overflow: hidden;\n  position: relative;\n  transition: 0.2s cubic-bezier(0.4, 0, 0.6, 1);\n  width: 100%;\n}\n\n.v-progress-linear__buffer {\n  height: inherit;\n  left: 0;\n  position: absolute;\n  top: 0;\n  transition: inherit;\n  width: 100%;\n  z-index: 1;\n}\n\n.v-progress-linear__background {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  top: 0;\n  transition: inherit;\n}\n\n.v-progress-linear__content {\n  align-items: center;\n  display: flex;\n  height: 100%;\n  left: 0;\n  justify-content: center;\n  position: absolute;\n  top: 0;\n  width: 100%;\n  z-index: 2;\n}\n\n.v-progress-linear__determinate {\n  height: inherit;\n  transition: inherit;\n}\n\n.v-progress-linear__indeterminate .long, .v-progress-linear__indeterminate .short {\n  background-color: inherit;\n  bottom: 0;\n  height: inherit;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: auto;\n  will-change: left, right;\n}\n.v-progress-linear__indeterminate--active .long {\n  -webkit-animation: indeterminate;\n          animation: indeterminate;\n  -webkit-animation-duration: 2.2s;\n          animation-duration: 2.2s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n}\n.v-progress-linear__indeterminate--active .short {\n  -webkit-animation: indeterminate-short;\n          animation: indeterminate-short;\n  -webkit-animation-duration: 2.2s;\n          animation-duration: 2.2s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n}\n\n.v-progress-linear__stream {\n  -webkit-animation: stream 0.25s infinite linear;\n          animation: stream 0.25s infinite linear;\n  border-color: currentColor;\n  border-top: 4px dotted;\n  bottom: 0;\n  opacity: 0.3;\n  pointer-events: none;\n  position: absolute;\n  right: -8px;\n  top: calc(50% - 2px);\n  transition: inherit;\n}\n\n.v-progress-linear__wrapper {\n  overflow: hidden;\n  position: relative;\n  transition: inherit;\n}\n\n.v-progress-linear--absolute,\n.v-progress-linear--fixed {\n  left: 0;\n  z-index: 1;\n}\n\n.v-progress-linear--absolute {\n  position: absolute;\n}\n\n.v-progress-linear--fixed {\n  position: fixed;\n}\n\n.v-progress-linear--reactive .v-progress-linear__content {\n  pointer-events: none;\n}\n\n.v-progress-linear--rounded {\n  border-radius: 4px;\n}\n\n.v-progress-linear--striped .v-progress-linear__determinate {\n  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 25%, transparent 0, transparent 50%, rgba(255, 255, 255, 0.25) 0, rgba(255, 255, 255, 0.25) 75%, transparent 0, transparent);\n  background-size: 40px 40px;\n  background-repeat: repeat-x;\n}\n\n.v-progress-linear--query .v-progress-linear__indeterminate--active .long {\n  -webkit-animation: query;\n          animation: query;\n  -webkit-animation-duration: 2s;\n          animation-duration: 2s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n}\n.v-progress-linear--query .v-progress-linear__indeterminate--active .short {\n  -webkit-animation: query-short;\n          animation: query-short;\n  -webkit-animation-duration: 2s;\n          animation-duration: 2s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n}\n\n@-webkit-keyframes indeterminate {\n  0% {\n    left: -90%;\n    right: 100%;\n  }\n  60% {\n    left: -90%;\n    right: 100%;\n  }\n  100% {\n    left: 100%;\n    right: -35%;\n  }\n}\n\n@keyframes indeterminate {\n  0% {\n    left: -90%;\n    right: 100%;\n  }\n  60% {\n    left: -90%;\n    right: 100%;\n  }\n  100% {\n    left: 100%;\n    right: -35%;\n  }\n}\n@-webkit-keyframes indeterminate-short {\n  0% {\n    left: -200%;\n    right: 100%;\n  }\n  60% {\n    left: 107%;\n    right: -8%;\n  }\n  100% {\n    left: 107%;\n    right: -8%;\n  }\n}\n@keyframes indeterminate-short {\n  0% {\n    left: -200%;\n    right: 100%;\n  }\n  60% {\n    left: 107%;\n    right: -8%;\n  }\n  100% {\n    left: 107%;\n    right: -8%;\n  }\n}\n@-webkit-keyframes query {\n  0% {\n    right: -90%;\n    left: 100%;\n  }\n  60% {\n    right: -90%;\n    left: 100%;\n  }\n  100% {\n    right: 100%;\n    left: -35%;\n  }\n}\n@keyframes query {\n  0% {\n    right: -90%;\n    left: 100%;\n  }\n  60% {\n    right: -90%;\n    left: 100%;\n  }\n  100% {\n    right: 100%;\n    left: -35%;\n  }\n}\n@-webkit-keyframes query-short {\n  0% {\n    right: -200%;\n    left: 100%;\n  }\n  60% {\n    right: 107%;\n    left: -8%;\n  }\n  100% {\n    right: 107%;\n    left: -8%;\n  }\n}\n@keyframes query-short {\n  0% {\n    right: -200%;\n    left: 100%;\n  }\n  60% {\n    right: 107%;\n    left: -8%;\n  }\n  100% {\n    right: 107%;\n    left: -8%;\n  }\n}\n@-webkit-keyframes stream {\n  to {\n    transform: translateX(-8px);\n  }\n}\n@keyframes stream {\n  to {\n    transform: translateX(-8px);\n  }\n}", ""]);
+exports.push([module.i, ".theme--light.v-progress-linear {\n  color: rgba(0, 0, 0, 0.87);\n}\n\n.theme--dark.v-progress-linear {\n  color: #FFFFFF;\n}\n\n.v-progress-linear {\n  background: transparent;\n  overflow: hidden;\n  position: relative;\n  transition: 0.2s cubic-bezier(0.4, 0, 0.6, 1);\n  width: 100%;\n}\n\n.v-progress-linear__buffer {\n  height: inherit;\n  left: 0;\n  position: absolute;\n  top: 0;\n  transition: inherit;\n  width: 100%;\n  z-index: 1;\n}\n\n.v-progress-linear__background {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  top: 0;\n  transition: inherit;\n}\n\n.v-progress-linear__content {\n  align-items: center;\n  display: flex;\n  height: 100%;\n  left: 0;\n  justify-content: center;\n  position: absolute;\n  top: 0;\n  width: 100%;\n  z-index: 2;\n}\n\n.v-progress-linear__determinate {\n  height: inherit;\n  transition: inherit;\n}\n\n.v-progress-linear__indeterminate .long, .v-progress-linear__indeterminate .short {\n  background-color: inherit;\n  bottom: 0;\n  height: inherit;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: auto;\n  will-change: left, right;\n}\n.v-progress-linear__indeterminate--active .long {\n  -webkit-animation: indeterminate;\n          animation: indeterminate;\n  -webkit-animation-duration: 2.2s;\n          animation-duration: 2.2s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n}\n.v-progress-linear__indeterminate--active .short {\n  -webkit-animation: indeterminate-short;\n          animation: indeterminate-short;\n  -webkit-animation-duration: 2.2s;\n          animation-duration: 2.2s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n}\n\n.v-progress-linear__stream {\n  -webkit-animation: stream 0.25s infinite linear;\n          animation: stream 0.25s infinite linear;\n  border-color: currentColor;\n  border-top: 4px dotted;\n  bottom: 0;\n  opacity: 0.3;\n  pointer-events: none;\n  position: absolute;\n  right: -8px;\n  top: calc(50% - 2px);\n  transition: inherit;\n}\n\n.v-progress-linear__wrapper {\n  overflow: hidden;\n  position: relative;\n  transition: inherit;\n}\n\n.v-progress-linear--absolute,\n.v-progress-linear--fixed {\n  left: 0;\n  z-index: 1;\n}\n\n.v-progress-linear--absolute {\n  position: absolute;\n}\n\n.v-progress-linear--fixed {\n  position: fixed;\n}\n\n.v-progress-linear--reactive .v-progress-linear__content {\n  pointer-events: none;\n}\n\n.v-progress-linear--rounded {\n  border-radius: 4px;\n}\n\n.v-progress-linear--striped .v-progress-linear__determinate {\n  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 25%, transparent 0, transparent 50%, rgba(255, 255, 255, 0.25) 0, rgba(255, 255, 255, 0.25) 75%, transparent 0, transparent);\n  background-size: 40px 40px;\n  background-repeat: repeat;\n}\n\n.v-progress-linear--query .v-progress-linear__indeterminate--active .long {\n  -webkit-animation: query;\n          animation: query;\n  -webkit-animation-duration: 2s;\n          animation-duration: 2s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n}\n.v-progress-linear--query .v-progress-linear__indeterminate--active .short {\n  -webkit-animation: query-short;\n          animation: query-short;\n  -webkit-animation-duration: 2s;\n          animation-duration: 2s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n}\n\n@-webkit-keyframes indeterminate {\n  0% {\n    left: -90%;\n    right: 100%;\n  }\n  60% {\n    left: -90%;\n    right: 100%;\n  }\n  100% {\n    left: 100%;\n    right: -35%;\n  }\n}\n\n@keyframes indeterminate {\n  0% {\n    left: -90%;\n    right: 100%;\n  }\n  60% {\n    left: -90%;\n    right: 100%;\n  }\n  100% {\n    left: 100%;\n    right: -35%;\n  }\n}\n@-webkit-keyframes indeterminate-short {\n  0% {\n    left: -200%;\n    right: 100%;\n  }\n  60% {\n    left: 107%;\n    right: -8%;\n  }\n  100% {\n    left: 107%;\n    right: -8%;\n  }\n}\n@keyframes indeterminate-short {\n  0% {\n    left: -200%;\n    right: 100%;\n  }\n  60% {\n    left: 107%;\n    right: -8%;\n  }\n  100% {\n    left: 107%;\n    right: -8%;\n  }\n}\n@-webkit-keyframes query {\n  0% {\n    right: -90%;\n    left: 100%;\n  }\n  60% {\n    right: -90%;\n    left: 100%;\n  }\n  100% {\n    right: 100%;\n    left: -35%;\n  }\n}\n@keyframes query {\n  0% {\n    right: -90%;\n    left: 100%;\n  }\n  60% {\n    right: -90%;\n    left: 100%;\n  }\n  100% {\n    right: 100%;\n    left: -35%;\n  }\n}\n@-webkit-keyframes query-short {\n  0% {\n    right: -200%;\n    left: 100%;\n  }\n  60% {\n    right: 107%;\n    left: -8%;\n  }\n  100% {\n    right: 107%;\n    left: -8%;\n  }\n}\n@keyframes query-short {\n  0% {\n    right: -200%;\n    left: 100%;\n  }\n  60% {\n    right: 107%;\n    left: -8%;\n  }\n  100% {\n    right: 107%;\n    left: -8%;\n  }\n}\n@-webkit-keyframes stream {\n  to {\n    transform: translateX(-8px);\n  }\n}\n@keyframes stream {\n  to {\n    transform: translateX(-8px);\n  }\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -3428,7 +3487,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".theme--light.v-select .v-select__selection--comma {\n  color: rgba(0, 0, 0, 0.87);\n}\n.theme--light.v-select .v-select__selection--disabled {\n  color: rgba(0, 0, 0, 0.38);\n}\n\n.theme--dark.v-select .v-select__selection--comma {\n  color: #FFFFFF;\n}\n.theme--dark.v-select .v-select__selection--disabled {\n  color: rgba(255, 255, 255, 0.5);\n}\n\n.v-select {\n  position: relative;\n}\n.v-select:not(.v-select--is-multi).v-text-field--single-line .v-select__selections {\n  flex-wrap: nowrap;\n}\n.v-select > .v-input__control > .v-input__slot {\n  cursor: pointer;\n}\n.v-select .v-chip {\n  flex: 0 1 auto;\n  margin: 4px;\n}\n.v-select .v-chip--selected:after {\n  opacity: 0.22;\n}\n.v-select .fade-transition-leave-active {\n  position: absolute;\n  left: 0;\n}\n.v-select.v-input--is-dirty ::-webkit-input-placeholder {\n  color: transparent !important;\n}\n.v-select.v-input--is-dirty ::-moz-placeholder {\n  color: transparent !important;\n}\n.v-select.v-input--is-dirty :-ms-input-placeholder {\n  color: transparent !important;\n}\n.v-select.v-input--is-dirty ::-ms-input-placeholder {\n  color: transparent !important;\n}\n.v-select.v-input--is-dirty ::placeholder {\n  color: transparent !important;\n}\n.v-select:not(.v-input--is-dirty):not(.v-input--is-focused) .v-text-field__prefix {\n  line-height: 20px;\n  top: 7px;\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);\n}\n.v-select.v-text-field--enclosed:not(.v-text-field--single-line):not(.v-text-field--outlined) .v-select__selections {\n  padding-top: 20px;\n}\n.v-select.v-text-field--outlined:not(.v-text-field--single-line) .v-select__selections {\n  padding: 8px 0;\n}\n.v-select.v-text-field--outlined:not(.v-text-field--single-line).v-input--dense .v-select__selections {\n  padding: 4px 0;\n}\n.v-select.v-text-field input {\n  flex: 1 1;\n  margin-top: 0;\n  min-width: 0;\n  pointer-events: none;\n  position: relative;\n}\n.v-select.v-select--is-menu-active .v-input__icon--append .v-icon {\n  transform: rotate(180deg);\n}\n.v-select.v-select--chips input {\n  margin: 0;\n}\n.v-select.v-select--chips .v-select__selections {\n  min-height: 42px;\n}\n.v-select.v-select--chips.v-input--dense .v-select__selections {\n  min-height: 40px;\n}\n.v-select.v-select--chips .v-chip--select.v-chip--active::before {\n  opacity: 0.2;\n}\n.v-select.v-select--chips.v-select--chips--small .v-select__selections {\n  min-height: 32px;\n}\n.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--box .v-select__selections, .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed .v-select__selections {\n  min-height: 68px;\n}\n.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--box.v-input--dense .v-select__selections, .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed.v-input--dense .v-select__selections {\n  min-height: 40px;\n}\n.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--box.v-select--chips--small .v-select__selections, .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed.v-select--chips--small .v-select__selections {\n  min-height: 32px;\n}\n.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--box.v-select--chips--small.v-input--dense .v-select__selections, .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed.v-select--chips--small.v-input--dense .v-select__selections {\n  min-height: 38px;\n}\n.v-select.v-text-field--reverse .v-select__slot,\n.v-select.v-text-field--reverse .v-select__selections {\n  flex-direction: row-reverse;\n}\n.v-select__selections {\n  align-items: center;\n  display: flex;\n  flex: 1 1;\n  flex-wrap: wrap;\n  line-height: 18px;\n  max-width: 100%;\n  min-width: 0;\n}\n.v-select__selection {\n  max-width: 90%;\n}\n.v-select__selection--comma {\n  margin: 7px 4px 7px 0;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.v-select__slot {\n  position: relative;\n  align-items: center;\n  display: flex;\n  max-width: 100%;\n  width: 100%;\n}\n.v-select:not(.v-text-field--single-line):not(.v-text-field--outlined) .v-select__slot > input {\n  align-self: flex-end;\n}", ""]);
+exports.push([module.i, ".theme--light.v-select .v-select__selection--comma {\n  color: rgba(0, 0, 0, 0.87);\n}\n.theme--light.v-select .v-select__selection--disabled {\n  color: rgba(0, 0, 0, 0.38);\n}\n\n.theme--dark.v-select .v-select__selection--comma {\n  color: #FFFFFF;\n}\n.theme--dark.v-select .v-select__selection--disabled {\n  color: rgba(255, 255, 255, 0.5);\n}\n\n.v-select {\n  position: relative;\n}\n.v-select:not(.v-select--is-multi).v-text-field--single-line .v-select__selections {\n  flex-wrap: nowrap;\n}\n.v-select > .v-input__control > .v-input__slot {\n  cursor: pointer;\n}\n.v-select .v-chip {\n  flex: 0 1 auto;\n  margin: 4px;\n}\n.v-select .v-chip--selected:after {\n  opacity: 0.22;\n}\n.v-select .fade-transition-leave-active {\n  position: absolute;\n  left: 0;\n}\n.v-select.v-input--is-dirty ::-webkit-input-placeholder {\n  color: transparent !important;\n}\n.v-select.v-input--is-dirty ::-moz-placeholder {\n  color: transparent !important;\n}\n.v-select.v-input--is-dirty :-ms-input-placeholder {\n  color: transparent !important;\n}\n.v-select.v-input--is-dirty ::-ms-input-placeholder {\n  color: transparent !important;\n}\n.v-select.v-input--is-dirty ::placeholder {\n  color: transparent !important;\n}\n.v-select:not(.v-input--is-dirty):not(.v-input--is-focused) .v-text-field__prefix {\n  line-height: 20px;\n  top: 7px;\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);\n}\n.v-select.v-text-field--enclosed:not(.v-text-field--single-line):not(.v-text-field--outlined) .v-select__selections {\n  padding-top: 20px;\n}\n.v-select.v-text-field--outlined:not(.v-text-field--single-line) .v-select__selections {\n  padding: 8px 0;\n}\n.v-select.v-text-field--outlined:not(.v-text-field--single-line).v-input--dense .v-select__selections {\n  padding: 4px 0;\n}\n.v-select.v-text-field input {\n  flex: 1 1;\n  margin-top: 0;\n  min-width: 0;\n  pointer-events: none;\n  position: relative;\n}\n.v-select.v-select--is-menu-active .v-input__icon--append .v-icon {\n  transform: rotate(180deg);\n}\n.v-select.v-select--chips input {\n  margin: 0;\n}\n.v-select.v-select--chips .v-select__selections {\n  min-height: 42px;\n}\n.v-select.v-select--chips.v-input--dense .v-select__selections {\n  min-height: 40px;\n}\n.v-select.v-select--chips .v-chip--select.v-chip--active::before {\n  opacity: 0.2;\n}\n.v-select.v-select--chips.v-select--chips--small .v-select__selections {\n  min-height: 26px;\n}\n.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--box .v-select__selections, .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed .v-select__selections {\n  min-height: 68px;\n}\n.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--box.v-input--dense .v-select__selections, .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed.v-input--dense .v-select__selections {\n  min-height: 40px;\n}\n.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--box.v-select--chips--small .v-select__selections, .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed.v-select--chips--small .v-select__selections {\n  min-height: 26px;\n}\n.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--box.v-select--chips--small.v-input--dense .v-select__selections, .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed.v-select--chips--small.v-input--dense .v-select__selections {\n  min-height: 38px;\n}\n.v-select.v-text-field--reverse .v-select__slot,\n.v-select.v-text-field--reverse .v-select__selections {\n  flex-direction: row-reverse;\n}\n.v-select__selections {\n  align-items: center;\n  display: flex;\n  flex: 1 1;\n  flex-wrap: wrap;\n  line-height: 18px;\n  max-width: 100%;\n  min-width: 0;\n}\n.v-select__selection {\n  max-width: 90%;\n}\n.v-select__selection--comma {\n  margin: 7px 4px 7px 0;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.v-select.v-input--dense .v-select__selection--comma {\n  margin: 5px 4px 3px 0;\n}\n.v-select.v-input--dense .v-chip {\n  margin: 0 4px 0 4px;\n}\n.v-select__slot {\n  position: relative;\n  align-items: center;\n  display: flex;\n  max-width: 100%;\n  width: 100%;\n}\n.v-select:not(.v-text-field--single-line):not(.v-text-field--outlined) .v-select__slot > input {\n  align-self: flex-end;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -3644,7 +3703,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".theme--light.v-text-field > .v-input__control > .v-input__slot:before {\n  border-color: rgba(0, 0, 0, 0.42);\n}\n.theme--light.v-text-field:not(.v-input--has-state):hover > .v-input__control > .v-input__slot:before {\n  border-color: rgba(0, 0, 0, 0.87);\n}\n.theme--light.v-text-field.v-input--is-disabled .v-input__slot::before {\n  -o-border-image: repeating-linear-gradient(to right, rgba(0, 0, 0, 0.38) 0px, rgba(0, 0, 0, 0.38) 2px, transparent 2px, transparent 4px) 1 repeat;\n     border-image: repeating-linear-gradient(to right, rgba(0, 0, 0, 0.38) 0px, rgba(0, 0, 0, 0.38) 2px, transparent 2px, transparent 4px) 1 repeat;\n}\n.theme--light.v-text-field--filled > .v-input__control > .v-input__slot {\n  background: rgba(0, 0, 0, 0.06);\n}\n.theme--light.v-text-field--filled:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot:hover {\n  background: rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-text-field--solo > .v-input__control > .v-input__slot {\n  background: #FFFFFF;\n}\n.theme--light.v-text-field--solo-inverted > .v-input__control > .v-input__slot {\n  background: rgba(0, 0, 0, 0.06);\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot {\n  background: #424242;\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input {\n  color: #FFFFFF;\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::-webkit-input-placeholder {\n  color: rgba(255, 255, 255, 0.5);\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::-moz-placeholder {\n  color: rgba(255, 255, 255, 0.5);\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input:-ms-input-placeholder {\n  color: rgba(255, 255, 255, 0.5);\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::-ms-input-placeholder {\n  color: rgba(255, 255, 255, 0.5);\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::placeholder {\n  color: rgba(255, 255, 255, 0.5);\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot .v-label {\n  color: rgba(255, 255, 255, 0.7);\n}\n.theme--light.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot fieldset {\n  color: rgba(0, 0, 0, 0.38);\n}\n.theme--light.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot:hover fieldset {\n  color: rgba(0, 0, 0, 0.86);\n}\n.theme--light.v-text-field--outlined:not(.v-input--is-focused).v-input--is-disabled > .v-input__control > .v-input__slot fieldset {\n  color: rgba(0, 0, 0, 0.26);\n}\n\n.theme--dark.v-text-field > .v-input__control > .v-input__slot:before {\n  border-color: rgba(255, 255, 255, 0.7);\n}\n.theme--dark.v-text-field:not(.v-input--has-state):hover > .v-input__control > .v-input__slot:before {\n  border-color: #FFFFFF;\n}\n.theme--dark.v-text-field.v-input--is-disabled .v-input__slot::before {\n  -o-border-image: repeating-linear-gradient(to right, rgba(255, 255, 255, 0.5) 0px, rgba(255, 255, 255, 0.5) 2px, transparent 2px, transparent 4px) 1 repeat;\n     border-image: repeating-linear-gradient(to right, rgba(255, 255, 255, 0.5) 0px, rgba(255, 255, 255, 0.5) 2px, transparent 2px, transparent 4px) 1 repeat;\n}\n.theme--dark.v-text-field--filled > .v-input__control > .v-input__slot {\n  background: rgba(255, 255, 255, 0.08);\n}\n.theme--dark.v-text-field--filled:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot:hover {\n  background: rgba(255, 255, 255, 0.16);\n}\n.theme--dark.v-text-field--solo > .v-input__control > .v-input__slot {\n  background: #1E1E1E;\n}\n.theme--dark.v-text-field--solo-inverted > .v-input__control > .v-input__slot {\n  background: rgba(255, 255, 255, 0.16);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot {\n  background: #FFFFFF;\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input {\n  color: rgba(0, 0, 0, 0.87);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::-webkit-input-placeholder {\n  color: rgba(0, 0, 0, 0.38);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::-moz-placeholder {\n  color: rgba(0, 0, 0, 0.38);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input:-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.38);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.38);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::placeholder {\n  color: rgba(0, 0, 0, 0.38);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot .v-label {\n  color: rgba(0, 0, 0, 0.6);\n}\n.theme--dark.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot fieldset {\n  color: rgba(255, 255, 255, 0.24);\n}\n.theme--dark.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot:hover fieldset {\n  color: #FFFFFF;\n}\n.theme--dark.v-text-field--outlined:not(.v-input--is-focused).v-input--is-disabled > .v-input__control > .v-input__slot fieldset {\n  color: rgba(255, 255, 255, 0.16);\n}\n\n.v-text-field {\n  padding-top: 12px;\n  margin-top: 4px;\n}\n.v-text-field input {\n  flex: 1 1 auto;\n  line-height: 20px;\n  padding: 8px 0 8px;\n  max-width: 100%;\n  min-width: 0px;\n  width: 100%;\n}\n.v-text-field fieldset,\n.v-text-field .v-input__control,\n.v-text-field .v-input__slot {\n  border-radius: inherit;\n}\n.v-text-field fieldset,\n.v-text-field .v-input__control {\n  color: inherit;\n}\n.v-text-field.v-input--has-state .v-input__control > .v-text-field__details > .v-counter {\n  color: inherit;\n}\n.v-text-field.v-input--is-disabled .v-input__control > .v-text-field__details > .v-counter,\n.v-text-field.v-input--is-disabled .v-input__control > .v-text-field__details > .v-messages {\n  color: inherit;\n}\n.v-text-field.v-input--dense {\n  padding-top: 0;\n}\n.v-text-field.v-input--dense:not(.v-text-field--outlined):not(.v-text-field--single-line):not(.v-select) input {\n  padding: 4px 0 2px;\n}\n.v-text-field.v-input--dense[type=text]::-ms-clear {\n  display: none;\n}\n.v-text-field .v-input__prepend-inner,\n.v-text-field .v-input__append-inner {\n  align-self: flex-start;\n  display: inline-flex;\n  margin-top: 4px;\n  line-height: 1;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.v-application--is-ltr .v-text-field .v-input__prepend-inner {\n  margin-right: auto;\n  padding-right: 4px;\n}\n.v-application--is-rtl .v-text-field .v-input__prepend-inner {\n  margin-left: auto;\n  padding-left: 4px;\n}\n.v-application--is-ltr .v-text-field .v-input__append-inner {\n  margin-left: auto;\n  padding-left: 4px;\n}\n.v-application--is-rtl .v-text-field .v-input__append-inner {\n  margin-right: auto;\n  padding-right: 4px;\n}\n.v-text-field .v-counter {\n  white-space: nowrap;\n}\n.v-application--is-ltr .v-text-field .v-counter {\n  margin-left: 8px;\n}\n.v-application--is-rtl .v-text-field .v-counter {\n  margin-right: 8px;\n}\n.v-text-field .v-label {\n  max-width: 90%;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  top: 6px;\n  white-space: nowrap;\n  pointer-events: none;\n}\n.v-application--is-ltr .v-text-field .v-label {\n  transform-origin: top left;\n}\n.v-application--is-rtl .v-text-field .v-label {\n  transform-origin: top right;\n}\n.v-text-field .v-label--active {\n  max-width: 133%;\n  transform: translateY(-18px) scale(0.75);\n}\n.v-text-field > .v-input__control > .v-input__slot {\n  cursor: text;\n  transition: background 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);\n}\n.v-text-field > .v-input__control > .v-input__slot:before, .v-text-field > .v-input__control > .v-input__slot:after {\n  bottom: -1px;\n  content: \"\";\n  left: 0;\n  position: absolute;\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);\n  width: 100%;\n}\n.v-text-field > .v-input__control > .v-input__slot:before {\n  border-color: inherit;\n  border-style: solid;\n  border-width: thin 0 0 0;\n}\n.v-text-field > .v-input__control > .v-input__slot:after {\n  border-color: currentColor;\n  border-style: solid;\n  border-width: thin 0 thin 0;\n  transform: scaleX(0);\n}\n.v-text-field__details {\n  display: flex;\n  flex: 1 0 auto;\n  max-width: 100%;\n  min-height: 14px;\n  overflow: hidden;\n}\n.v-text-field__prefix, .v-text-field__suffix {\n  align-self: center;\n  cursor: default;\n  transition: color 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);\n  white-space: nowrap;\n}\n.v-application--is-ltr .v-text-field__prefix {\n  text-align: right;\n  padding-right: 4px;\n}\n.v-application--is-rtl .v-text-field__prefix {\n  text-align: left;\n  padding-left: 4px;\n}\n.v-text-field__suffix {\n  white-space: nowrap;\n}\n.v-application--is-ltr .v-text-field__suffix {\n  padding-left: 4px;\n}\n.v-application--is-rtl .v-text-field__suffix {\n  padding-right: 4px;\n}\n.v-application--is-ltr .v-text-field--reverse .v-text-field__prefix {\n  text-align: left;\n  padding-right: 0;\n  padding-left: 4px;\n}\n.v-application--is-rtl .v-text-field--reverse .v-text-field__prefix {\n  text-align: right;\n  padding-right: 4px;\n  padding-left: 0;\n}\n.v-application--is-ltr .v-text-field--reverse .v-text-field__suffix {\n  padding-left: 0;\n  padding-right: 4px;\n}\n.v-application--is-rtl .v-text-field--reverse .v-text-field__suffix {\n  padding-left: 4px;\n  padding-right: 0;\n}\n.v-text-field > .v-input__control > .v-input__slot > .v-text-field__slot {\n  display: flex;\n  flex: 1 1 auto;\n  position: relative;\n}\n.v-text-field:not(.v-text-field--is-booted) .v-label,\n.v-text-field:not(.v-text-field--is-booted) legend {\n  transition: none;\n}\n.v-text-field--filled, .v-text-field--full-width, .v-text-field--outlined {\n  position: relative;\n}\n.v-text-field--filled > .v-input__control > .v-input__slot, .v-text-field--full-width > .v-input__control > .v-input__slot, .v-text-field--outlined > .v-input__control > .v-input__slot {\n  align-items: stretch;\n  min-height: 56px;\n}\n.v-text-field--filled.v-input--dense > .v-input__control > .v-input__slot, .v-text-field--full-width.v-input--dense > .v-input__control > .v-input__slot, .v-text-field--outlined.v-input--dense > .v-input__control > .v-input__slot {\n  min-height: 52px;\n}\n.v-text-field--filled.v-input--dense.v-text-field--single-line > .v-input__control > .v-input__slot, .v-text-field--filled.v-input--dense.v-text-field--outlined > .v-input__control > .v-input__slot, .v-text-field--filled.v-input--dense.v-text-field--outlined.v-text-field--filled > .v-input__control > .v-input__slot, .v-text-field--full-width.v-input--dense.v-text-field--single-line > .v-input__control > .v-input__slot, .v-text-field--full-width.v-input--dense.v-text-field--outlined > .v-input__control > .v-input__slot, .v-text-field--full-width.v-input--dense.v-text-field--outlined.v-text-field--filled > .v-input__control > .v-input__slot, .v-text-field--outlined.v-input--dense.v-text-field--single-line > .v-input__control > .v-input__slot, .v-text-field--outlined.v-input--dense.v-text-field--outlined > .v-input__control > .v-input__slot, .v-text-field--outlined.v-input--dense.v-text-field--outlined.v-text-field--filled > .v-input__control > .v-input__slot {\n  min-height: 40px;\n}\n.v-text-field--outlined {\n  border-radius: 4px;\n}\n.v-text-field--full-width .v-input__prepend-outer,\n.v-text-field--full-width .v-input__prepend-inner,\n.v-text-field--full-width .v-input__append-inner,\n.v-text-field--full-width .v-input__append-outer, .v-text-field--enclosed .v-input__prepend-outer,\n.v-text-field--enclosed .v-input__prepend-inner,\n.v-text-field--enclosed .v-input__append-inner,\n.v-text-field--enclosed .v-input__append-outer {\n  margin-top: 17px;\n}\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__prepend-outer,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__prepend-inner,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__append-inner,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__append-outer, .v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__prepend-outer,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__prepend-inner,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__append-inner,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__append-outer {\n  margin-top: 14px;\n}\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-outer,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-inner,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-inner,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-outer, .v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-outer,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-inner,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-inner,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-outer {\n  margin-top: 9px;\n}\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-outer,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-inner,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-inner,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-outer, .v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-outer,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-inner,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-inner,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-outer {\n  margin-top: 7px;\n}\n.v-text-field--filled .v-label, .v-text-field--full-width .v-label {\n  top: 18px;\n}\n.v-text-field--filled .v-label--active, .v-text-field--full-width .v-label--active {\n  transform: translateY(-6px) scale(0.75);\n}\n.v-text-field--filled.v-input--dense .v-label, .v-text-field--full-width.v-input--dense .v-label {\n  top: 17px;\n}\n.v-text-field--filled.v-input--dense .v-label--active, .v-text-field--full-width.v-input--dense .v-label--active {\n  transform: translateY(-10px) scale(0.75);\n}\n.v-text-field--filled.v-input--dense.v-text-field--single-line .v-label, .v-text-field--full-width.v-input--dense.v-text-field--single-line .v-label {\n  top: 11px;\n}\n.v-text-field--filled {\n  border-radius: 4px 4px 0 0;\n}\n.v-text-field--filled:not(.v-text-field--single-line) input {\n  margin-top: 22px;\n}\n.v-text-field--filled.v-input--dense:not(.v-text-field--single-line).v-text-field--outlined input {\n  margin-top: 0;\n}\n.v-text-field--filled .v-text-field__prefix,\n.v-text-field--filled .v-text-field__suffix {\n  max-height: 32px;\n  margin-top: 20px;\n}\n.v-text-field--full-width {\n  border-radius: 0;\n}\n.v-text-field--outlined .v-text-field__slot, .v-text-field--single-line .v-text-field__slot {\n  align-items: center;\n}\n.v-text-field.v-text-field--enclosed {\n  margin: 0;\n  padding: 0;\n}\n.v-text-field.v-text-field--enclosed.v-text-field--single-line .v-text-field__prefix,\n.v-text-field.v-text-field--enclosed.v-text-field--single-line .v-text-field__suffix {\n  margin-top: 0;\n}\n.v-text-field.v-text-field--enclosed:not(.v-text-field--filled) .v-progress-linear__background {\n  display: none;\n}\n.v-text-field.v-text-field--enclosed:not(.v-text-field--rounded) > .v-input__control > .v-input__slot,\n.v-text-field.v-text-field--enclosed .v-text-field__details {\n  padding: 0 12px;\n}\n.v-text-field.v-text-field--enclosed .v-text-field__details {\n  margin-bottom: 8px;\n}\n.v-application--is-ltr .v-text-field--reverse input {\n  text-align: right;\n}\n.v-application--is-rtl .v-text-field--reverse input {\n  text-align: left;\n}\n.v-application--is-ltr .v-text-field--reverse .v-label {\n  transform-origin: top right;\n}\n.v-application--is-rtl .v-text-field--reverse .v-label {\n  transform-origin: top left;\n}\n.v-text-field--reverse > .v-input__control > .v-input__slot,\n.v-text-field--reverse .v-text-field__slot {\n  flex-direction: row-reverse;\n}\n.v-text-field--outlined > .v-input__control > .v-input__slot:before, .v-text-field--outlined > .v-input__control > .v-input__slot:after, .v-text-field--solo > .v-input__control > .v-input__slot:before, .v-text-field--solo > .v-input__control > .v-input__slot:after, .v-text-field--rounded > .v-input__control > .v-input__slot:before, .v-text-field--rounded > .v-input__control > .v-input__slot:after {\n  display: none;\n}\n.v-text-field--outlined, .v-text-field--solo {\n  border-radius: 4px;\n}\n.v-text-field--outlined {\n  margin-bottom: 16px;\n  transition: border 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);\n}\n.v-text-field--outlined .v-label {\n  top: 18px;\n}\n.v-text-field--outlined .v-label--active {\n  transform: translateY(-24px) scale(0.75);\n}\n.v-text-field--outlined.v-input--dense .v-label {\n  top: 10px;\n}\n.v-text-field--outlined.v-input--dense .v-label--active {\n  transform: translateY(-16px) scale(0.75);\n}\n.v-text-field--outlined fieldset {\n  border-collapse: collapse;\n  border-color: currentColor;\n  border-style: solid;\n  border-width: 1px;\n  bottom: 0;\n  left: 0;\n  pointer-events: none;\n  position: absolute;\n  right: 0;\n  top: -5px;\n  transition-duration: 0.3s;\n  transition-property: color, border-width;\n  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);\n}\n.v-application--is-ltr .v-text-field--outlined fieldset {\n  padding-left: 8px;\n}\n.v-application--is-rtl .v-text-field--outlined fieldset {\n  padding-right: 8px;\n}\n.v-application--is-ltr .v-text-field--outlined.v-text-field--reverse fieldset {\n  padding-right: 8px;\n}\n.v-application--is-rtl .v-text-field--outlined.v-text-field--reverse fieldset {\n  padding-left: 8px;\n}\n.v-text-field--outlined legend {\n  line-height: 11px;\n  padding: 0;\n  transition: width 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);\n}\n.v-application--is-ltr .v-text-field--outlined legend {\n  text-align: left;\n}\n.v-application--is-rtl .v-text-field--outlined legend {\n  text-align: right;\n}\n.v-application--is-ltr .v-text-field--outlined.v-text-field--reverse legend {\n  text-align: right;\n}\n.v-application--is-rtl .v-text-field--outlined.v-text-field--reverse legend {\n  text-align: left;\n}\n.v-application--is-ltr .v-text-field--outlined.v-text-field--rounded legend {\n  margin-left: 12px;\n}\n.v-application--is-rtl .v-text-field--outlined.v-text-field--rounded legend {\n  margin-right: 12px;\n}\n.v-text-field--outlined > .v-input__control > .v-input__slot {\n  background: transparent;\n}\n.v-text-field--outlined .v-text-field__prefix {\n  max-height: 32px;\n}\n.v-text-field--outlined .v-input__prepend-outer,\n.v-text-field--outlined .v-input__append-outer {\n  margin-top: 18px;\n}\n.v-text-field--outlined.v-input--is-focused fieldset, .v-text-field--outlined.v-input--has-state fieldset {\n  border: 2px solid currentColor;\n}\n.v-text-field--rounded {\n  border-radius: 28px;\n}\n.v-text-field--rounded > .v-input__control > .v-input__slot {\n  padding: 0 24px;\n}\n.v-text-field--shaped {\n  border-radius: 16px 16px 0 0;\n}\n.v-text-field.v-text-field--solo .v-label {\n  top: calc(50% - 10px);\n}\n.v-text-field.v-text-field--solo .v-input__control {\n  min-height: 48px;\n  padding: 0;\n}\n.v-text-field.v-text-field--solo .v-input__control input {\n  caret-color: auto;\n}\n.v-text-field.v-text-field--solo.v-input--dense > .v-input__control {\n  min-height: 38px;\n}\n.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat) > .v-input__control > .v-input__slot {\n  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);\n}\n.v-text-field.v-text-field--solo .v-input__append-inner,\n.v-text-field.v-text-field--solo .v-input__prepend-inner {\n  align-self: center;\n  margin-top: 0;\n}\n.v-text-field.v-text-field--solo .v-input__prepend-outer,\n.v-text-field.v-text-field--solo .v-input__append-outer {\n  margin-top: 12px;\n}\n.v-text-field.v-text-field--solo.v-input--dense .v-input__prepend-outer,\n.v-text-field.v-text-field--solo.v-input--dense .v-input__append-outer {\n  margin-top: 7px;\n}\n.v-text-field.v-input--is-focused > .v-input__control > .v-input__slot:after {\n  transform: scaleX(1);\n}\n.v-text-field.v-input--has-state > .v-input__control > .v-input__slot:before {\n  border-color: currentColor;\n}", ""]);
+exports.push([module.i, ".theme--light.v-text-field > .v-input__control > .v-input__slot:before {\n  border-color: rgba(0, 0, 0, 0.42);\n}\n.theme--light.v-text-field:not(.v-input--has-state):hover > .v-input__control > .v-input__slot:before {\n  border-color: rgba(0, 0, 0, 0.87);\n}\n.theme--light.v-text-field.v-input--is-disabled .v-input__slot::before {\n  -o-border-image: repeating-linear-gradient(to right, rgba(0, 0, 0, 0.38) 0px, rgba(0, 0, 0, 0.38) 2px, transparent 2px, transparent 4px) 1 repeat;\n     border-image: repeating-linear-gradient(to right, rgba(0, 0, 0, 0.38) 0px, rgba(0, 0, 0, 0.38) 2px, transparent 2px, transparent 4px) 1 repeat;\n}\n.theme--light.v-text-field--filled > .v-input__control > .v-input__slot {\n  background: rgba(0, 0, 0, 0.06);\n}\n.theme--light.v-text-field--filled:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot:hover {\n  background: rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-text-field--solo > .v-input__control > .v-input__slot {\n  background: #FFFFFF;\n}\n.theme--light.v-text-field--solo-inverted > .v-input__control > .v-input__slot {\n  background: rgba(0, 0, 0, 0.06);\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot {\n  background: #424242;\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input {\n  color: #FFFFFF;\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::-webkit-input-placeholder {\n  color: rgba(255, 255, 255, 0.5);\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::-moz-placeholder {\n  color: rgba(255, 255, 255, 0.5);\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input:-ms-input-placeholder {\n  color: rgba(255, 255, 255, 0.5);\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::-ms-input-placeholder {\n  color: rgba(255, 255, 255, 0.5);\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::placeholder {\n  color: rgba(255, 255, 255, 0.5);\n}\n.theme--light.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot .v-label {\n  color: rgba(255, 255, 255, 0.7);\n}\n.theme--light.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot fieldset {\n  color: rgba(0, 0, 0, 0.38);\n}\n.theme--light.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot:hover fieldset {\n  color: rgba(0, 0, 0, 0.86);\n}\n.theme--light.v-text-field--outlined:not(.v-input--is-focused).v-input--is-disabled > .v-input__control > .v-input__slot fieldset {\n  color: rgba(0, 0, 0, 0.26);\n}\n\n.theme--dark.v-text-field > .v-input__control > .v-input__slot:before {\n  border-color: rgba(255, 255, 255, 0.7);\n}\n.theme--dark.v-text-field:not(.v-input--has-state):hover > .v-input__control > .v-input__slot:before {\n  border-color: #FFFFFF;\n}\n.theme--dark.v-text-field.v-input--is-disabled .v-input__slot::before {\n  -o-border-image: repeating-linear-gradient(to right, rgba(255, 255, 255, 0.5) 0px, rgba(255, 255, 255, 0.5) 2px, transparent 2px, transparent 4px) 1 repeat;\n     border-image: repeating-linear-gradient(to right, rgba(255, 255, 255, 0.5) 0px, rgba(255, 255, 255, 0.5) 2px, transparent 2px, transparent 4px) 1 repeat;\n}\n.theme--dark.v-text-field--filled > .v-input__control > .v-input__slot {\n  background: rgba(255, 255, 255, 0.08);\n}\n.theme--dark.v-text-field--filled:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot:hover {\n  background: rgba(255, 255, 255, 0.16);\n}\n.theme--dark.v-text-field--solo > .v-input__control > .v-input__slot {\n  background: #1E1E1E;\n}\n.theme--dark.v-text-field--solo-inverted > .v-input__control > .v-input__slot {\n  background: rgba(255, 255, 255, 0.16);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot {\n  background: #FFFFFF;\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input {\n  color: rgba(0, 0, 0, 0.87);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::-webkit-input-placeholder {\n  color: rgba(0, 0, 0, 0.38);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::-moz-placeholder {\n  color: rgba(0, 0, 0, 0.38);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input:-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.38);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.38);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot input::placeholder {\n  color: rgba(0, 0, 0, 0.38);\n}\n.theme--dark.v-text-field--solo-inverted.v-input--is-focused > .v-input__control > .v-input__slot .v-label {\n  color: rgba(0, 0, 0, 0.6);\n}\n.theme--dark.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot fieldset {\n  color: rgba(255, 255, 255, 0.24);\n}\n.theme--dark.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot:hover fieldset {\n  color: #FFFFFF;\n}\n.theme--dark.v-text-field--outlined:not(.v-input--is-focused).v-input--is-disabled > .v-input__control > .v-input__slot fieldset {\n  color: rgba(255, 255, 255, 0.16);\n}\n\n.v-text-field {\n  padding-top: 12px;\n  margin-top: 4px;\n}\n.v-text-field input {\n  flex: 1 1 auto;\n  line-height: 20px;\n  padding: 8px 0 8px;\n  max-width: 100%;\n  min-width: 0px;\n  width: 100%;\n}\n.v-text-field fieldset,\n.v-text-field .v-input__control,\n.v-text-field .v-input__slot {\n  border-radius: inherit;\n}\n.v-text-field fieldset,\n.v-text-field .v-input__control {\n  color: inherit;\n}\n.v-text-field.v-input--has-state .v-input__control > .v-text-field__details > .v-counter {\n  color: inherit;\n}\n.v-text-field.v-input--is-disabled .v-input__control > .v-text-field__details > .v-counter,\n.v-text-field.v-input--is-disabled .v-input__control > .v-text-field__details > .v-messages {\n  color: inherit;\n}\n.v-text-field.v-input--dense {\n  padding-top: 0;\n}\n.v-text-field.v-input--dense:not(.v-text-field--outlined) input {\n  padding: 4px 0 2px;\n}\n.v-text-field.v-input--dense[type=text]::-ms-clear {\n  display: none;\n}\n.v-text-field.v-input--dense .v-input__prepend-inner,\n.v-text-field.v-input--dense .v-input__append-inner {\n  margin-top: 0px;\n}\n.v-text-field.v-input--dense .v-input__prepend-inner .v-input__icon > .v-icon,\n.v-text-field.v-input--dense .v-input__append-inner .v-input__icon > .v-icon {\n  margin-top: 8px;\n}\n.v-text-field .v-input__prepend-inner,\n.v-text-field .v-input__append-inner {\n  align-self: flex-start;\n  display: inline-flex;\n  margin-top: 4px;\n  line-height: 1;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.v-application--is-ltr .v-text-field .v-input__prepend-inner {\n  margin-right: auto;\n  padding-right: 4px;\n}\n.v-application--is-rtl .v-text-field .v-input__prepend-inner {\n  margin-left: auto;\n  padding-left: 4px;\n}\n.v-application--is-ltr .v-text-field .v-input__append-inner {\n  margin-left: auto;\n  padding-left: 4px;\n}\n.v-application--is-rtl .v-text-field .v-input__append-inner {\n  margin-right: auto;\n  padding-right: 4px;\n}\n.v-text-field .v-counter {\n  white-space: nowrap;\n}\n.v-application--is-ltr .v-text-field .v-counter {\n  margin-left: 8px;\n}\n.v-application--is-rtl .v-text-field .v-counter {\n  margin-right: 8px;\n}\n.v-text-field .v-label {\n  max-width: 90%;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  top: 6px;\n  white-space: nowrap;\n  pointer-events: none;\n}\n.v-application--is-ltr .v-text-field .v-label {\n  transform-origin: top left;\n}\n.v-application--is-rtl .v-text-field .v-label {\n  transform-origin: top right;\n}\n.v-text-field .v-label--active {\n  max-width: 133%;\n  transform: translateY(-18px) scale(0.75);\n}\n.v-text-field > .v-input__control > .v-input__slot {\n  cursor: text;\n  transition: background 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);\n}\n.v-text-field > .v-input__control > .v-input__slot:before, .v-text-field > .v-input__control > .v-input__slot:after {\n  bottom: -1px;\n  content: \"\";\n  left: 0;\n  position: absolute;\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);\n  width: 100%;\n}\n.v-text-field > .v-input__control > .v-input__slot:before {\n  border-color: inherit;\n  border-style: solid;\n  border-width: thin 0 0 0;\n}\n.v-text-field > .v-input__control > .v-input__slot:after {\n  border-color: currentColor;\n  border-style: solid;\n  border-width: thin 0 thin 0;\n  transform: scaleX(0);\n}\n.v-text-field__details {\n  display: flex;\n  flex: 1 0 auto;\n  max-width: 100%;\n  min-height: 14px;\n  overflow: hidden;\n}\n.v-text-field__prefix, .v-text-field__suffix {\n  align-self: center;\n  cursor: default;\n  transition: color 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);\n  white-space: nowrap;\n}\n.v-application--is-ltr .v-text-field__prefix {\n  text-align: right;\n  padding-right: 4px;\n}\n.v-application--is-rtl .v-text-field__prefix {\n  text-align: left;\n  padding-left: 4px;\n}\n.v-text-field__suffix {\n  white-space: nowrap;\n}\n.v-application--is-ltr .v-text-field__suffix {\n  padding-left: 4px;\n}\n.v-application--is-rtl .v-text-field__suffix {\n  padding-right: 4px;\n}\n.v-application--is-ltr .v-text-field--reverse .v-text-field__prefix {\n  text-align: left;\n  padding-right: 0;\n  padding-left: 4px;\n}\n.v-application--is-rtl .v-text-field--reverse .v-text-field__prefix {\n  text-align: right;\n  padding-right: 4px;\n  padding-left: 0;\n}\n.v-application--is-ltr .v-text-field--reverse .v-text-field__suffix {\n  padding-left: 0;\n  padding-right: 4px;\n}\n.v-application--is-rtl .v-text-field--reverse .v-text-field__suffix {\n  padding-left: 4px;\n  padding-right: 0;\n}\n.v-text-field > .v-input__control > .v-input__slot > .v-text-field__slot {\n  display: flex;\n  flex: 1 1 auto;\n  position: relative;\n}\n.v-text-field:not(.v-text-field--is-booted) .v-label,\n.v-text-field:not(.v-text-field--is-booted) legend {\n  transition: none;\n}\n.v-text-field--filled, .v-text-field--full-width, .v-text-field--outlined {\n  position: relative;\n}\n.v-text-field--filled > .v-input__control > .v-input__slot, .v-text-field--full-width > .v-input__control > .v-input__slot, .v-text-field--outlined > .v-input__control > .v-input__slot {\n  align-items: stretch;\n  min-height: 56px;\n}\n.v-text-field--filled.v-input--dense > .v-input__control > .v-input__slot, .v-text-field--full-width.v-input--dense > .v-input__control > .v-input__slot, .v-text-field--outlined.v-input--dense > .v-input__control > .v-input__slot {\n  min-height: 52px;\n}\n.v-text-field--filled.v-input--dense.v-text-field--single-line > .v-input__control > .v-input__slot, .v-text-field--filled.v-input--dense.v-text-field--outlined > .v-input__control > .v-input__slot, .v-text-field--filled.v-input--dense.v-text-field--outlined.v-text-field--filled > .v-input__control > .v-input__slot, .v-text-field--full-width.v-input--dense.v-text-field--single-line > .v-input__control > .v-input__slot, .v-text-field--full-width.v-input--dense.v-text-field--outlined > .v-input__control > .v-input__slot, .v-text-field--full-width.v-input--dense.v-text-field--outlined.v-text-field--filled > .v-input__control > .v-input__slot, .v-text-field--outlined.v-input--dense.v-text-field--single-line > .v-input__control > .v-input__slot, .v-text-field--outlined.v-input--dense.v-text-field--outlined > .v-input__control > .v-input__slot, .v-text-field--outlined.v-input--dense.v-text-field--outlined.v-text-field--filled > .v-input__control > .v-input__slot {\n  min-height: 40px;\n}\n.v-text-field--outlined {\n  border-radius: 4px;\n}\n.v-text-field--full-width .v-input__prepend-outer,\n.v-text-field--full-width .v-input__prepend-inner,\n.v-text-field--full-width .v-input__append-inner,\n.v-text-field--full-width .v-input__append-outer, .v-text-field--enclosed .v-input__prepend-outer,\n.v-text-field--enclosed .v-input__prepend-inner,\n.v-text-field--enclosed .v-input__append-inner,\n.v-text-field--enclosed .v-input__append-outer {\n  margin-top: 17px;\n}\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__prepend-outer,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__prepend-inner,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__append-inner,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__append-outer, .v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__prepend-outer,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__prepend-inner,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__append-inner,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__append-outer {\n  margin-top: 14px;\n}\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-outer,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-inner,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-inner,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-outer, .v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-outer,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-inner,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-inner,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-outer {\n  margin-top: 9px;\n}\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-outer,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-inner,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-inner,\n.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-outer, .v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-outer,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-inner,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-inner,\n.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-outer {\n  margin-top: 7px;\n}\n.v-text-field--filled .v-label, .v-text-field--full-width .v-label {\n  top: 18px;\n}\n.v-text-field--filled .v-label--active, .v-text-field--full-width .v-label--active {\n  transform: translateY(-6px) scale(0.75);\n}\n.v-text-field--filled.v-input--dense .v-label, .v-text-field--full-width.v-input--dense .v-label {\n  top: 17px;\n}\n.v-text-field--filled.v-input--dense .v-label--active, .v-text-field--full-width.v-input--dense .v-label--active {\n  transform: translateY(-10px) scale(0.75);\n}\n.v-text-field--filled.v-input--dense.v-text-field--single-line .v-label, .v-text-field--full-width.v-input--dense.v-text-field--single-line .v-label {\n  top: 11px;\n}\n.v-text-field--filled {\n  border-radius: 4px 4px 0 0;\n}\n.v-text-field--filled:not(.v-text-field--single-line) input {\n  margin-top: 22px;\n}\n.v-text-field--filled.v-input--dense:not(.v-text-field--single-line).v-text-field--outlined input {\n  margin-top: 0;\n}\n.v-text-field--filled .v-text-field__prefix,\n.v-text-field--filled .v-text-field__suffix {\n  max-height: 32px;\n  margin-top: 20px;\n}\n.v-text-field--full-width {\n  border-radius: 0;\n}\n.v-text-field--outlined .v-text-field__slot, .v-text-field--single-line .v-text-field__slot {\n  align-items: center;\n}\n.v-text-field.v-text-field--enclosed {\n  margin: 0;\n  padding: 0;\n}\n.v-text-field.v-text-field--enclosed.v-text-field--single-line .v-text-field__prefix,\n.v-text-field.v-text-field--enclosed.v-text-field--single-line .v-text-field__suffix {\n  margin-top: 0;\n}\n.v-text-field.v-text-field--enclosed:not(.v-text-field--filled) .v-progress-linear__background {\n  display: none;\n}\n.v-text-field.v-text-field--enclosed:not(.v-text-field--rounded) > .v-input__control > .v-input__slot,\n.v-text-field.v-text-field--enclosed .v-text-field__details {\n  padding: 0 12px;\n}\n.v-text-field.v-text-field--enclosed .v-text-field__details {\n  margin-bottom: 8px;\n}\n.v-application--is-ltr .v-text-field--reverse input {\n  text-align: right;\n}\n.v-application--is-rtl .v-text-field--reverse input {\n  text-align: left;\n}\n.v-application--is-ltr .v-text-field--reverse .v-label {\n  transform-origin: top right;\n}\n.v-application--is-rtl .v-text-field--reverse .v-label {\n  transform-origin: top left;\n}\n.v-text-field--reverse > .v-input__control > .v-input__slot,\n.v-text-field--reverse .v-text-field__slot {\n  flex-direction: row-reverse;\n}\n.v-text-field--outlined > .v-input__control > .v-input__slot:before, .v-text-field--outlined > .v-input__control > .v-input__slot:after, .v-text-field--solo > .v-input__control > .v-input__slot:before, .v-text-field--solo > .v-input__control > .v-input__slot:after, .v-text-field--rounded > .v-input__control > .v-input__slot:before, .v-text-field--rounded > .v-input__control > .v-input__slot:after {\n  display: none;\n}\n.v-text-field--outlined, .v-text-field--solo {\n  border-radius: 4px;\n}\n.v-text-field--outlined {\n  margin-bottom: 16px;\n  transition: border 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);\n}\n.v-text-field--outlined .v-label {\n  top: 18px;\n}\n.v-text-field--outlined .v-label--active {\n  transform: translateY(-24px) scale(0.75);\n}\n.v-text-field--outlined.v-input--dense .v-label {\n  top: 10px;\n}\n.v-text-field--outlined.v-input--dense .v-label--active {\n  transform: translateY(-16px) scale(0.75);\n}\n.v-text-field--outlined fieldset {\n  border-collapse: collapse;\n  border-color: currentColor;\n  border-style: solid;\n  border-width: 1px;\n  bottom: 0;\n  left: 0;\n  pointer-events: none;\n  position: absolute;\n  right: 0;\n  top: -5px;\n  transition-duration: 0.3s;\n  transition-property: color, border-width;\n  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);\n}\n.v-application--is-ltr .v-text-field--outlined fieldset {\n  padding-left: 8px;\n}\n.v-application--is-rtl .v-text-field--outlined fieldset {\n  padding-right: 8px;\n}\n.v-application--is-ltr .v-text-field--outlined.v-text-field--reverse fieldset {\n  padding-right: 8px;\n}\n.v-application--is-rtl .v-text-field--outlined.v-text-field--reverse fieldset {\n  padding-left: 8px;\n}\n.v-text-field--outlined legend {\n  line-height: 11px;\n  padding: 0;\n  transition: width 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);\n}\n.v-application--is-ltr .v-text-field--outlined legend {\n  text-align: left;\n}\n.v-application--is-rtl .v-text-field--outlined legend {\n  text-align: right;\n}\n.v-application--is-ltr .v-text-field--outlined.v-text-field--reverse legend {\n  text-align: right;\n}\n.v-application--is-rtl .v-text-field--outlined.v-text-field--reverse legend {\n  text-align: left;\n}\n.v-application--is-ltr .v-text-field--outlined.v-text-field--rounded legend {\n  margin-left: 12px;\n}\n.v-application--is-rtl .v-text-field--outlined.v-text-field--rounded legend {\n  margin-right: 12px;\n}\n.v-text-field--outlined > .v-input__control > .v-input__slot {\n  background: transparent;\n}\n.v-text-field--outlined .v-text-field__prefix {\n  max-height: 32px;\n}\n.v-text-field--outlined .v-input__prepend-outer,\n.v-text-field--outlined .v-input__append-outer {\n  margin-top: 18px;\n}\n.v-text-field--outlined.v-input--is-focused fieldset, .v-text-field--outlined.v-input--has-state fieldset {\n  border: 2px solid currentColor;\n}\n.v-text-field--rounded {\n  border-radius: 28px;\n}\n.v-text-field--rounded > .v-input__control > .v-input__slot {\n  padding: 0 24px;\n}\n.v-text-field--shaped {\n  border-radius: 16px 16px 0 0;\n}\n.v-text-field.v-text-field--solo .v-label {\n  top: calc(50% - 10px);\n}\n.v-text-field.v-text-field--solo .v-input__control {\n  min-height: 48px;\n  padding: 0;\n}\n.v-text-field.v-text-field--solo .v-input__control input {\n  caret-color: auto;\n}\n.v-text-field.v-text-field--solo.v-input--dense > .v-input__control {\n  min-height: 38px;\n}\n.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat) > .v-input__control > .v-input__slot {\n  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);\n}\n.v-text-field.v-text-field--solo .v-input__append-inner,\n.v-text-field.v-text-field--solo .v-input__prepend-inner {\n  align-self: center;\n  margin-top: 0;\n}\n.v-text-field.v-text-field--solo .v-input__prepend-outer,\n.v-text-field.v-text-field--solo .v-input__append-outer {\n  margin-top: 12px;\n}\n.v-text-field.v-text-field--solo.v-input--dense .v-input__prepend-outer,\n.v-text-field.v-text-field--solo.v-input--dense .v-input__append-outer {\n  margin-top: 7px;\n}\n.v-text-field.v-input--is-focused > .v-input__control > .v-input__slot:after {\n  transform: scaleX(1);\n}\n.v-text-field.v-input--has-state > .v-input__control > .v-input__slot:before {\n  border-color: currentColor;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -6135,6 +6194,52 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/page-elements/PageHero.vue?vue&type=template&id=4dde43cf&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/page-elements/PageHero.vue?vue&type=template&id=4dde43cf& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "page-hero" },
+    [
+      _vm.page.featuredImage
+        ? _c(
+            "v-img",
+            {
+              staticClass: "white--text align-center",
+              attrs: {
+                gradient: "0deg, rgba(0,0,0, .75), rgba(0,0,0,0) 70.71%",
+                width: "100%",
+                height: "50vh",
+                src: _vm.page.featuredImage
+              }
+            },
+            [_c("v-container", [_vm._t("default")], 2)],
+            1
+          )
+        : _vm._e()
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/layouts/default.vue?vue&type=template&id=b6c4d5e4&":
 /*!********************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vuetify-loader/lib/loader.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./src/js/layouts/default.vue?vue&type=template&id=b6c4d5e4& ***!
@@ -6173,7 +6278,7 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("v-content", [_c("v-container", [_c("router-view")], 1)], 1),
+      _c("v-content", [_c("router-view")], 1),
       _vm._v(" "),
       _c(
         "v-footer",
@@ -6226,7 +6331,79 @@ var render = function() {
   return _vm.page
     ? _c(
         "div",
-        [_c("post-content", { attrs: { content: _vm.page.content.rendered } })],
+        [
+          _c(
+            "page-hero",
+            { attrs: { page: _vm.page } },
+            [
+              _c(
+                "v-row",
+                [
+                  _c(
+                    "v-col",
+                    { attrs: { cols: "12", md: "8", lg: "7", xl: "6" } },
+                    [
+                      _c("h1", {
+                        staticClass: "display-4 mb-4",
+                        domProps: { innerHTML: _vm._s(_vm.page.title.rendered) }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        [
+                          _c("p", { staticClass: "headline" }, [
+                            _vm._v(
+                              "Join us live on Sunday mornings 10:30 AM PST"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              attrs: {
+                                href:
+                                  "https://www.youtube.com/embed/live_stream?channel=UC5vBeXky8V3ImgnH7nOJB-w",
+                                target: "_blank",
+                                color: "primary",
+                                rounded: "",
+                                "x-large": ""
+                              }
+                            },
+                            [
+                              _c(
+                                "v-icon",
+                                { staticClass: "mr-2", attrs: { large: "" } },
+                                [_vm._v("live_tv")]
+                              ),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "mt-2" }, [
+                                _vm._v("Live Stream")
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-container",
+            [
+              _c("post-content", {
+                attrs: { content: _vm.page.content.rendered }
+              })
+            ],
+            1
+          )
+        ],
         1
       )
     : _vm._e()
@@ -21885,7 +22062,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_8__["default"])(
     },
 
     invertedScroll(val) {
-      this.isActive = !val;
+      this.isActive = !val || this.currentScroll !== 0;
     }
 
   },
@@ -29299,8 +29476,14 @@ __webpack_require__.r(__webpack_exports__);
     },
 
     sortItems(items) {
-      const sortBy = this.internalOptions.groupBy.concat(this.internalOptions.sortBy);
-      const sortDesc = this.internalOptions.groupDesc.concat(this.internalOptions.sortDesc);
+      let sortBy = this.internalOptions.sortBy;
+      let sortDesc = this.internalOptions.sortDesc;
+
+      if (this.internalOptions.groupBy.length) {
+        sortBy = [...this.internalOptions.groupBy, ...sortBy];
+        sortDesc = [...this.internalOptions.groupDesc, ...sortDesc];
+      }
+
       return this.customSort(items, sortBy, sortDesc, this.locale);
     },
 
@@ -30424,19 +30607,18 @@ function searchTableItems(items, search, headersWithCustomFilters, headersWithou
     },
 
     genGroupedRows(groupedItems, props) {
-      const groups = Object.keys(groupedItems || {});
-      return groups.map(group => {
-        if (!this.openCache.hasOwnProperty(group)) this.$set(this.openCache, group, true);
+      return groupedItems.map(group => {
+        if (!this.openCache.hasOwnProperty(group.name)) this.$set(this.openCache, group.name, true);
 
         if (this.$scopedSlots.group) {
           return this.$scopedSlots.group({
-            group,
+            group: group.name,
             options: props.options,
-            items: groupedItems[group],
+            items: group.items,
             headers: this.computedHeaders
           });
         } else {
-          return this.genDefaultGroupedRow(group, groupedItems[group], props);
+          return this.genDefaultGroupedRow(group.name, group.items, props);
         }
       });
     },
@@ -30804,71 +30986,95 @@ __webpack_require__.r(__webpack_exports__);
     genGroupByToggle(header) {
       return this.$createElement('span', {
         on: {
-          click: () => this.$emit('group', header.value)
+          click: e => {
+            e.stopPropagation();
+            this.$emit('group', header.value);
+          }
         }
       }, ['group']);
     },
 
-    // eslint-disable-next-line max-statements
+    getAria(beingSorted, isDesc) {
+      const $t = key => this.$vuetify.lang.t(`$vuetify.dataTable.ariaLabel.${key}`);
+
+      let ariaSort = 'none';
+      let ariaLabel = [$t('sortNone'), $t('activateAscending')];
+
+      if (!beingSorted) {
+        return {
+          ariaSort,
+          ariaLabel: ariaLabel.join(' ')
+        };
+      }
+
+      if (isDesc) {
+        ariaSort = 'descending';
+        ariaLabel = [$t('sortDescending'), $t(this.options.mustSort ? 'activateAscending' : 'activateNone')];
+      } else {
+        ariaSort = 'ascending';
+        ariaLabel = [$t('sortAscending'), $t('activateDescending')];
+      }
+
+      return {
+        ariaSort,
+        ariaLabel: ariaLabel.join(' ')
+      };
+    },
+
     genHeader(header) {
-      const listeners = {};
+      const data = {
+        attrs: {
+          role: 'columnheader',
+          scope: 'col',
+          'aria-label': header.text || ''
+        },
+        style: {
+          width: Object(_util_helpers__WEBPACK_IMPORTED_MODULE_2__["convertToUnit"])(header.width),
+          minWidth: Object(_util_helpers__WEBPACK_IMPORTED_MODULE_2__["convertToUnit"])(header.width)
+        },
+        class: [`text-${header.align || 'start'}`, ...Object(_util_helpers__WEBPACK_IMPORTED_MODULE_2__["wrapInArray"])(header.class), header.divider && 'v-data-table__divider'],
+        on: {}
+      };
       const children = [];
-      const attrs = {
-        role: 'columnheader',
-        scope: 'col',
-        'aria-label': header.text || '',
-        'aria-sort': 'none'
-      };
-      const styles = {
-        width: Object(_util_helpers__WEBPACK_IMPORTED_MODULE_2__["convertToUnit"])(header.width),
-        minWidth: Object(_util_helpers__WEBPACK_IMPORTED_MODULE_2__["convertToUnit"])(header.width)
-      };
-      const classes = [`text-${header.align || 'start'}`, ...Object(_util_helpers__WEBPACK_IMPORTED_MODULE_2__["wrapInArray"])(header.class), header.divider && 'v-data-table__divider'];
 
       if (header.value === 'data-table-select' && !this.singleSelect) {
-        children.push(this.genSelectAll());
-      } else {
-        children.push(this.$scopedSlots[header.value] ? this.$scopedSlots[header.value]({
-          header
-        }) : this.$createElement('span', [header.text]));
+        return this.$createElement('th', data, [this.genSelectAll()]);
+      }
 
-        if (!this.disableSort && (header.sortable || !header.hasOwnProperty('sortable'))) {
-          listeners['click'] = () => this.$emit('sort', header.value);
+      children.push(this.$scopedSlots[header.value] ? this.$scopedSlots[header.value]({
+        header
+      }) : this.$createElement('span', [header.text]));
 
-          const sortIndex = this.options.sortBy.findIndex(k => k === header.value);
-          const beingSorted = sortIndex >= 0;
-          const isDesc = this.options.sortDesc[sortIndex];
-          classes.push('sortable');
+      if (!this.disableSort && (header.sortable || !header.hasOwnProperty('sortable'))) {
+        data.on['click'] = () => this.$emit('sort', header.value);
 
-          if (beingSorted) {
-            classes.push('active');
-            classes.push(isDesc ? 'desc' : 'asc');
-            attrs['aria-sort'] = isDesc ? 'descending' : 'ascending';
-            attrs['aria-label'] += isDesc ? this.$vuetify.lang.t('$vuetify.dataTable.ariaLabel.sortDescending') : this.$vuetify.lang.t('$vuetify.dataTable.ariaLabel.sortAscending');
-          } else {
-            attrs['aria-label'] += this.$vuetify.lang.t('$vuetify.dataTable.ariaLabel.sortNone');
-          }
+        const sortIndex = this.options.sortBy.findIndex(k => k === header.value);
+        const beingSorted = sortIndex >= 0;
+        const isDesc = this.options.sortDesc[sortIndex];
+        data.class.push('sortable');
+        const {
+          ariaLabel,
+          ariaSort
+        } = this.getAria(beingSorted, isDesc);
+        data.attrs['aria-label'] += `${header.text ? ': ' : ''}${ariaLabel}`;
+        data.attrs['aria-sort'] = ariaSort;
 
-          if (header.align === 'end') children.unshift(this.genSortIcon());else children.push(this.genSortIcon());
-
-          if (this.options.multiSort && beingSorted) {
-            children.push(this.$createElement('span', {
-              class: 'v-data-table-header__sort-badge'
-            }, [String(sortIndex + 1)]));
-          }
+        if (beingSorted) {
+          data.class.push('active');
+          data.class.push(isDesc ? 'desc' : 'asc');
         }
 
-        if (this.showGroupBy) {
-          children.push(this.genGroupByToggle(header));
+        if (header.align === 'end') children.unshift(this.genSortIcon());else children.push(this.genSortIcon());
+
+        if (this.options.multiSort && beingSorted) {
+          children.push(this.$createElement('span', {
+            class: 'v-data-table-header__sort-badge'
+          }, [String(sortIndex + 1)]));
         }
       }
 
-      return this.$createElement('th', {
-        attrs,
-        class: classes,
-        style: styles,
-        on: listeners
-      }, children);
+      if (this.showGroupBy) children.push(this.genGroupByToggle(header));
+      return this.$createElement('th', data, children);
     }
 
   },
@@ -35409,6 +35615,7 @@ __webpack_require__.r(__webpack_exports__);
  // Utils
 
 
+const hasIntersect = typeof window !== 'undefined' && 'IntersectionObserver' in window;
 /* @vue/component */
 
 /* harmony default export */ __webpack_exports__["default"] = (_VResponsive__WEBPACK_IMPORTED_MODULE_2__["default"].extend({
@@ -35461,10 +35668,6 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     computedAspectRatio() {
       return Number(this.normalisedSrc.aspect || this.calculatedAspectRatio);
-    },
-
-    hasIntersect() {
-      return typeof window !== 'undefined' && 'IntersectionObserver' in window;
     },
 
     normalisedSrc() {
@@ -35530,7 +35733,7 @@ __webpack_require__.r(__webpack_exports__);
       // If the current browser supports the intersection
       // observer api, the image is not observable, and
       // the eager prop isn't being used, do not load
-      if (this.hasIntersect && !isIntersecting && !this.eager) return;
+      if (hasIntersect && !isIntersecting && !this.eager) return;
 
       if (this.normalisedSrc.lazySrc) {
         const lazyImg = new Image();
@@ -35636,14 +35839,19 @@ __webpack_require__.r(__webpack_exports__);
     node.data.staticClass += ' v-image'; // Only load intersect directive if it
     // will work in the current browser.
 
-    node.data.directives = this.hasIntersect ? [{
-      name: 'intersect',
-      options: this.options,
-      modifiers: {
-        once: true
-      },
-      value: this.init
-    }] : [];
+    if (hasIntersect) {
+      node.data.directives = [{
+        name: 'intersect',
+        modifiers: {
+          once: true
+        },
+        value: {
+          handler: this.init,
+          options: this.options
+        }
+      }];
+    }
+
     node.data.attrs = {
       role: this.alt ? 'img' : undefined,
       'aria-label': this.alt
@@ -37906,6 +38114,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_12__["default"])(Object(_mixins_applicationable__WEBPACK_IMPORTED_MODULE_2__["default"])('left', ['isActive', 'isMobile', 'miniVariant', 'expandOnHover', 'permanent', 'right', 'temporary', 'width']), _mixins_colorable__WEBPACK_IMPORTED_MODULE_3__["default"], _mixins_dependent__WEBPACK_IMPORTED_MODULE_4__["default"], _mixins_overlayable__WEBPACK_IMPORTED_MODULE_5__["default"], _mixins_ssr_bootable__WEBPACK_IMPORTED_MODULE_6__["default"], _mixins_themeable__WEBPACK_IMPORTED_MODULE_7__["default"]);
+const DEFAULT_WIDTH = 256;
+const DEFAULT_MINI_VARIANT_WIDTH = 56;
 /* @vue/component */
 
 /* harmony default export */ __webpack_exports__["default"] = (baseMixins.extend({
@@ -37940,7 +38150,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_12__["default"])
     miniVariant: Boolean,
     miniVariantWidth: {
       type: [Number, String],
-      default: 56
+      default: DEFAULT_MINI_VARIANT_WIDTH
     },
     mobileBreakPoint: {
       type: [Number, String],
@@ -37965,7 +38175,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_12__["default"])
     touchless: Boolean,
     width: {
       type: [Number, String],
-      default: 256
+      default: DEFAULT_WIDTH
     },
     value: null
   },
@@ -38027,7 +38237,11 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_12__["default"])
       return this.right ? 100 : -100;
     },
 
-    computedWidth() {
+    computedApplicationWidth() {
+      return this.expandOnHover || this.miniVariant ? this.miniVariantWidth : this.width;
+    },
+
+    computedNavigationWidth() {
       return this.isMiniVariant ? this.miniVariantWidth : this.width;
     },
 
@@ -38074,7 +38288,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_12__["default"])
         top: !this.isBottom ? Object(_util_helpers__WEBPACK_IMPORTED_MODULE_11__["convertToUnit"])(this.computedTop) : 'auto',
         maxHeight: this.computedMaxHeight != null ? `calc(100% - ${Object(_util_helpers__WEBPACK_IMPORTED_MODULE_11__["convertToUnit"])(this.computedMaxHeight)})` : undefined,
         transform: `${translate}(${Object(_util_helpers__WEBPACK_IMPORTED_MODULE_11__["convertToUnit"])(this.computedTransform, '%')})`,
-        width: Object(_util_helpers__WEBPACK_IMPORTED_MODULE_11__["convertToUnit"])(this.computedWidth)
+        width: Object(_util_helpers__WEBPACK_IMPORTED_MODULE_11__["convertToUnit"])(this.computedNavigationWidth)
       };
       return styles;
     }
@@ -38270,8 +38484,13 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_12__["default"])
      */
     updateApplication() {
       if (!this.isActive || this.isMobile || this.temporary || !this.$el) return 0;
-      const width = Number(this.computedWidth);
-      return isNaN(width) ? this.$el.clientWidth : width;
+      const width = Number(this.computedApplicationWidth);
+
+      if (isNaN(width)) {
+        return this.expandOnHover || this.miniVariant ? DEFAULT_MINI_VARIANT_WIDTH : DEFAULT_WIDTH;
+      }
+
+      return width;
     },
 
     updateMiniVariant(val) {
@@ -49461,28 +49680,31 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Intersect", function() { return Intersect; });
 function inserted(el, binding) {
-  const modifiers = binding.modifiers ||
-  /* istanbul ignore next */
-  {};
+  const modifiers = binding.modifiers || {};
   const value = binding.value;
-  const isObject = typeof value === 'object';
-  const callback = isObject ? value.handler : value;
+  const {
+    handler,
+    options
+  } = typeof value === 'object' ? value : {
+    handler: value,
+    options: {}
+  };
   const observer = new IntersectionObserver((entries = [], observer) => {
     /* istanbul ignore if */
     if (!el._observe) return; // Just in case, should never fire
     // If is not quiet or has already been
     // initted, invoke the user callback
 
-    if (callback && (!modifiers.quiet || el._observe.init)) {
+    if (handler && (!modifiers.quiet || el._observe.init)) {
       const isIntersecting = Boolean(entries.find(entry => entry.isIntersecting));
-      callback(entries, observer, isIntersecting);
+      handler(entries, observer, isIntersecting);
     } // If has already been initted and
     // has the once modifier, unbind
 
 
     if (el._observe.init && modifiers.once) unbind(el); // Otherwise, mark the observer as initted
     else el._observe.init = true;
-  }, value.options || {});
+  }, options);
   el._observe = {
     init: false,
     observer
@@ -50112,7 +50334,7 @@ class Vuetify {
 }
 Vuetify.install = _install__WEBPACK_IMPORTED_MODULE_0__["install"];
 Vuetify.installed = false;
-Vuetify.version = "2.2.18";
+Vuetify.version = "2.2.19";
 //# sourceMappingURL=framework.js.map
 
 /***/ }),
@@ -50561,9 +50783,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Rye per bladsy:',
     ariaLabel: {
-      sortDescending: ': Sorted descending. Activate to remove sorting.',
-      sortAscending: ': Sorted ascending. Activate to sort descending.',
-      sortNone: ': Not sorted. Activate to sort ascending.'
+      sortDescending: 'Sorted descending.',
+      sortAscending: 'Sorted ascending..',
+      sortNone: 'Not sorted.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
     },
     sortBy: 'Sort by'
   },
@@ -50622,9 +50847,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'الصفوف لكل صفحة:',
     ariaLabel: {
-      sortDescending: ': مفروز تنازلي. تنشيط لإزالة الفرز.',
-      sortAscending: ': مفروز تصاعدي. تنشيط للفرز التنازلي.',
-      sortNone: ': غير مفروزة. تفعيل لفرز تصاعدي.'
+      sortDescending: 'مفروز تنازلي. تنشيط لإزالة الفرز.',
+      sortAscending: 'مفروز تصاعدي. تنشيط للفرز التنازلي.',
+      sortNone: 'غير مفروزة. تفعيل لفرز تصاعدي.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
     },
     sortBy: 'مفروزة حسب'
   },
@@ -50683,9 +50911,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Files per pàgina:',
     ariaLabel: {
-      sortDescending: ': Ordre descendent. Premi per treure la ordenació.',
-      sortAscending: ': Ordre ascendent. Premi per ordenar descendent.',
-      sortNone: ': Sense ordenar. Premi per ordenar ascendent.'
+      sortDescending: 'Ordre descendent. Premi per treure la ordenació.',
+      sortAscending: 'Ordre ascendent. Premi per ordenar descendent.',
+      sortNone: 'Sense ordenar. Premi per ordenar ascendent.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
     },
     sortBy: 'Ordenat per'
   },
@@ -50744,9 +50975,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Řádků na stránku:',
     ariaLabel: {
-      sortDescending: ': Řazeno sestupně. Aktivováním vypnete řazení.',
-      sortAscending: ': Řazeno vzestupně. Aktivováním se bude řadit sestupně.',
-      sortNone: ': Neseřazeno. Aktivováním se bude řadit vzestupně.'
+      sortDescending: 'Řazeno sestupně.',
+      sortAscending: 'Řazeno vzestupně.',
+      sortNone: 'Neseřazeno.',
+      activateNone: 'Aktivováním vypnete řazení.',
+      activateDescending: 'Aktivováním se bude řadit sestupně.',
+      activateAscending: 'Aktivováním se bude řadit vzestupně.'
     },
     sortBy: 'Řadit dle'
   },
@@ -50805,9 +51039,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Zeilen pro Seite:',
     ariaLabel: {
-      sortDescending: ': Absteigend sortiert. Aktivieren um Sortierung zu entfernen.',
-      sortAscending: ': Aufsteigend sortiert. Aktivieren um absteigend zu sortieren.',
-      sortNone: ': Nicht sortiert. Aktivieren um aufsteigend zu sortieren.'
+      sortDescending: 'Absteigend sortiert.',
+      sortAscending: 'Aufsteigend sortiert.',
+      sortNone: 'Nicht sortiert.',
+      activateNone: 'Aktivieren um Sortierung zu entfernen.',
+      activateDescending: 'Aktivieren um absteigend zu sortieren.',
+      activateAscending: 'Aktivieren um aufsteigend zu sortieren.'
     },
     sortBy: 'Sortiere nach'
   },
@@ -50866,9 +51103,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Γραμμές ανά σελίδα:',
     ariaLabel: {
-      sortDescending: ': Sorted descending. Activate to remove sorting.',
-      sortAscending: ': Sorted ascending. Activate to sort descending.',
-      sortNone: ': Not sorted. Activate to sort ascending.'
+      sortDescending: 'Sorted descending.',
+      sortAscending: 'Sorted ascending.',
+      sortNone: 'Not sorted.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
     },
     sortBy: 'Sort by'
   },
@@ -50927,9 +51167,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Rows per page:',
     ariaLabel: {
-      sortDescending: ': Sorted descending. Activate to remove sorting.',
-      sortAscending: ': Sorted ascending. Activate to sort descending.',
-      sortNone: ': Not sorted. Activate to sort ascending.'
+      sortDescending: 'Sorted descending.',
+      sortAscending: 'Sorted ascending.',
+      sortNone: 'Not sorted.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
     },
     sortBy: 'Sort by'
   },
@@ -50988,9 +51231,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Filas por página:',
     ariaLabel: {
-      sortDescending: ': Orden descendente. Pulse para quitar orden.',
-      sortAscending: ': Orden ascendente. Pulse para ordenar descendente.',
-      sortNone: ': Sin ordenar. Pulse para ordenar ascendente.'
+      sortDescending: 'Orden descendente.',
+      sortAscending: 'Orden ascendente.',
+      sortNone: 'Sin ordenar.',
+      activateNone: 'Pulse para quitar orden.',
+      activateDescending: 'Pulse para ordenar descendente.',
+      activateAscending: 'Pulse para ordenar ascendente.'
     },
     sortBy: 'Ordenado por'
   },
@@ -51049,9 +51295,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Ridu leheküljel:',
     ariaLabel: {
-      sortDescending: ': Kahanevalt sorteeritud. Vajuta uuesti sorteerimise eemaldamiseks.',
-      sortAscending: ': Kasvavalt sorteeritud. Vajuta uuesti, et sorteerida kahanevalt.',
-      sortNone: ': Ei ole sorteeritud. Vajuta kasvavalt sorteerimiseks.'
+      sortDescending: 'Kahanevalt sorteeritud.',
+      sortAscending: 'Kasvavalt sorteeritud.',
+      sortNone: 'Ei ole sorteeritud.',
+      activateNone: 'Vajuta uuesti sorteerimise eemaldamiseks.',
+      activateDescending: 'Vajuta uuesti, et sorteerida kahanevalt.',
+      activateAscending: 'Vajuta kasvavalt sorteerimiseks.'
     },
     sortBy: 'Sorteerimise alus'
   },
@@ -51110,9 +51359,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'ردیف در صفحه:',
     ariaLabel: {
-      sortDescending: ': نزولی مرتب شده است. فعال‌سازی برای حذف مرتب‌سازی.',
-      sortAscending: ': صعودی مرتب شده است. فعال‌سازی برای مرتب‌سازی نزولی.',
-      sortNone: ': مرتب نشده است. فعال‌سازی برای مرتب‌سازی صعودی.'
+      sortDescending: 'نزولی مرتب شده است. فعال‌سازی برای حذف مرتب‌سازی.',
+      sortAscending: 'صعودی مرتب شده است. فعال‌سازی برای مرتب‌سازی نزولی.',
+      sortNone: 'مرتب نشده است. فعال‌سازی برای مرتب‌سازی صعودی.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
     },
     sortBy: 'مرتب‌سازی براساس'
   },
@@ -51171,9 +51423,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Lignes par page:',
     ariaLabel: {
-      sortDescending: ': Tri décroissant. Activer pour supprimer le tri.',
-      sortAscending: ': Tri croissant. Activer pour trier par ordre décroissant.',
-      sortNone: ': Non trié. Activer pour trier par ordre croissant.'
+      sortDescending: 'Tri décroissant.',
+      sortAscending: 'Tri croissant.',
+      sortNone: 'Non trié.',
+      activateNone: 'Activer pour supprimer le tri.',
+      activateDescending: 'Activer pour trier par ordre décroissant.',
+      activateAscending: 'Activer pour trier par ordre croissant.'
     },
     sortBy: 'Trier par'
   },
@@ -51232,9 +51487,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'שורות לעמוד:',
     ariaLabel: {
-      sortDescending: ': ממוין לפי סדר עולה. לחץ להספקת המיון.',
-      sortAscending: ': ממוין לפי סדר יורד. לחץ למיון לפי סדר עולה.',
-      sortNone: ': לא ממוין. לחץ למיון לפי סדר עולה.'
+      sortDescending: 'ממוין לפי סדר עולה. לחץ להספקת המיון.',
+      sortAscending: 'ממוין לפי סדר יורד. לחץ למיון לפי סדר עולה.',
+      sortNone: 'לא ממוין. לחץ למיון לפי סדר עולה.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
     },
     sortBy: 'סדר לפי'
   },
@@ -51293,9 +51551,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Redaka po stranici:',
     ariaLabel: {
-      sortDescending: ': Sortirano silazno. Odaberite za uklanjanje sortiranja.',
-      sortAscending: ': Sortirano uzlazno. Odaberite za silazno sortiranje.',
-      sortNone: ': Nije sortirano. Odaberite za uzlazno sortiranje.'
+      sortDescending: 'Sortirano silazno.',
+      sortAscending: 'Sortirano uzlazno.',
+      sortNone: 'Nije sortirano.',
+      activateNone: 'Odaberite za uklanjanje sortiranja.',
+      activateDescending: 'Odaberite za silazno sortiranje.',
+      activateAscending: 'Odaberite za uzlazno sortiranje.'
     },
     sortBy: 'Sortirajte po'
   },
@@ -51354,9 +51615,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Elem oldalanként:',
     ariaLabel: {
-      sortDescending: ': Sorted descending. Activate to remove sorting.',
-      sortAscending: ': Sorted ascending. Activate to sort descending.',
-      sortNone: ': Not sorted. Activate to sort ascending.'
+      sortDescending: 'Sorted descending. Activate to remove sorting.',
+      sortAscending: 'Sorted ascending. Activate to sort descending.',
+      sortNone: 'Not sorted. Activate to sort ascending.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
     },
     sortBy: 'Sort by'
   },
@@ -51415,9 +51679,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Baris per halaman:',
     ariaLabel: {
-      sortDescending: ': Diurutkan kebawah. Aktifkan untuk menghapus penyortiran.',
-      sortAscending: ': Diurutkan keatas. Aktifkan untuk mengurutkan kebawah.',
-      sortNone: ': Tidak diurutkan. Aktifkan untuk mengurutkan keatas.'
+      sortDescending: 'Diurutkan kebawah.',
+      sortAscending: 'Diurutkan keatas.',
+      sortNone: 'Tidak diurutkan.',
+      activateNone: 'Aktifkan untuk menghapus penyortiran.',
+      activateDescending: 'Aktifkan untuk mengurutkan kebawah.',
+      activateAscending: 'Aktifkan untuk mengurutkan keatas.'
     },
     sortBy: 'Urutkan berdasar'
   },
@@ -51625,9 +51892,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Righe per pagina:',
     ariaLabel: {
-      sortDescending: ': Ordinati in ordine decrescente. Attiva per rimuovere l\'ordinamento.',
-      sortAscending: ': Ordinati in ordine crescente. Attiva per ordinare in ordine decrescente.',
-      sortNone: ': Non ordinato. Attiva per ordinare in ordine crescente.'
+      sortDescending: 'Ordinati in ordine decrescente.',
+      sortAscending: 'Ordinati in ordine crescente.',
+      sortNone: 'Non ordinato.',
+      activateNone: 'Attiva per rimuovere l\'ordinamento.',
+      activateDescending: 'Attiva per ordinare in ordine decrescente.',
+      activateAscending: 'Attiva per ordinare in ordine crescente.'
     },
     sortBy: 'Ordina per'
   },
@@ -51686,9 +51956,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: '1ページあたりの行数：',
     ariaLabel: {
-      sortDescending: ': 降順の並び替え。ソートを削除するには有効にしてください。',
-      sortAscending: ': 昇順の並び替え。降順の並び替えのためには有効にしてください。.',
-      sortNone: ': ソートされていません。昇順のソートのためには有効にしてください。'
+      sortDescending: '降順の並び替え。',
+      sortAscending: '昇順の並び替え。',
+      sortNone: 'ソートされていません。',
+      activateNone: 'ソートを削除するには有効にしてください。',
+      activateDescending: '降順の並び替えのためには有効にしてください。',
+      activateAscending: '昇順のソートのためには有効にしてください。'
     },
     sortBy: 'ソート方式'
   },
@@ -51747,9 +52020,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: '페이지 당 행 수:',
     ariaLabel: {
-      sortDescending: ': 내림차순 정렬. 정렬을 취소하려면 활성화하세요.',
-      sortAscending: ': 오름차순 정렬. 내림차순 정렬을 위해 활성화하세요.',
-      sortNone: ': 정렬하지 않음. 오름차순 정렬을 위해 활성화하세요.'
+      sortDescending: '내림차순 정렬.',
+      sortAscending: '오름차순 정렬.',
+      sortNone: '정렬하지 않음.',
+      activateNone: '정렬을 취소하려면 활성화하세요.',
+      activateDescending: '내림차순 정렬을 위해 활성화하세요.',
+      activateAscending: '오름차순 정렬을 위해 활성화하세요.'
     },
     sortBy: 'Sort by'
   },
@@ -51808,9 +52084,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Eilutės per puslapį:',
     ariaLabel: {
-      sortDescending: ': Išrikiuota mažėjimo tvarka. Suaktyvinkite, jei norite rikiavimą pašalinti.',
-      sortAscending: ': Išrikiuota didėjimo tvarka. Suaktyvinkite, jei norite rikiuoti mažėjimo tvarka.',
-      sortNone: ': Nerikiuota. Suaktyvinkite, jei norite rikiuoti didėjimo tvarka.'
+      sortDescending: 'Išrikiuota mažėjimo tvarka.',
+      sortAscending: 'Išrikiuota didėjimo tvarka.',
+      sortNone: 'Nerikiuota.',
+      activateNone: 'Suaktyvinkite, jei norite rikiavimą pašalinti.',
+      activateDescending: 'Suaktyvinkite, jei norite rikiuoti mažėjimo tvarka.',
+      activateAscending: 'Suaktyvinkite, jei norite rikiuoti didėjimo tvarka.'
     },
     sortBy: 'Sort by'
   },
@@ -51869,9 +52148,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Rādīt lapā:',
     ariaLabel: {
-      sortDescending: ': Sakārtots dilstošā secībā. Aktivizēt, lai noņemtu kārtošanu.',
-      sortAscending: ': Sakārtots augošā secībā. Aktivizēt, lai sakārtotu dilstošā secībā.',
-      sortNone: ': Nav sakārtots. Aktivizēt, lai sakārtotu augošā secībā.'
+      sortDescending: 'Sakārtots dilstošā secībā.',
+      sortAscending: 'Sakārtots augošā secībā.',
+      sortNone: 'Nav sakārtots.',
+      activateNone: 'Aktivizēt, lai noņemtu kārtošanu.',
+      activateDescending: 'Aktivizēt, lai sakārtotu dilstošā secībā.',
+      activateAscending: 'Aktivizēt, lai sakārtotu augošā secībā.'
     },
     sortBy: 'Sort by'
   },
@@ -51930,9 +52212,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Rijen per pagina:',
     ariaLabel: {
-      sortDescending: ': Aflopend gesorteerd. Activeer om de sortering te verwijderen.',
-      sortAscending: ': Oplopend gesorteerd. Activeer om aflopend te sorteren.',
-      sortNone: ': Niet gesorterrd. Activeer om oplopend te sorteren.'
+      sortDescending: 'Aflopend gesorteerd.',
+      sortAscending: 'Oplopend gesorteerd.',
+      sortNone: 'Niet gesorterrd.',
+      activateNone: 'Activeer om de sortering te verwijderen.',
+      activateDescending: 'Activeer om aflopend te sorteren.',
+      activateAscending: 'Activeer om oplopend te sorteren.'
     },
     sortBy: 'Sorteer volgens'
   },
@@ -51991,9 +52276,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Rader per side:',
     ariaLabel: {
-      sortDescending: ': Sortert synkende. Aktiver for å fjerne sortering.',
-      sortAscending: ': Sortert stigende. Aktiver for å sortere synkende.',
-      sortNone: ': Ikke sortert. Aktiver for å sortere stigende.'
+      sortDescending: 'Sortert synkende.',
+      sortAscending: 'Sortert stigende.',
+      sortNone: 'Ikke sortert.',
+      activateNone: 'Aktiver for å fjerne sortering.',
+      activateDescending: 'Aktiver for å sortere synkende.',
+      activateAscending: 'Aktiver for å sortere stigende.'
     },
     sortBy: 'Sorter etter'
   },
@@ -52052,9 +52340,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Wierszy na stronie:',
     ariaLabel: {
-      sortDescending: ': Sortowanie malejąco. Kliknij aby zmienić.',
-      sortAscending: ': Sortowanie rosnąco. Kliknij aby zmienić.',
-      sortNone: ': Bez sortowania. Kliknij aby posortować rosnąco.'
+      sortDescending: 'Sortowanie malejąco. Kliknij aby zmienić.',
+      sortAscending: 'Sortowanie rosnąco. Kliknij aby zmienić.',
+      sortNone: 'Bez sortowania. Kliknij aby posortować rosnąco.',
+      activateNone: 'Kliknij aby usunąć sortowanie.',
+      activateDescending: 'Kliknij aby posortować malejąco.',
+      activateAscending: 'Kliknij aby posortować rosnąco.'
     },
     sortBy: 'Sortuj według'
   },
@@ -52113,9 +52404,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Linhas por página:',
     ariaLabel: {
-      sortDescending: ': Ordenado decrescente. Ative para remover a ordenação.',
-      sortAscending: ': Ordenado crescente. Ative para ordenar decrescente.',
-      sortNone: ': Não ordenado. Ative para ordenar crescente.'
+      sortDescending: 'Ordenado decrescente.',
+      sortAscending: 'Ordenado crescente.',
+      sortNone: 'Não ordenado.',
+      activateNone: 'Ative para remover a ordenação.',
+      activateDescending: 'Ative para ordenar decrescente.',
+      activateAscending: 'Ative para ordenar crescente.'
     },
     sortBy: 'Ordenar por'
   },
@@ -52174,9 +52468,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Rânduri pe pagină:',
     ariaLabel: {
-      sortDescending: ': Sorted descending. Activate to remove sorting.',
-      sortAscending: ': Sorted ascending. Activate to sort descending.',
-      sortNone: ': Not sorted. Activate to sort ascending.'
+      sortDescending: 'Sorted descending.',
+      sortAscending: 'Sorted ascending.',
+      sortNone: 'Not sorted.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
     },
     sortBy: 'Sort by'
   },
@@ -52235,9 +52532,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Строк на странице:',
     ariaLabel: {
-      sortDescending: ': Упорядочено по убыванию. Активируйте, чтобы убрать сортировку.',
-      sortAscending: ': Упорядочено по возрастанию. Активируйте для упорядочивания убыванию.',
-      sortNone: ': Не упорядочено. Активируйте для упорядочивания по возрастанию.'
+      sortDescending: 'Упорядочено по убыванию.',
+      sortAscending: 'Упорядочено по возрастанию.',
+      sortNone: 'Не упорядочено.',
+      activateNone: 'Активируйте, чтобы убрать сортировку.',
+      activateDescending: 'Активируйте для упорядочивания убыванию.',
+      activateAscending: 'Активируйте для упорядочивания по возрастанию.Activate to sort ascending.'
     },
     sortBy: 'Сортировать по'
   },
@@ -52296,9 +52596,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Vrstic na stran:',
     ariaLabel: {
-      sortDescending: ': Razvrščeno padajoče. Aktivirajte za odstranitev razvrščanja.',
-      sortAscending: ': Razvrščeno naraščajoče. Aktivirajte za padajoče razvrščanje.',
-      sortNone: ': Ni razvrščeno. Aktivirajte za naraščajoče razvrščanje.'
+      sortDescending: 'Razvrščeno padajoče.',
+      sortAscending: 'Razvrščeno naraščajoče.',
+      sortNone: 'Ni razvrščeno.',
+      activateNone: 'Aktivirajte za odstranitev razvrščanja.',
+      activateDescending: 'Aktivirajte za padajoče razvrščanje.',
+      activateAscending: 'Aktivirajte za naraščajoče razvrščanje.'
     },
     sortBy: 'Razvrsti po'
   },
@@ -52357,9 +52660,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Редова по страници:',
     ariaLabel: {
-      sortDescending: ': Sorted descending. Activate to remove sorting.',
-      sortAscending: ': Sorted ascending. Activate to sort descending.',
-      sortNone: ': Not sorted. Activate to sort ascending.'
+      sortDescending: 'Sorted descending.',
+      sortAscending: 'Sorted ascending.',
+      sortNone: 'Not sorted.',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
     },
     sortBy: 'Sort by'
   },
@@ -52418,9 +52724,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Rader per sida:',
     ariaLabel: {
-      sortDescending: ': Sorterat fallande. Aktivera för att ta bort sortering.',
-      sortAscending: ': Sorterat stigande. Aktivera för sortering fallande.',
-      sortNone: ': Osorterat. Aktivera för sortering stigande.'
+      sortDescending: 'Sorterat fallande.',
+      sortAscending: 'Sorterat stigande.',
+      sortNone: 'Osorterat.',
+      activateNone: 'Aktivera för att ta bort sortering.',
+      activateDescending: 'Aktivera för sortering fallande.',
+      activateAscending: 'Aktivera för sortering stigande.'
     },
     sortBy: 'Sortera efter'
   },
@@ -52479,9 +52788,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'แถวต่อหน้า:',
     ariaLabel: {
-      sortDescending: ': เรียงลำดับจากมากไปน้อย กดเพื่อปิดการเรียงลำดับ',
-      sortAscending: ': เรียงจากน้อยไปมาก กดเพื่อเรียงลำดับจากมากไปน้อย',
-      sortNone: ': ไม่ได้จัดเรียง กดเพื่อเรียงลำดับจากน้อยไปมาก'
+      sortDescending: 'เรียงลำดับจากมากไปน้อย กดเพื่อปิดการเรียงลำดับ',
+      sortAscending: 'เรียงจากน้อยไปมาก กดเพื่อเรียงลำดับจากมากไปน้อย',
+      sortNone: 'ไม่ได้จัดเรียง กดเพื่อเรียงลำดับจากน้อยไปมาก',
+      activateNone: 'Activate to remove sorting.',
+      activateDescending: 'Activate to sort descending.',
+      activateAscending: 'Activate to sort ascending.'
     },
     sortBy: 'จัดเรียงตาม'
   },
@@ -52540,9 +52852,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Sayfa başına satır:',
     ariaLabel: {
-      sortDescending: ': Z den A ya sıralı. Sıralamayı kaldırmak için etkinleştir.',
-      sortAscending: ': A dan Z ye sıralı. Z den A ya sıralamak için etkinleştir.',
-      sortNone: ': Sıralı değil. A dan Z ye sıralamak için etkinleştir.'
+      sortDescending: 'Z den A ya sıralı.',
+      sortAscending: 'A dan Z ye sıralı.',
+      sortNone: 'Sıralı değil. ',
+      activateNone: 'Sıralamayı kaldırmak için etkinleştir.',
+      activateDescending: 'Z den A ya sıralamak için etkinleştir.',
+      activateAscending: 'A dan Z ye sıralamak için etkinleştir.'
     },
     sortBy: 'Sırala'
   },
@@ -52601,9 +52916,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: 'Рядків на сторінці:',
     ariaLabel: {
-      sortDescending: ': Відсортовано за спаданням. Активувати, щоб видалити сортування.',
-      sortAscending: ': Відсортовано за зростанням. Активувати, щоб відсортувати за спаданням.',
-      sortNone: ': Не відсортовано. Активувати, щоб відсортувати за зростанням.'
+      sortDescending: 'Відсортовано за спаданням.',
+      sortAscending: 'Відсортовано за зростанням.',
+      sortNone: 'Не відсортовано.',
+      activateNone: 'Активувати, щоб видалити сортування.',
+      activateDescending: 'Активувати, щоб відсортувати за спаданням.',
+      activateAscending: 'Активувати, щоб відсортувати за зростанням.'
     },
     sortBy: 'Відсортувати за'
   },
@@ -52662,9 +52980,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: '每页数目：',
     ariaLabel: {
-      sortDescending: '：降序排列。点击以移除排序。',
-      sortAscending: '：升序排列。点击以降序排列。',
-      sortNone: '：未排序。点击以升序排列。'
+      sortDescending: '：降序排列。',
+      sortAscending: '：升序排列。',
+      sortNone: '：未排序。',
+      activateNone: '点击以移除排序。',
+      activateDescending: '点击以降序排列。',
+      activateAscending: '点击以升序排列。'
     },
     sortBy: '排序方式'
   },
@@ -52723,9 +53044,12 @@ __webpack_require__.r(__webpack_exports__);
   dataTable: {
     itemsPerPageText: '每頁列數：',
     ariaLabel: {
-      sortDescending: '：降序排列。點擊以移除排序方式。',
-      sortAscending: '：升序排列。點擊以降序排列。',
-      sortNone: '無排序方式。點擊以升序排列。'
+      sortDescending: '：降序排列。',
+      sortAscending: '：升序排列。',
+      sortNone: '無排序方式。點擊以升序排列。',
+      activateNone: '點擊以移除排序方式。',
+      activateDescending: '點擊以降序排列。',
+      activateAscending: '點擊以移除排序方式。'
     },
     sortBy: '排序方式'
   },
@@ -58575,11 +58899,25 @@ function upperFirst(str) {
 }
 function groupItems(items, groupBy, groupDesc) {
   const key = groupBy[0];
-  return items.reduce((acc, item) => {
+  const groups = [];
+  let current = null;
+
+  for (var i = 0; i < items.length; i++) {
+    const item = items[i];
     const val = getObjectValueByPath(item, key);
-    (acc[val] = acc[val] || []).push(item);
-    return acc;
-  }, {});
+
+    if (current !== val) {
+      current = val;
+      groups.push({
+        name: val,
+        items: []
+      });
+    }
+
+    groups[groups.length - 1].items.push(item);
+  }
+
+  return groups;
 }
 function wrapInArray(v) {
   return v != null ? Array.isArray(v) ? v : [v] : [];
@@ -63162,6 +63500,86 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/components/page-elements/PageHero.vue":
+/*!******************************************************!*\
+  !*** ./src/js/components/page-elements/PageHero.vue ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _PageHero_vue_vue_type_template_id_4dde43cf___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PageHero.vue?vue&type=template&id=4dde43cf& */ "./src/js/components/page-elements/PageHero.vue?vue&type=template&id=4dde43cf&");
+/* harmony import */ var _PageHero_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PageHero.vue?vue&type=script&lang=js& */ "./src/js/components/page-elements/PageHero.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
+/* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
+/* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _PageHero_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PageHero_vue_vue_type_template_id_4dde43cf___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _PageHero_vue_vue_type_template_id_4dde43cf___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* vuetify-loader */
+
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_4__["VContainer"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_5__["VImg"]})
+
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/js/components/page-elements/PageHero.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/js/components/page-elements/PageHero.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./src/js/components/page-elements/PageHero.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vuetify_loader_lib_loader_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageHero_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vuetify-loader/lib/loader.js??ref--11-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./PageHero.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/page-elements/PageHero.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vuetify_loader_lib_loader_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageHero_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/js/components/page-elements/PageHero.vue?vue&type=template&id=4dde43cf&":
+/*!*************************************************************************************!*\
+  !*** ./src/js/components/page-elements/PageHero.vue?vue&type=template&id=4dde43cf& ***!
+  \*************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vuetify_loader_lib_loader_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageHero_vue_vue_type_template_id_4dde43cf___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vuetify-loader/lib/loader.js??ref--11-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./PageHero.vue?vue&type=template&id=4dde43cf& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vuetify-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/page-elements/PageHero.vue?vue&type=template&id=4dde43cf&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vuetify_loader_lib_loader_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageHero_vue_vue_type_template_id_4dde43cf___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vuetify_loader_lib_loader_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageHero_vue_vue_type_template_id_4dde43cf___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/js/layouts/default.vue":
 /*!************************************!*\
   !*** ./src/js/layouts/default.vue ***!
@@ -63178,9 +63596,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify/lib/components/VApp */ "./node_modules/vuetify/lib/components/VApp/index.js");
 /* harmony import */ var vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VAppBar */ "./node_modules/vuetify/lib/components/VAppBar/index.js");
-/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VContent__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VContent */ "./node_modules/vuetify/lib/components/VContent/index.js");
-/* harmony import */ var vuetify_lib_components_VFooter__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VFooter */ "./node_modules/vuetify/lib/components/VFooter/index.js");
+/* harmony import */ var vuetify_lib_components_VContent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VContent */ "./node_modules/vuetify/lib/components/VContent/index.js");
+/* harmony import */ var vuetify_lib_components_VFooter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VFooter */ "./node_modules/vuetify/lib/components/VFooter/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
 /* harmony import */ var vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VToolbar */ "./node_modules/vuetify/lib/components/VToolbar/index.js");
 
 
@@ -63208,8 +63626,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__["VApp"],VAppBar: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_5__["VAppBar"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VContainer"],VContent: vuetify_lib_components_VContent__WEBPACK_IMPORTED_MODULE_7__["VContent"],VFooter: vuetify_lib_components_VFooter__WEBPACK_IMPORTED_MODULE_8__["VFooter"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VSpacer"],VToolbarTitle: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_9__["VToolbarTitle"]})
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__["VApp"],VAppBar: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_5__["VAppBar"],VContent: vuetify_lib_components_VContent__WEBPACK_IMPORTED_MODULE_6__["VContent"],VFooter: vuetify_lib_components_VFooter__WEBPACK_IMPORTED_MODULE_7__["VFooter"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VSpacer"],VToolbarTitle: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_9__["VToolbarTitle"]})
 
 
 /* hot reload */
@@ -63263,6 +63680,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _page_home_vue_vue_type_template_id_5338dcb6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-home.vue?vue&type=template&id=5338dcb6& */ "./src/js/pages/page-home.vue?vue&type=template&id=5338dcb6&");
 /* harmony import */ var _page_home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./page-home.vue?vue&type=script&lang=js& */ "./src/js/pages/page-home.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
+/* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
+/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
 
 
 
@@ -63280,6 +63702,16 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   null
   
 )
+
+/* vuetify-loader */
+
+
+
+
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_4__["VBtn"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__["VContainer"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_6__["VIcon"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_5__["VRow"]})
+
 
 /* hot reload */
 if (false) { var api; }
@@ -63405,16 +63837,16 @@ var Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"
 Vue.use(vuetify_lib__WEBPACK_IMPORTED_MODULE_0__["default"]);
 /* harmony default export */ __webpack_exports__["default"] = (new vuetify_lib__WEBPACK_IMPORTED_MODULE_0__["default"]({
   icons: {
-    iconfont: 'mdiSvg' // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4'
+    iconfont: 'md' // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4'
 
   },
   theme: {
     themes: {
       light: {
-        primary: '#4D4740',
-        secondary: '#37332F',
-        accent: '#E29900',
-        error: '#b71c1c'
+        primary: '#0D47A1',
+        secondary: '#2E7D32',
+        accent: '#CCFF90',
+        error: '#E65100'
       }
     }
   }

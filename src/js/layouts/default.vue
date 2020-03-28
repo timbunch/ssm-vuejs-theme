@@ -9,9 +9,7 @@
             <primary-nav/>
         </v-app-bar>
         <v-content>
-            <v-container>
-                <router-view></router-view>
-            </v-container>
+            <router-view></router-view>
         </v-content>
         <v-footer fixed class="font-weight-light caption">
             <span>&copy; Simply Smart Media LLC</span>

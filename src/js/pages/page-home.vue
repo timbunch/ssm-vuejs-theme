@@ -1,13 +1,37 @@
 <template>
     <div v-if="page">
-        <post-content :content="page.content.rendered"/>
+        <page-hero :page="page">
+            <v-row>
+                <v-col cols="12" md="8" lg="7" xl="6">
+                    <h1 class="display-4 mb-4" v-html="page.title.rendered"></h1>
+                    <div>
+                        <!--<p>Live streaming will continue during gathering restrictions</p>-->
+                        <p class="headline">Join us live on Sunday mornings 10:30 AM PST</p>
+                        <v-btn
+                                href="https://www.youtube.com/embed/live_stream?channel=UC5vBeXky8V3ImgnH7nOJB-w"
+                                target="_blank"
+                                color="primary"
+                                rounded
+                                x-large>
+                            <v-icon large class="mr-2">live_tv</v-icon>
+                            <span class="mt-2">Live Stream</span>
+                        </v-btn>
+                    </div>
+                </v-col>
+            </v-row>
+        </page-hero>
+        <v-container>
+            <post-content :content="page.content.rendered"/>
+        </v-container>
     </div>
 </template>
 
 <script>
   import PostContent from "../components/content/PostContent";
+  import PageHero from "../components/page-elements/PageHero";
+
   export default {
-    components: {PostContent},
+    components: {PageHero, PostContent},
     data() {
       return {
         page: null
