@@ -16,8 +16,15 @@ img {
   height: auto;
 }
 
-body .v-application {
-
+body .theme--light.v-application {
+  background-color: #ECEFF1;
+  color: #424242;
+  .grey.darken-3 {
+    color: #ECEFF1;
+    a {
+      color: #ECEFF1;
+    }
+  }
   .wp-block-embed-youtube {
     width: 100%;
     max-width: 640px;

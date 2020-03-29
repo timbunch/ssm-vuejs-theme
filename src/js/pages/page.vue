@@ -1,8 +1,8 @@
 <template>
-    <div v-if="page" class="page">
+    <v-container v-if="page" class="page">
         <h1 v-html="page.title.rendered"/>
         <post-content :content="page.content.rendered"/>
-    </div>
+    </v-container>
 </template>
 
 <script>

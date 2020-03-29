@@ -1,42 +1,44 @@
 <template>
     <v-app>
-        <v-app-bar app>
-            <router-link to="/">
+        <v-app-bar app height="88">
+            <v-container class="d-flex">
                 <v-toolbar-title>
-                    Home
+                    <router-link class="text-no-underline" to="/">
+                        {{siteName}}
+                    </router-link>
                 </v-toolbar-title>
-            </router-link>
-            <primary-nav/>
+                <v-spacer/>
+                <primary-nav/>
+            </v-container>
         </v-app-bar>
         <v-content>
             <router-view></router-view>
         </v-content>
-        <v-footer fixed class="font-weight-light caption">
-            <span>&copy; Simply Smart Media LLC</span>
-            <v-spacer></v-spacer>
-            <a href="https://www.privacypolicies.com/privacy/view/ef742e2aaad8c5a87265ada5d8fd783b"
-               target="_blank">
-                Privacy Policy</a>
-        </v-footer>
+        <page-footer/>
     </v-app>
 </template>
 <script>
   import Vue from 'vue'
   import VueRouter from 'vue-router'
   import PrimaryNav from "../components/menus/PrimaryNav";
+  import PageFooter from "../components/page-elements/PageFooter";
 
   Vue.use(VueRouter);
 
   export default {
     name: 'layout-default',
-    components: {PrimaryNav},
+    components: {PageFooter, PrimaryNav},
     beforeMount() {
       this.$store.dispatch('GET_MENUS');
     },
     data() {
       return {}
     },
-    computed: {},
+    computed: {
+      siteName() {
+        return window.ssmSettings.siteName ? window.ssmSettings.siteName : 'Home';
+      }
+    },
     methods: {}
   }
 </script>

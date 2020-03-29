@@ -21,6 +21,7 @@
             </v-row>
         </page-hero>
         <v-container>
+            <tiles :tiles="tiles"/>
             <post-content :content="page.content.rendered"/>
         </v-container>
     </div>
@@ -29,9 +30,10 @@
 <script>
   import PostContent from "../components/content/PostContent";
   import PageHero from "../components/page-elements/PageHero";
+  import Tiles from "../components/tiles/Tiles";
 
   export default {
-    components: {PageHero, PostContent},
+    components: {Tiles, PageHero, PostContent},
     data() {
       return {
         page: null
@@ -59,6 +61,11 @@
           this.$store.dispatch('WRITE_PAGE_META');
           this.$store.dispatch('GA_PAGE_TRACK');
         });
+      }
+    },
+    computed: {
+      tiles() {
+        return this.$store.getters.PROP_KEY({prop: 'menus', key: 'homeTiles'})
       }
     }
   }
