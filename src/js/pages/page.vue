@@ -7,7 +7,6 @@
                 </v-col>
             </v-row>
         </page-hero>
-
         <v-container>
             <post-content :content="page.content.rendered"/>
         </v-container>

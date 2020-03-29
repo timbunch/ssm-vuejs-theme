@@ -12,7 +12,7 @@
                 @mouseleave="raised = false"
         >
             <div class="pa-8 text-center">
-                <h3 class="secondary--text" v-html="tile.title"/>
+                <h3 class="headline font-weight-medium secondary--text" v-html="tile.title"/>
                 <div v-html="tile.description"/>
             </div>
         </v-card>

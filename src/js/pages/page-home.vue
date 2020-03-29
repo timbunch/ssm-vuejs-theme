@@ -1,6 +1,6 @@
 <template>
     <div v-if="page">
-        <page-hero :page="page">
+        <page-hero height="570px" :page="page">
             <v-row>
                 <v-col cols="12" md="10" lg="8" xl="7">
                     <h1 class="mb-4" :class="headingClass" v-html="page.title.rendered"/>
