@@ -2,7 +2,7 @@
 
 function ssm_enqueue_styles()
 {
-	$src = get_stylesheet_directory_uri() . '/dist/app.css';
+	$src = get_stylesheet_directory_uri() . '/app.css';
 	wp_enqueue_style('theme-styles', $src, false, '');
 	$src = "https://fonts.googleapis.com/css?family=Material+Icons";
 	wp_enqueue_style('material-icons', $src, false, '');

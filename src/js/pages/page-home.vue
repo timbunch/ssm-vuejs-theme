@@ -2,7 +2,7 @@
     <div v-if="page">
         <page-hero :page="page">
             <v-row>
-                <v-col cols="12" md="8" lg="7" xl="6">
+                <v-col cols="12" md="10" lg="8" xl="7">
                     <h1 class="mb-4" :class="headingClass" v-html="page.title.rendered"/>
                     <div>
                         <p class="headline">Join us live on Sunday mornings 10:30 AM PST</p>

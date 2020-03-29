@@ -9,7 +9,7 @@
     "watch": "npm run development -- --watch",
     "hot": "NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
-    "production": "npm update; NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js;"
+    "production": "npm update; NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js;zip -r ssm-vuejs-theme.zip ssm-vuejs-theme;"
   },
   "author": "theaudiobrew.com",
   "license": "ISC",

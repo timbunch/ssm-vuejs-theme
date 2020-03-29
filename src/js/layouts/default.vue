@@ -1,13 +1,13 @@
 <template>
     <v-app>
-        <v-app-bar app height="88">
-            <v-container class="d-flex">
-                <v-toolbar-title>
+        <v-app-bar app height="88" :hide-on-scroll="$vuetify.breakpoint.smAndDown">
+            <v-container class="d-md-flex">
+                <v-toolbar-title class="text-center pb-2 pb-md-0">
                     <router-link class="text-no-underline" to="/">
                         {{siteName}}
                     </router-link>
                 </v-toolbar-title>
-                <v-spacer/>
+                <v-spacer v-if="$vuetify.breakpoint.mdAndUp"/>
                 <primary-nav/>
             </v-container>
         </v-app-bar>

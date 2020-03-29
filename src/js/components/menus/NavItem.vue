@@ -37,10 +37,14 @@
     .nav-item {
         &-link {
             color: #424242;
-            padding: 0 1rem;
             text-decoration: none;
+            @media (min-width: 600px) {
+                padding: 0 1rem;
+            }
             &:first-child {
-                margin-left: .5rem;
+                @media (min-width: 600px) {
+                    margin-left: .5rem;
+                }
             }
         }
     }
