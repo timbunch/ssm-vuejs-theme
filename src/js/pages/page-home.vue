@@ -3,9 +3,8 @@
         <page-hero :page="page">
             <v-row>
                 <v-col cols="12" md="8" lg="7" xl="6">
-                    <h1 class="display-4 mb-4" v-html="page.title.rendered"></h1>
+                    <h1 class="mb-4" :class="headingClass" v-html="page.title.rendered"/>
                     <div>
-                        <!--<p>Live streaming will continue during gathering restrictions</p>-->
                         <p class="headline">Join us live on Sunday mornings 10:30 AM PST</p>
                         <v-btn
                                 href="https://www.youtube.com/embed/live_stream?channel=UC5vBeXky8V3ImgnH7nOJB-w"
@@ -64,6 +63,15 @@
       }
     },
     computed: {
+      headingClass() {
+        //
+        switch (this.$vuetify.breakpoint.name) {
+          case 'xs':
+            return 'display-2';
+          default:
+            return 'display-4';
+        }
+      },
       tiles() {
         return this.$store.getters.PROP_KEY({prop: 'menus', key: 'homeTiles'})
       }

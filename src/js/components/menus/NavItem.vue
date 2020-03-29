@@ -36,8 +36,8 @@
 <style lang="scss" scoped>
     .nav-item {
         &-link {
-            color: #0D47A1;
-            padding: 0 .5rem;
+            color: #424242;
+            padding: 0 1rem;
             text-decoration: none;
             &:first-child {
                 margin-left: .5rem;
