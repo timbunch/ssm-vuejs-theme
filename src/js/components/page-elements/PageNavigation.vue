@@ -1,6 +1,6 @@
 <template>
     <v-app-bar app :height="height" :hide-on-scroll="$vuetify.breakpoint.smAndDown">
-        <v-container class="d-sm-flex align-content-center">
+        <v-container class="d-flex align-content-center">
             <v-toolbar-title class="text-center">
                 <router-link class="text-no-underline" to="/">
                     <logo-typeface :width="logoWidth"/>

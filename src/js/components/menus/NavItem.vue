@@ -57,10 +57,17 @@
             text-decoration: none;
             position: relative;
             transition: color 250ms ease;
+            padding: 0 1rem;
             @media (min-width: 600px) {
-                padding: 0 2rem;
                 font-size: 18px;
             }
+            @media (min-width: 700px) {
+                padding: 0 1.5rem;
+            }
+            @media (min-width: 800px) {
+                padding: 0 2rem;
+            }
+
             &:after {
                 display: block;
                 content: '';
@@ -71,7 +78,7 @@
                 bottom: 0;
                 background-color: transparent;
                 transition: all 250ms ease;
-                flex-basis:100%;
+                flex-basis: 100%;
             }
 
             &:hover, &.active {
