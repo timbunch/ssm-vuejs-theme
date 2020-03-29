@@ -1,6 +1,11 @@
 <template>
     <div class="nav-item">
-        <router-link class="nav-item-link" :to="routerLink" v-if="routerLink">
+        <router-link
+                class="nav-item-link"
+                :to="routerLink"
+                v-if="routerLink"
+                :class="{active: active}"
+        >
             <span v-html="item.title"/>
         </router-link>
         <a class="nav-item-link" :href="item.url" v-if="externalLink" target="_blank">
@@ -21,6 +26,9 @@
       }
     },
     computed: {
+      active() {
+        return this.routerLink === this.$route.path;
+      },
       externalLink() {
         return this.item.parsedUrl.host && this.item.parsedUrl.host !== window.location.hostname;
       },
@@ -40,15 +48,40 @@
         align-items: center;
 
         &-link {
-            color: #424242;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #1565C0;
             text-decoration: none;
+            position: relative;
+            transition: color 250ms ease;
             @media (min-width: 600px) {
-                padding: 0 1rem;
+                padding: 0 2rem;
+                font-size: 18px;
+            }
+            &:after {
+                display: block;
+                content: '';
+                height: 4px;
+                position: absolute;
+                left: 2rem;
+                right: 2rem;
+                bottom: 0;
+                background-color: transparent;
+                transition: all 250ms ease;
+                flex-basis:100%;
             }
 
-            &:first-child {
-                @media (min-width: 600px) {
-                    margin-left: .5rem;
+            &:hover, &.active {
+                color: #0D47A1;
+
+                &:after {
+                    background-color: #1565C0;
+                    left: 1.5rem;
+                    right: 1.5rem;
+                    bottom: 0;
                 }
             }
         }
