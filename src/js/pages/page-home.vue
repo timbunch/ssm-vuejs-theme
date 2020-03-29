@@ -64,13 +64,9 @@
     },
     computed: {
       headingClass() {
-        //
-        switch (this.$vuetify.breakpoint.name) {
-          case 'xs':
-            return 'display-2';
-          default:
-            return 'display-4';
-        }
+        return this.$vuetify.breakpoint.name === 'xs'
+          ? 'display-2'
+          : 'display-4';
       },
       tiles() {
         return this.$store.getters.PROP_KEY({prop: 'menus', key: 'homeTiles'})

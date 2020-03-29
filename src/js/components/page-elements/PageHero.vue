@@ -4,9 +4,10 @@
                 v-if="page.featuredImage"
                 gradient="0deg, rgba(0,0,0, .75), rgba(0,0,0,.5) 70.71%"
                 width="100%"
-                height="50vh"
+                :height="height"
                 class="align-center page-hero-image"
-                :src="page.featuredImage">
+                :src="page.featuredImage"
+        >
             <v-container>
                 <slot></slot>
             </v-container>
@@ -23,6 +24,11 @@
       page: {
         type: Object,
         required: true
+      },
+      height: {
+        type: String,
+        required: false,
+        default: '50vh'
       }
     }
   }
