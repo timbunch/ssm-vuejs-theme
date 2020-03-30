@@ -1,18 +1,19 @@
 <template>
-    <v-col cols="12" lg="4">
+    <v-col cols="12" sm="4">
         <v-card
-                color="grey lighten-5"
+                dark
                 :to="routerLink"
                 :class="tile.classes"
                 :min-height="height"
-                class="tile d-flex justify-center align-content-center"
+                class="tile"
                 outlined
                 :raised="raised"
                 @mouseover="raised = true"
                 @mouseleave="raised = false"
         >
-            <div class="pa-8 text-center">
-                <h3 class="headline font-weight-medium secondary--text" v-html="tile.title"/>
+            <div class="pa-4 text-center">
+                <h3 class="headline font-weight-medium" v-html="tile.title"/>
+                <div class="tile-divider"></div>
                 <div v-html="tile.description"/>
             </div>
         </v-card>
@@ -43,7 +44,7 @@
           case 'md':
             return '240px';
           default:
-            return '20vh';
+            return '300px';
         }
       },
       routerLink() {
@@ -58,5 +59,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #ECEFF1;
+        background-color: #0277BD;
+        transition: all 500ms ease;
+
+        &-divider {
+            height: 2px;
+            background-color: #B3E5FC;
+            position: relative;
+            margin: .5rem auto;
+            width: 60%;
+            transition: all 500ms ease;
+        }
+
+        &:hover {
+            background-color: #01579B;
+
+            .tile-divider {
+                width: 80%;
+                background-color: #ECEFF1;
+                margin: .75rem auto;
+            }
+        }
     }
 </style>
