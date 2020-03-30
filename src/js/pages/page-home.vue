@@ -66,7 +66,7 @@
       headingClass() {
         return this.$vuetify.breakpoint.name === 'xs'
           ? 'display-2'
-          : 'display-4';
+          : 'display-3';
       },
       tiles() {
         return this.$store.getters.PROP_KEY({prop: 'menus', key: 'homeTiles'})

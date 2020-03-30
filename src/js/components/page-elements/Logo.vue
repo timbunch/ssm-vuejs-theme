@@ -2,7 +2,7 @@
     <svg :width="width" height="100%" viewBox="0 0 529 122" version="1.1" xmlns="http://www.w3.org/2000/svg"
          xml:space="preserve"
          style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1,0,0,1,-14.8057,-5.69996)" fill="#1565C0">
+    <g transform="matrix(1,0,0,1,-14.8057,-5.69996)" :fill="fill">
         <g transform="matrix(0.234306,0,0,0.113124,40.3773,15.7677)">
             <g transform="matrix(4.42218,0,0,9.15937,-3974.51,-325.561)">
                 <g transform="matrix(1.50963,0,0,1.07944,785.851,-196.921)">
@@ -113,7 +113,7 @@
       fill: {
         type: String,
         required: false,
-        default: '#1565C0'
+        default: '#1A237E'
       },
       width: {
         type: String,
