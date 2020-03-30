@@ -8,10 +8,8 @@
                             <v-list-item-title>
                                 <h3 v-html="siteName"/>
                             </v-list-item-title>
-
                         </v-list-item>
                         <v-list-item v-html="siteDescription"/>
-                        </v-list-item>
                     </v-list>
                 </v-col>
                 <v-col cols="12" md="4">
@@ -44,8 +42,8 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col>
-                    <span>&copy; Simply Smart Media LLC</span>
+                <v-col class="d-flex">
+                    <span>&copy; Rockaway Community Church</span>
                     <v-spacer></v-spacer>
                     <a
                             href="#"
