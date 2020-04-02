@@ -4,15 +4,17 @@ Vue.use(Vuetify);
 
 export default new Vuetify({
   icons: {
-    iconfont: 'mdiSvg', // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4'
+    iconfont: 'md', // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4'
   },
   theme: {
     themes: {
       light: {
-        primary: '#4D4740',
-        secondary: '#37332F',
-        accent: '#E29900',
-        error: '#b71c1c',
+        //primary: '#1565C0',
+        primary: '#0277BD',
+        secondary: '#01579B',
+        accent: '#B3E5FC',
+        error: '#E65100',
+        light: '#ECEFF1'
       },
     }
   }

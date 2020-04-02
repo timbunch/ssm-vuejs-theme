@@ -1,6 +1,11 @@
 <template>
     <div class="nav-item">
-        <router-link class="nav-item-link" :to="routerLink" v-if="routerLink">
+        <router-link
+                class="nav-item-link"
+                :to="routerLink"
+                v-if="routerLink"
+                :class="{active: active}"
+        >
             <span v-html="item.title"/>
         </router-link>
         <a class="nav-item-link" :href="item.url" v-if="externalLink" target="_blank">
@@ -12,33 +17,79 @@
     </div>
 </template>
 <script>
-    export default {
-      name: 'nav-item',
-      props: {
-        item: {
-          type: Object,
-          required: true
-        }
+  export default {
+    name: 'nav-item',
+    props: {
+      item: {
+        type: Object,
+        required: true
+      }
+    },
+    computed: {
+      active() {
+        return this.routerLink === this.$route.path;
       },
-      computed: {
-        externalLink() {
-          return this.item.parsedUrl.host && this.item.parsedUrl.host !== window.location.hostname;
-        },
-        routerLink() {
-          return !this.externalLink && this.item.parsedUrl.path;
-        },
-        hashtag() {
-          return !!this.item.parsedUrl.fragment;
-        }
+      externalLink() {
+        return this.item.parsedUrl.host && this.item.parsedUrl.host !== window.location.hostname;
+      },
+      routerLink() {
+        return !this.externalLink && this.item.parsedUrl.path;
+      },
+      hashtag() {
+        return !!this.item.parsedUrl.fragment;
       }
     }
+  }
 </script>
 <style lang="scss" scoped>
     .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         &-link {
-            padding: 0 .5rem;
-            &:first-child {
-                margin-left: .5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #B3E5FC;
+            text-decoration: none;
+            position: relative;
+            transition: color 250ms ease;
+            padding: 0 1rem;
+            @media (min-width: 600px) {
+                font-size: 18px;
+            }
+            @media (min-width: 700px) {
+                padding: 0 1.5rem;
+            }
+            @media (min-width: 800px) {
+                padding: 0 2rem;
+            }
+
+            &:after {
+                display: block;
+                content: '';
+                height: 4px;
+                position: absolute;
+                left: 2rem;
+                right: 2rem;
+                bottom: 0;
+                background-color: transparent;
+                transition: all 250ms ease;
+                flex-basis: 100%;
+            }
+
+            &:hover, &.active {
+                color: #ECEFF1;
+
+                &:after {
+                    background-color: #ECEFF1;
+                    left: 1.5rem;
+                    right: 1.5rem;
+                    bottom: 0;
+                }
             }
         }
     }

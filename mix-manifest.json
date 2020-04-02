@@ -1,4 +1,23 @@
 {
-    "/dist/app.js": "/dist/app.js",
-    "/dist/app.css": "/dist/app.css"
+    "/ssm-vuejs-theme/app.js": "/ssm-vuejs-theme/app.js",
+    "/ssm-vuejs-theme/app.css": "/ssm-vuejs-theme/app.css",
+    "/ssm-vuejs-theme/archive.php": "/ssm-vuejs-theme/archive.php",
+    "/ssm-vuejs-theme/footer.php": "/ssm-vuejs-theme/footer.php",
+    "/ssm-vuejs-theme/functions.php": "/ssm-vuejs-theme/functions.php",
+    "/ssm-vuejs-theme/header.php": "/ssm-vuejs-theme/header.php",
+    "/ssm-vuejs-theme/index.php": "/ssm-vuejs-theme/index.php",
+    "/ssm-vuejs-theme/style.css": "/ssm-vuejs-theme/style.css",
+    "/ssm-vuejs-theme/mix-manifest.json": "/ssm-vuejs-theme/mix-manifest.json",
+    "/ssm-vuejs-theme/functions/content-filter.php": "/ssm-vuejs-theme/functions/content-filter.php",
+    "/ssm-vuejs-theme/functions/disable-admin-bar.php": "/ssm-vuejs-theme/functions/disable-admin-bar.php",
+    "/ssm-vuejs-theme/functions/featured-image.php": "/ssm-vuejs-theme/functions/featured-image.php",
+    "/ssm-vuejs-theme/functions/ga.php": "/ssm-vuejs-theme/functions/ga.php",
+    "/ssm-vuejs-theme/functions/menu-api.php": "/ssm-vuejs-theme/functions/menu-api.php",
+    "/ssm-vuejs-theme/functions/meta-description.php": "/ssm-vuejs-theme/functions/meta-description.php",
+    "/ssm-vuejs-theme/functions/meta-title.php": "/ssm-vuejs-theme/functions/meta-title.php",
+    "/ssm-vuejs-theme/functions/register-nav-menu.php": "/ssm-vuejs-theme/functions/register-nav-menu.php",
+    "/ssm-vuejs-theme/functions/rest-api-init.php": "/ssm-vuejs-theme/functions/rest-api-init.php",
+    "/ssm-vuejs-theme/functions/wp-enqueue-scripts.php": "/ssm-vuejs-theme/functions/wp-enqueue-scripts.php",
+    "/ssm-vuejs-theme/functions/wp-enqueue-styles.php": "/ssm-vuejs-theme/functions/wp-enqueue-styles.php",
+    "/ssm-vuejs-theme/functions/wp-head.php": "/ssm-vuejs-theme/functions/wp-head.php"
 }

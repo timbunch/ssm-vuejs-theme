@@ -12,8 +12,12 @@ let mix = require('laravel-mix');
  */
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 mix
-  .js('src/app.js', 'dist/')
-  .sass('src/app.scss', 'dist/')
+  .js('src/app.js', 'ssm-vuejs-theme/')
+  .sass('src/app.scss', 'ssm-vuejs-theme/')
+  .copy('*.php', 'ssm-vuejs-theme/')
+  .copy('*.css', 'ssm-vuejs-theme/')
+  .copy('mix-manifest.json', 'ssm-vuejs-theme/')
+  .copy('functions/*.php', 'ssm-vuejs-theme/functions/')
   .options({
     watchOptions: {
       ignored: /node_modules/
