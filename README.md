@@ -1,8 +1,10 @@
 # SSM Vue Theme
-A streamlined hybrid front end theme for Wordpress and VueJS
+A streamlined SPA hybrid front end theme for Wordpress and VueJS using Material Design components from Vuetify.
 
 ## JS, CSS Deployment
 
-`npm run production` 
+`npm run production`
+
+Build a distributable version of the site. 
 
 ##### release notes:
