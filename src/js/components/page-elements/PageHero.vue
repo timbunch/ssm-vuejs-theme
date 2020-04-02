@@ -38,8 +38,9 @@
             display: flex;
             padding: 1rem 0;
             position: relative;
+            background-size: cover;
             &:before {
-                background: linear-gradient(0deg, rgba(0,0,0, .75) 0%, rgba(0,0,0,.5) 70.71%);
+                background: linear-gradient(0deg, rgba(0,0,0, .65) 0%, rgba(0,0,0,.35) 70.71%);
                 content: '';
                 position: absolute;
                 top: 0;
