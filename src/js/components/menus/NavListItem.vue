@@ -4,9 +4,7 @@
             :href="item.link"
     >
         <v-list-item-icon v-if="item.classes">
-            <v-icon>
-                {{icon}}
-            </v-icon>
+            <nav-item-icon :item="item.classes"/>
         </v-list-item-icon>
         <v-list-item-title>
             <span v-html="item.title"/>
@@ -15,36 +13,15 @@
     </v-list-item>
 </template>
 <script>
-  import {mdiBookOpenPageVariant, mdiCharity, mdiShieldCross, mdiChurch} from '@mdi/js';
+  import NavItemIcon from "./NavItemIcon";
 
   export default {
     name: 'nav-list-item',
+    components: {NavItemIcon},
     props: {
       item: {
         type: Object,
         required: true
-      }
-    },
-    data() {
-      return {
-        mdiBookOpenPageVariant: mdiBookOpenPageVariant,
-        mdiCharity: mdiCharity,
-        mdiShieldCross: mdiShieldCross,
-        mdiChurch: mdiChurch
-      }
-    },
-    computed: {
-      icon() {
-        switch (this.item.classes) {
-          case 'mdiCharity':
-            return this.mdiCharity;
-          case 'mdiShieldCross':
-            return this.mdiShieldCross;
-          case 'mdiChurch':
-            return this.mdiChurch;
-          default:
-            return this.item.classes;
-        }
       }
     }
   }
