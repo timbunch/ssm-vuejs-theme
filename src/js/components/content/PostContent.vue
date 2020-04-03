@@ -13,3 +13,8 @@
       }
     }
 </script>
+<style lang="scss" scoped>
+    .post-content {
+        padding: 3rem 0;
+    }
+</style>

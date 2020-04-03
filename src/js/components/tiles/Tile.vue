@@ -2,14 +2,15 @@
     <v-col cols="12" sm="4">
         <v-card
                 dark
+                :color="color"
                 :to="routerLink"
                 :class="tile.classes"
                 :min-height="height"
                 class="tile"
                 outlined
                 :raised="raised"
-                @mouseover="raised = true"
-                @mouseleave="raised = false"
+                @mouseover="onHoverEnter"
+                @mouseleave="onHoverLeave"
         >
             <div class="pa-4 text-center">
                 <nav-item-icon v-if="tile.classes" :item="tile.classes" class="mx-auto" size="44"/>
@@ -22,6 +23,7 @@
 </template>
 <script>
   import NavItemIcon from "../menus/NavItemIcon";
+
   export default {
     name: 'tile',
     components: {NavItemIcon},
@@ -34,8 +36,19 @@
     },
     data() {
       return {
-        raised: false
+        raised: false,
+        color: 'primary'
       }
+    },
+    methods: {
+      onHoverEnter() {
+        this.raised = true;
+        this.color = 'secondary';
+      },
+      onHoverLeave() {
+        this.raised = false;
+        this.color = 'primary';
+      },
     },
     computed: {
       height() {
@@ -63,7 +76,6 @@
         justify-content: center;
         align-items: center;
         color: #ECEFF1;
-        background-color: #0277BD;
         transition: all 500ms ease;
 
         &-divider {
@@ -76,8 +88,6 @@
         }
 
         &:hover {
-            background-color: #01579B;
-
             .tile-divider {
                 width: 80%;
                 background-color: #ECEFF1;

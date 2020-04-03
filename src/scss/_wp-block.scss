@@ -2,6 +2,7 @@
   &-separator {
     border-color: #999999;
     border-width: .5px;
+    margin-bottom: 1rem;
   }
 
   &-image {
@@ -11,13 +12,21 @@
     }
   }
 
-  &-columns {}
+  &-columns {
+  }
 
-  &-column {}
+  &-column {
+  }
 
-  &-block-quote {}
+  &-block-quote {
+  }
 
   &-group {
-    &__inner-container {}
+    &__inner-container {
+    }
+  }
+
+  &-button {
+    margin-bottom: 1rem;
   }
 }
