@@ -12,6 +12,7 @@
                 @mouseleave="raised = false"
         >
             <div class="pa-4 text-center">
+                <nav-item-icon v-if="tile.classes" :item="tile.classes" class="mx-auto" size="44"/>
                 <h3 class="headline font-weight-medium" v-html="tile.title"/>
                 <div class="tile-divider"></div>
                 <div v-html="tile.description"/>
@@ -20,8 +21,10 @@
     </v-col>
 </template>
 <script>
+  import NavItemIcon from "../menus/NavItemIcon";
   export default {
     name: 'tile',
+    components: {NavItemIcon},
     props: {
       tile: {
         type: Object,

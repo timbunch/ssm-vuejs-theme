@@ -1,5 +1,7 @@
 <template>
-    <v-icon>
+    <v-icon
+            :size="size"
+    >
         {{icon}}
     </v-icon>
 </template>
@@ -12,6 +14,11 @@
       item: {
         type: Object,
         required: true
+      },
+      size: {
+        type: [Number, String],
+        required: false,
+        default: 24
       }
     },
     data() {
