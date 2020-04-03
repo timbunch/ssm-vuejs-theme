@@ -13,7 +13,7 @@
       },
       computed: {
         items() {
-          return this.$store.getters.PROP_KEY({prop: 'menus', key: 'mobile'})
+          return this.$store.getters.PROP_KEY({prop: 'menus', key: 'mobileMenu'})
         }
       },
     }

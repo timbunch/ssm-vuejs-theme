@@ -13,5 +13,8 @@ export default {
     ],
     title: window.ssmSettings.siteName
   },
-  pages: {}
+  pages: {},
+  ui: {
+    mobileMenu: false
+  }
 }
