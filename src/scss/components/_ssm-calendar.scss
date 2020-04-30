@@ -1,0 +1,24 @@
+.ssm-calendar {
+  margin-bottom: 2rem;
+  @media (min-width: 790px) {
+    margin-bottom: 4rem;
+  }
+  > .wp-block-group__inner-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    @media (min-width: 790px) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 4rem;
+    }
+    @media (min-width: 960px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .wp-block-group {}
+    h3 {
+      border-bottom: solid 2px #424242;
+      margin-bottom: 1rem;
+    }
+  }
+
+}

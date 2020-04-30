@@ -3,7 +3,7 @@
         <page-hero :page="page" height="300px">
             <v-row>
                 <v-col cols="12" md="10" lg="8" xl="7">
-                    <h1 :class="headingClass" v-html="page.title.rendered"/>
+                    <h1 class="display-2 font-weight-light" v-html="page.title.rendered"/>
                 </v-col>
             </v-row>
         </page-hero>
@@ -36,12 +36,7 @@
     computed: {
       page() {
         return this.$store.getters.PAGE(this.$route.params.slug);
-      },
-      headingClass() {
-        return this.$vuetify.breakpoint.name === 'xs'
-          ? 'display-2'
-          : 'display-3';
-      },
+      }
     }
   }
 </script>

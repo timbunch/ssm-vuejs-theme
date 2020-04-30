@@ -12,7 +12,7 @@
     name: 'nav-item-icon',
     props: {
       item: {
-        type: Object,
+        type: String,
         required: true
       },
       size: {

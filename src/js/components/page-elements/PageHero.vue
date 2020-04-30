@@ -40,7 +40,7 @@
             position: relative;
             background-size: cover;
             &:before {
-                background: linear-gradient(0deg, rgba(0,0,0, .65) 0%, rgba(0,0,0,.35) 70.71%);
+                background: linear-gradient(0deg, rgba(0,0,0, .5) 0%, rgba(0,0,0,.15) 70.71%);
                 content: '';
                 position: absolute;
                 top: 0;
@@ -61,6 +61,7 @@
         }
 
         &-container {
+            padding-top: 88px;
             z-index: 2;
         }
     }

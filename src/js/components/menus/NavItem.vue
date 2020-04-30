@@ -53,7 +53,7 @@
             justify-content: center;
             align-items: center;
             height: 100%;
-            color: #B3E5FC;
+            color: #424242;
             text-decoration: none;
             position: relative;
             transition: color 250ms ease;
@@ -82,10 +82,10 @@
             }
 
             &:hover, &.active {
-                color: #ECEFF1;
+                color: #212121;
 
                 &:after {
-                    background-color: #ECEFF1;
+                    background-color: #212121;
                     left: 1.5rem;
                     right: 1.5rem;
                     bottom: 0;

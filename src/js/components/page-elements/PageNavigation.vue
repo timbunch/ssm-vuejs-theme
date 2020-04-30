@@ -1,9 +1,16 @@
 <template>
-    <v-app-bar color="primary" dark app :height="height" :hide-on-scroll="$vuetify.breakpoint.smAndDown">
+    <v-app-bar
+            hide-on-scroll
+            fixed
+            color="rgba(255,255,255,.9)"
+            flat
+            :height="height"
+            :hide-on-scroll="$vuetify.breakpoint.smAndDown"
+    >
         <v-container class="d-flex align-content-center">
             <v-toolbar-title class="text-center">
                 <router-link class="text-no-underline" to="/">
-                    <logo-typeface fill="#ECEFF1" :width="logoWidth"/>
+                    <logo-typeface fill="#424242" :width="logoWidth"/>
                 </router-link>
             </v-toolbar-title>
             <v-spacer/>

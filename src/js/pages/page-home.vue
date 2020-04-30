@@ -3,7 +3,6 @@
         <page-hero height="570px" :page="page">
             <v-row>
                 <v-col cols="12" md="10" lg="8" xl="7">
-
                     <div>
                         <blockquote class="mb-4">
                             <p class="display-2 font-weight-light" v-html="hero.content"/>
