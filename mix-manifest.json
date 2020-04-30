@@ -15,6 +15,7 @@
     "/ssm-vuejs-theme/functions/menu-api.php": "/ssm-vuejs-theme/functions/menu-api.php",
     "/ssm-vuejs-theme/functions/meta-description.php": "/ssm-vuejs-theme/functions/meta-description.php",
     "/ssm-vuejs-theme/functions/meta-title.php": "/ssm-vuejs-theme/functions/meta-title.php",
+    "/ssm-vuejs-theme/functions/register-home-page-hero-cpt.php": "/ssm-vuejs-theme/functions/register-home-page-hero-cpt.php",
     "/ssm-vuejs-theme/functions/register-nav-menu.php": "/ssm-vuejs-theme/functions/register-nav-menu.php",
     "/ssm-vuejs-theme/functions/rest-api-init.php": "/ssm-vuejs-theme/functions/rest-api-init.php",
     "/ssm-vuejs-theme/functions/wp-enqueue-scripts.php": "/ssm-vuejs-theme/functions/wp-enqueue-scripts.php",

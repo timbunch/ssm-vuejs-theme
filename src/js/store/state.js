@@ -1,4 +1,5 @@
 export default {
+  heros: [],
   menus: {},
   meta: {
     metaTags: [

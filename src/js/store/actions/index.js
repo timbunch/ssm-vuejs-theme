@@ -63,6 +63,20 @@ const generic = {
       resolve(false);
     });
   },
+  GET_HEROS: ({commit}) => {
+    return new Promise(async resolve => {
+      const response = await WpRepository.get('ssm-home-page-hero');
+      if (response.status === 200) {
+        commit('MUTATE_PROP', {prop: 'heros', value: response.data.map(a => {
+          return {
+            content: a.content.rendered,
+            reference: a.title.rendered
+          }
+          })});
+      }
+      resolve(true);
+    });
+  },
   WRITE_PAGE_META: ({getters}) => {
     const meta = getters.PROP('meta');
     document.title = meta.title;
