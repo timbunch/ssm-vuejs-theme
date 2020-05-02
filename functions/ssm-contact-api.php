@@ -12,7 +12,9 @@ class SSM_WP_API_Contact
 		register_rest_route('wp/v2', '/contact', array(
 			'methods' => WP_REST_Server::EDITABLE,
 			'callback' => [$this, 'set'],
-			'permission_callback' => function() { return true; },
+			'permission_callback' => function () {
+				return true;
+			},
 		));
 	}
 
@@ -20,15 +22,17 @@ class SSM_WP_API_Contact
 	{
 		$parameters = $request->get_params();
 
-		foreach ($parameters as $id=>$parameter) {
+		foreach ($parameters as $id => $parameter) {
 			$parameters[$id] = sanitize_text_field($parameter);
 		}
 
 		if (empty($parameters['security'])) {
-			return new WP_REST_Response( ['message' => 'No token provided'], 400 );
+			return new WP_REST_Response(['message' => 'No token provided'], 400);
 		}
 
-		$headers = ['Content-Type: text/html; charset=UTF-8', 'From: '.$parameters['name'].' <'.$parameters['email'].'>'];
+		wp_verify_nonce($parameters['security'], 'wp_rest');
+
+		$headers = ['Content-Type: text/html; charset=UTF-8', 'From: ' . $parameters['name'] . ' <' . $parameters['email'] . '>'];
 		$options = get_option('ssm_theme_options');
 		$to = $options['contact_recipients'];
 		if (!$to) {
@@ -36,6 +40,6 @@ class SSM_WP_API_Contact
 		}
 
 		$response = wp_mail($to, $parameters['subject'], $parameters['message'], $headers);
-		return new WP_REST_Response( ['message' => 'Thank you', 'response' => $response], 200 );
+		return new WP_REST_Response(['message' => 'Thank you', 'response' => $response], 200);
 	}
 }
