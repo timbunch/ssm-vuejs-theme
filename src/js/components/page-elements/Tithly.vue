@@ -3,6 +3,7 @@
         <v-btn
                 color="primary"
                 rounded
+                large
                 class="tithely-give-btn"
                 data-church-id="1317241"
         >
