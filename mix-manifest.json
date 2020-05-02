@@ -20,5 +20,7 @@
     "/ssm-vuejs-theme/functions/rest-api-init.php": "/ssm-vuejs-theme/functions/rest-api-init.php",
     "/ssm-vuejs-theme/functions/wp-enqueue-scripts.php": "/ssm-vuejs-theme/functions/wp-enqueue-scripts.php",
     "/ssm-vuejs-theme/functions/wp-enqueue-styles.php": "/ssm-vuejs-theme/functions/wp-enqueue-styles.php",
-    "/ssm-vuejs-theme/functions/wp-head.php": "/ssm-vuejs-theme/functions/wp-head.php"
+    "/ssm-vuejs-theme/functions/wp-head.php": "/ssm-vuejs-theme/functions/wp-head.php",
+    "/ssm-vuejs-theme/functions/ssm-contact-api.php": "/ssm-vuejs-theme/functions/ssm-contact-api.php",
+    "/ssm-vuejs-theme/functions/theme-options.php": "/ssm-vuejs-theme/functions/theme-options.php"
 }

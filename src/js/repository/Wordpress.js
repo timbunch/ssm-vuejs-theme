@@ -7,4 +7,7 @@ export default {
   get_post_slug(type, slug) {
     return Repository.get(`${type}/?slug=${slug}`);
   },
+  set(type, payload) {
+    return Repository.post(`${type}`, payload);
+  }
 }

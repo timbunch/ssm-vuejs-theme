@@ -86,6 +86,14 @@ const generic = {
       resolve(true);
     });
   },
+  SUBMIT_CONTACT: ({}, payload) => {
+    return new Promise(async resolve => {
+      const response = await WpRepository.set('contact', payload);
+      if (response.status === 200) {
+
+      }
+    });
+  },
   WRITE_PAGE_META: ({getters}) => {
     const meta = getters.PROP('meta');
     document.title = meta.title;

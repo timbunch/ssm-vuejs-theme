@@ -29,29 +29,37 @@
     </v-form>
 </template>
 <script>
-    export default {
-      name: 'contact-form',
-      data() {
-        return {
-          name: null,
-          email: null,
-          message: null,
-          valid: false,
-          nameRules: [
-            v => !!v || 'Name is required'
-          ],
-          emailRules: [
-            v => !!v || 'E-mail is required',
-            v => /.+@.+/.test(v) || 'E-mail must be valid',
-          ],
+  export default {
+    name: 'contact-form',
+    data() {
+      return {
+        name: null,
+        email: null,
+        message: null,
+        valid: false,
+        nameRules: [
+          v => !!v || 'Name is required'
+        ],
+        emailRules: [
+          v => !!v || 'E-mail is required',
+          v => /.+@.+/.test(v) || 'E-mail must be valid',
+        ],
+      }
+    },
+    methods: {
+      submit() {
+        if (!this.valid) {
+          return false;
         }
-      },
-      methods: {
-        submit() {
-          if (!this.valid) {
-            return false;
-          }
+        const payload = {
+          security: window.ssmSettings.security,
+          name: this.name,
+          email: this.email,
+          message: this.message,
+          subject: 'RCC Website Contact Form'
         }
+        this.$store.dispatch('SUBMIT_CONTACT', payload);
       }
     }
+  }
 </script>
