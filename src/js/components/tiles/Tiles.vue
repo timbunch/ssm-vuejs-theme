@@ -1,6 +1,6 @@
 <template>
     <v-row class="tiles">
-        <tile v-for="(tile, i) in tiles" :key="i" :tile="tile"/>
+        <tile v-for="(tile, i) in tiles" :key="i" :tile="tile" :height="height"/>
     </v-row>
 </template>
 <script>
@@ -14,20 +14,12 @@
         type: Array,
         required: true,
         default: []
+      },
+      height: {
+        type: [String, Number],
+        required: false,
+        default: null
       }
     }
   }
 </script>
-<style lang="scss" scoped>
-    .tiles {
-        display: flex;
-        flex-wrap: wrap;
-
-        @media (min-width: 600px) {
-            padding: 2rem 0;
-        }
-        @media (min-width: 1264px) {
-            padding: 4rem 0;
-        }
-    }
-</style>

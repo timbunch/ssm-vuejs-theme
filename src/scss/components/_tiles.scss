@@ -1,0 +1,37 @@
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: 600px) {
+    padding: 2rem 0;
+  }
+  @media (min-width: 1264px) {
+    padding: 4rem 0;
+  }
+
+  .tile {
+    flex-basis: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ECEFF1;
+    transition: all 500ms ease;
+
+    &-divider {
+      height: 2px;
+      background-color: #B3E5FC;
+      position: relative;
+      margin: .5rem auto;
+      width: 60%;
+      transition: all 500ms ease;
+    }
+
+    &:hover {
+      .tile-divider {
+        width: 80%;
+        background-color: #ECEFF1;
+        margin: .75rem auto;
+      }
+    }
+  }
+}

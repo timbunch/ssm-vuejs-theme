@@ -6,21 +6,22 @@
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2rem;
-  margin-bottom: 4rem;
   text-align: center;
   @media (min-width: 970px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  a {
+    color: #ECEFF1;
+  }
+
   .wp-block-column {
     margin: 0;
     align-items: center;
     background-color: #0277BD;
     background-repeat: no-repeat;
     border-radius: 4px;
-    display: flex;
-    justify-content: center;
     max-width: 100%;
-    min-height: 300px;
     padding: 1.5rem;
 
     p {

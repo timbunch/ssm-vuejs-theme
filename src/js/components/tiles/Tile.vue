@@ -4,8 +4,9 @@
                 dark
                 :color="color"
                 :to="routerLink"
+                height="100%"
                 :class="tile.classes"
-                :min-height="height"
+                :min-height="minHeight"
                 class="tile"
                 outlined
                 :raised="raised"
@@ -16,7 +17,7 @@
                 <nav-item-icon v-if="tile.classes" :item="tile.classes" class="mx-auto mb-2" size="44"/>
                 <h3 class="headline font-weight-medium" v-html="tile.title"/>
                 <div class="tile-divider"></div>
-                <div v-html="tile.description"/>
+                <div v-if="tile.description" v-html="tile.description"/>
             </div>
         </v-card>
     </v-col>
@@ -32,6 +33,11 @@
         type: Object,
         required: true,
         default: []
+      },
+      height: {
+        type: [String, Number],
+        required: false,
+        default: null
       }
     },
     data() {
@@ -51,7 +57,10 @@
       },
     },
     computed: {
-      height() {
+      minHeight() {
+        if (this.height) {
+          return this.height;
+        }
         switch (this.$vuetify.breakpoint.name) {
           case 'xs':
             return '160px';
@@ -69,30 +78,3 @@
     }
   }
 </script>
-<style lang="scss" scoped>
-    .tile {
-        flex-basis: 33%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #ECEFF1;
-        transition: all 500ms ease;
-
-        &-divider {
-            height: 2px;
-            background-color: #B3E5FC;
-            position: relative;
-            margin: .5rem auto;
-            width: 60%;
-            transition: all 500ms ease;
-        }
-
-        &:hover {
-            .tile-divider {
-                width: 80%;
-                background-color: #ECEFF1;
-                margin: .75rem auto;
-            }
-        }
-    }
-</style>
