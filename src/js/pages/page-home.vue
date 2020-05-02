@@ -22,7 +22,7 @@
             </v-row>
         </page-hero>
         <v-container>
-            <tiles :tiles="tiles"/>
+            <tiles :tiles="tiles" class="mt-8"/>
             <post-content :content="page.content.rendered"/>
         </v-container>
     </div>
