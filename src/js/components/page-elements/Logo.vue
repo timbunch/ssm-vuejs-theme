@@ -113,7 +113,7 @@
       fill: {
         type: String,
         required: false,
-        default: '#1A237E'
+        default: '#0277BD'
       },
       width: {
         type: String,

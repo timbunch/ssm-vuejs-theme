@@ -1,19 +1,36 @@
 <template>
     <div class="nav-item">
-        <router-link
+        <v-btn
+                text
                 class="nav-item-link"
                 :to="routerLink"
                 v-if="routerLink"
                 :class="{active: active}"
+                color="primary"
+                height="100%"
         >
             <span v-html="item.title"/>
-        </router-link>
-        <a class="nav-item-link" :href="item.url" v-if="externalLink" target="_blank">
+        </v-btn>
+        <v-btn
+                text
+                color="primary"
+                height="100%"
+                class="nav-item-link"
+                :href="item.url"
+                v-if="externalLink"
+                target="_blank"
+        >
             <span v-html="item.title"/>
-        </a>
-        <a class="nav-item-link" :href="item.url" v-if="!externalLink && hashtag">
+        </v-btn>
+        <v-btn
+                color="primary"
+                height="100%"
+                class="nav-item-link"
+                :href="item.url"
+                v-if="!externalLink && hashtag"
+        >
             <span v-html="item.title"/>
-        </a>
+        </v-btn>
     </div>
 </template>
 <script>
@@ -68,6 +85,10 @@
                 padding: 0 2rem;
             }
 
+            span {
+                text-transform: none;
+            }
+
             &:after {
                 display: block;
                 content: '';
@@ -81,13 +102,16 @@
                 flex-basis: 100%;
             }
 
+            &:before {
+                background-color: transparent !important;
+            }
+
             &:hover, &.active {
-                color: #212121;
 
                 &:after {
-                    background-color: #212121;
-                    left: 1.5rem;
-                    right: 1.5rem;
+                    background-color: #0277BD;
+                    left: 1rem;
+                    right: 1rem;
                     bottom: 0;
                 }
             }

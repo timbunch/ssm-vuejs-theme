@@ -10,7 +10,7 @@
         <v-container class="d-flex align-content-center">
             <v-toolbar-title class="text-center">
                 <router-link class="text-no-underline" to="/">
-                    <logo-typeface fill="#424242" :width="logoWidth"/>
+                    <logo-typeface :width="logoWidth"/>
                 </router-link>
             </v-toolbar-title>
             <v-spacer/>
