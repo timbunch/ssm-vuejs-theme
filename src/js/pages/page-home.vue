@@ -9,7 +9,7 @@
                             <cite class="headline" >{{hero.reference}}</cite>
                         </blockquote>
                         <v-btn
-                                href="https://www.youtube.com/embed/live_stream?channel=UC5vBeXky8V3ImgnH7nOJB-w"
+                                href="https://www.youtube.com/channel/UC5vBeXky8V3ImgnH7nOJB-w"
                                 target="_blank"
                                 color="primary"
                                 rounded
