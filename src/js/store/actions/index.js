@@ -89,9 +89,7 @@ const generic = {
   SUBMIT_CONTACT: ({}, payload) => {
     return new Promise(async resolve => {
       const response = await WpRepository.set('contact', payload);
-      if (response.status === 200) {
-
-      }
+      resolve(response.data.message);
     });
   },
   WRITE_PAGE_META: ({getters}) => {

@@ -36,10 +36,10 @@ class SSM_WP_API_Contact
 		$options = get_option('ssm_theme_options');
 		$to = $options['contact_recipients'];
 		if (!$to) {
-			return false;
+			return new WP_REST_Response(['message' => 'No one is set up to receive these emails'], 400);
 		}
-
-		$response = wp_mail($to, $parameters['subject'], $parameters['message'], $headers);
+		$message = $parameters['message'] . '<br /><br />' . $parameters['name'] . '<br/>' . $parameters['email'];
+		$response = wp_mail($to, $parameters['subject'], $message, $headers);
 		return new WP_REST_Response(['message' => 'Thank you', 'response' => $response], 200);
 	}
 }
