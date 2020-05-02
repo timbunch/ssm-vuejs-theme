@@ -4,11 +4,10 @@
             <v-row>
                 <v-col cols="12" md="10" lg="8" xl="7">
                     <div>
-                        <blockquote class="mb-4">
+                        <blockquote class="mb-4" v-if="hero">
                             <p class="display-2 font-weight-light" v-html="hero.content"/>
                             <cite class="headline" >{{hero.reference}}</cite>
                         </blockquote>
-
                         <v-btn
                                 href="https://www.youtube.com/embed/live_stream?channel=UC5vBeXky8V3ImgnH7nOJB-w"
                                 target="_blank"
@@ -42,7 +41,7 @@
       }
     },
     mounted() {
-      this.$store.dispatch('GET_HEROS');
+      this.$store.dispatch('GET_HERO');
       if (window.ssmSettings.frontPage) {
         this.$store.dispatch('GET_PAGE', window.ssmSettings.frontPage).then(page => {
           if (!page) {
@@ -70,12 +69,8 @@
       tiles() {
         return this.$store.getters.PROP_KEY({prop: 'menus', key: 'homeTiles'})
       },
-      heros() {
-        return this.$store.getters.PROP('heros');
-      },
       hero() {
-        const i = Math.floor(Math.random() * Math.floor(this.heros.length));
-        return this.heros ? this.heros[i] : false;
+        return this.$store.getters.PROP('homeHero');
       }
     }
   }

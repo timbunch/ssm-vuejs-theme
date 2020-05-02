@@ -63,16 +63,25 @@ const generic = {
       resolve(false);
     });
   },
-  GET_HEROS: ({commit}) => {
+  GET_HERO: ({commit, getters}) => {
     return new Promise(async resolve => {
+      const homeHero = getters.PROP('homeHero');
+      if (homeHero) {
+        resolve(true);
+        return true;
+      }
       const response = await WpRepository.get('ssm-home-page-hero');
       if (response.status === 200) {
-        commit('MUTATE_PROP', {prop: 'heros', value: response.data.map(a => {
-          return {
-            content: a.content.rendered,
-            reference: a.title.rendered
-          }
-          })});
+        const i = Math.floor(Math.random() * Math.floor(response.data.length));
+        const hero = response.data[i] ? response.data[i] : false;
+        if (hero) {
+          commit('MUTATE_PROP', {
+            prop: 'homeHero', value: {
+              content: hero.content.rendered,
+              reference: hero.title.rendered
+            }
+          });
+        }
       }
       resolve(true);
     });
