@@ -9,7 +9,7 @@
         </page-hero>
         <v-container>
             <post-content :content="page.content.rendered"/>
-            <contact-form v-if="$route.params.slug === 'contact-us'" />
+            <contact-form v-if="['prayer-requests', 'contact-us'].includes($route.params.slug)" />
             <tiles class="tiles-small" v-if="tiles" :tiles="tiles" :height="160"/>
         </v-container>
     </div>
