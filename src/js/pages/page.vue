@@ -8,7 +8,9 @@
             </v-row>
         </page-hero>
         <v-container>
-            <post-content :content="page.content.rendered"/>
+            <post-content :content="page.content.rendered">
+                <tithly class="mb-8" v-if="$route.params.slug === 'giving'" label="Give Online"/>
+            </post-content>
             <contact-form v-if="['prayer-requests', 'contact-us'].includes($route.params.slug)" />
             <tiles class="tiles-small" v-if="tiles" :tiles="tiles" :height="160"/>
         </v-container>
@@ -21,10 +23,11 @@
   import PageHero from "../components/page-elements/PageHero";
   import Tiles from "../components/tiles/Tiles";
   import ContactForm from "../components/forms/ContactForm";
+  import Tithly from "../components/page-elements/Tithly";
 
   export default {
     name: 'page',
-    components: {ContactForm, Tiles, PageHero, PostContent},
+    components: {Tithly, ContactForm, Tiles, PageHero, PostContent},
     beforeRouteEnter(to, from, next) {
       store.dispatch('GET_PAGE', to.params.slug).then((page) => {
         store.dispatch('SET_PAGE_META', page);

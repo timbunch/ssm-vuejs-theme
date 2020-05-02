@@ -1,5 +1,8 @@
 <template>
-    <div class="post-content" v-html="content"></div>
+    <div class="post-content">
+        <slot></slot>
+        <div v-html="content"></div>
+    </div>
 </template>
 <script>
     export default {
