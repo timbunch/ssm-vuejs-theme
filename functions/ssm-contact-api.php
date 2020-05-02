@@ -40,6 +40,9 @@ class SSM_WP_API_Contact
 		}
 		$message = $parameters['message'] . '<br /><br />' . $parameters['name'] . '<br/>' . $parameters['email'];
 		$response = wp_mail($to, $parameters['subject'], $message, $headers);
-		return new WP_REST_Response(['message' => 'Thank you', 'response' => $response], 200);
+		$message = !empty($options['contact_recipients'])
+			? $options['contact_response']
+			: 'Thank you, your message has been received!';
+		return new WP_REST_Response(['message' => $message, 'response' => $response], 200);
 	}
 }

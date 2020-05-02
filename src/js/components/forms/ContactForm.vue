@@ -28,7 +28,9 @@
         <v-btn color="primary" :disabled="!valid" @click="submit">Submit</v-btn>
         <v-fade-transition>
             <div v-if="response" class="contact-response">
-                <v-btn icon absolute top right @click="response = null"><v-icon>close</v-icon></v-btn>
+                <v-btn icon absolute top right @click="response = null">
+                    <v-icon>close</v-icon>
+                </v-btn>
                 <div v-html="response"></div>
             </div>
         </v-fade-transition>
@@ -78,6 +80,7 @@
     .contact-form {
         position: relative;
     }
+
     .contact-response {
         background-color: #fff;
         display: flex;

@@ -25,6 +25,15 @@ function ssm_register_theme_options()
 		'general',
 		['id' => 'contact_recipients']
 	);
+
+	add_settings_field(
+		'contact_response',
+		'Contact response',
+		'ssm_settings_textarea_input',
+		'theme_options',
+		'general',
+		['id' => 'contact_response']
+	);
 }
 
 add_action('admin_menu', 'ssm_insert_theme_options_page');
@@ -69,9 +78,23 @@ function ssm_settings_field_input($args)
 		$type = 'text';
 	}
 	?>
-	<input type="<?php echo $type; ?>" name="ssm_theme_options[<?php echo $args['id']; ?>]"
-		   id="<?php echo $args['id']; ?>" value="<?php echo esc_attr($options[$args['id']] ?? ''); ?>"/>
+    <input type="<?php echo $type; ?>" name="ssm_theme_options[<?php echo $args['id']; ?>]"
+           id="<?php echo $args['id']; ?>" value="<?php echo esc_attr($options[$args['id']] ?? ''); ?>"/>
 	<?php if (isset($args['desc'])) { ?>
-	<label class="description" for="<?php echo $args['id']; ?>"><?php _e($args['desc'], 'pcomm'); ?></label>
+    <label class="description" for="<?php echo $args['id']; ?>"><?php _e($args['desc'], 'pcomm'); ?></label>
 <?php }
+}
+
+/**
+ * Renders the text area setting field.
+ * @param $args
+ */
+function ssm_settings_textarea_input($args)
+{
+	$options = get_option('ssm_theme_options');
+	?>
+    <textarea name="ssm_theme_options[<?php echo $args['id']; ?>]"><?php echo esc_attr($options[$args['id']] ?: ''); ?></textarea>
+	<?php if (isset($args['desc'])) { ?>
+        <label class="description" for="<?php echo $args['id']; ?>"><?php _e($args['desc'], 'pcomm'); ?></label>
+    <?php }
 }
