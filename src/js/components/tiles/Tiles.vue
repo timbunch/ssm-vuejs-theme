@@ -1,5 +1,5 @@
 <template>
-    <v-row class="tiles">
+    <v-row class="tiles" v-if="tiles">
         <tile v-for="(tile, i) in tiles" :key="i" :tile="tile" :height="height"/>
     </v-row>
 </template>
@@ -11,9 +11,9 @@
     components: {Tile},
     props: {
       tiles: {
-        type: Array,
+        type: [Array, Boolean],
         required: true,
-        default: []
+        default: false
       },
       height: {
         type: [String, Number],
