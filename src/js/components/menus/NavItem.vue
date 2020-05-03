@@ -5,10 +5,9 @@
                 class="nav-item-link"
                 :to="routerLink"
                 v-if="routerLink"
-                :class="{active: active}"
                 color="primary"
                 height="100%"
-                large
+                active-class="active"
         >
             <span v-html="item.title"/>
         </v-btn>
@@ -20,7 +19,7 @@
                 :href="item.url"
                 v-if="externalLink"
                 target="_blank"
-                large
+                active-class="active"
         >
             <span v-html="item.title"/>
         </v-btn>
@@ -30,7 +29,7 @@
                 class="nav-item-link"
                 :href="item.url"
                 v-if="!externalLink && hashtag"
-                :large="$vuetify.breakpoint.lgAndUp"
+                active-class="active"
         >
             <span v-html="item.title"/>
         </v-btn>
@@ -77,15 +76,8 @@
             text-decoration: none;
             position: relative;
             transition: color 250ms ease;
-            padding: 0 1rem;
             @media (min-width: 600px) {
-                font-size: 18px;
-            }
-            @media (min-width: 700px) {
-                padding: 0 1.5rem;
-            }
-            @media (min-width: 800px) {
-                padding: 0 2rem;
+                font-size: 18px !important;
             }
 
             span {
