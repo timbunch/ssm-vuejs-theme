@@ -11,7 +11,6 @@
             <v-toolbar-title class="text-center">
                 <router-link class="text-no-underline" to="/">
                     <logo-mini :width="logoWidth"/>
-                    <!--<logo-full :width="logoWidth"/>-->
                 </router-link>
             </v-toolbar-title>
             <v-spacer/>
@@ -38,6 +37,7 @@
     },
     methods: {
       toggleMenu() {
+        console.log('togglemenu');
         this.$store.dispatch('SET_PROP_KEY', {prop: 'ui', key: 'mobileMenu', value: true})
       }
     }

@@ -8,12 +8,9 @@
     export default {
       name: 'mobile-nav',
       components: {NavListItem},
-      mounted: {
-
-      },
       computed: {
         items() {
-          return this.$store.getters.PROP_KEY({prop: 'menus', key: 'mobileMenu'})
+          return this.$store.getters.PROP_KEY({prop: 'menus', key: 'mobileMenu'}) || [];
         }
       },
     }

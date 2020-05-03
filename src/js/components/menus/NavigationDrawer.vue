@@ -7,7 +7,7 @@
             temporary
             width="320"
             v-model="mobileMenu"
-            v-if="$vuetify.breakpoint.xsOnly">
+            v-if="$vuetify.breakpoint.smAndDown">
         <v-list>
 
             <v-list-item v-if="siteName">
