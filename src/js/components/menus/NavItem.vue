@@ -8,6 +8,7 @@
                 :class="{active: active}"
                 color="primary"
                 height="100%"
+                large
         >
             <span v-html="item.title"/>
         </v-btn>
@@ -19,6 +20,7 @@
                 :href="item.url"
                 v-if="externalLink"
                 target="_blank"
+                large
         >
             <span v-html="item.title"/>
         </v-btn>
@@ -28,6 +30,7 @@
                 class="nav-item-link"
                 :href="item.url"
                 v-if="!externalLink && hashtag"
+                :large="$vuetify.breakpoint.lgAndUp"
         >
             <span v-html="item.title"/>
         </v-btn>
@@ -112,7 +115,6 @@
                     background-color: #0277BD;
                     left: 1rem;
                     right: 1rem;
-                    bottom: 0;
                 }
             }
         }
