@@ -22,7 +22,7 @@
                                 <h3>Follow us on social media!</h3>
                             </v-list-item-title>
                         </v-list-item>
-                        <v-list-item href="https://www.facebook.com/RockawayCommunityChurch/">
+                        <v-list-item target="_blank" href="https://www.facebook.com/RockawayCommunityChurch/">
                             <v-list-item-icon>
                                 <v-icon>{{facebook}}</v-icon>
                             </v-list-item-icon>
@@ -30,7 +30,7 @@
                                 Facebook
                             </v-list-item-title>
                         </v-list-item>
-                        <v-list-item href="https://www.youtube.com/channel/UC5vBeXky8V3ImgnH7nOJB-w">
+                        <v-list-item target="_blank" href="https://www.youtube.com/channel/UC5vBeXky8V3ImgnH7nOJB-w">
                             <v-list-item-icon>
                                 <v-icon>{{youtube}}</v-icon>
                             </v-list-item-icon>
@@ -77,3 +77,11 @@
     }
   }
 </script>
+<style lang="scss">
+    .page-footer {
+        background-image: url('/wp-content/uploads/2020/05/roofline-bg-light.svg');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 100%;
+    }
+</style>

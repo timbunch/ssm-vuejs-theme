@@ -3,6 +3,10 @@
   flex-wrap: wrap;
 
   .tile {
+    background-image: url('/wp-content/uploads/2020/05/roofline-bg-light.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
     flex-basis: 33%;
     display: flex;
     justify-content: center;
@@ -20,6 +24,8 @@
     }
 
     &:hover {
+      background-size: 110%;
+
       .tile-divider {
         width: 80%;
         background-color: #ECEFF1;
