@@ -8,15 +8,7 @@
                             <p class="display-2 font-weight-light" v-html="hero.content"/>
                             <cite class="headline" >{{hero.reference}}</cite>
                         </blockquote>
-                        <v-btn
-                                href="https://www.youtube.com/channel/UC5vBeXky8V3ImgnH7nOJB-w"
-                                target="_blank"
-                                color="primary"
-                                rounded
-                                x-large>
-                            <v-icon large class="mr-2">live_tv</v-icon>
-                            <span class="mt-2">Live Stream</span>
-                        </v-btn>
+                        <btn-live-stream/>
                     </div>
                 </v-col>
             </v-row>
@@ -32,9 +24,10 @@
   import PostContent from "../components/content/PostContent";
   import PageHero from "../components/page-elements/PageHero";
   import Tiles from "../components/tiles/Tiles";
+  import BtnLiveStream from "../components/page-elements/BtnLiveStream";
 
   export default {
-    components: {Tiles, PageHero, PostContent},
+    components: {BtnLiveStream, Tiles, PageHero, PostContent},
     data() {
       return {
         page: null

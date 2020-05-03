@@ -4,14 +4,14 @@
             <v-row>
                 <v-col cols="12" md="10" lg="8" xl="7">
                     <h1 class="display-2 font-weight-light" v-html="page.title.rendered"/>
+                    <btn-live-stream v-if="slug === 'sundays'" class="mt-8"/>
+                    <tithly class="mt-8" v-if="slug === 'giving'" label="Give Online"/>
                 </v-col>
             </v-row>
         </page-hero>
         <v-container>
-            <post-content :content="page.content.rendered">
-                <tithly class="mb-8" v-if="$route.params.slug === 'giving'" label="Give Online"/>
-            </post-content>
-            <contact-form v-if="['prayer-requests', 'contact-us'].includes($route.params.slug)" />
+            <post-content :content="page.content.rendered"/>
+            <contact-form v-if="['prayer-requests', 'contact-us', 'connect'].includes($route.params.slug)" />
             <tiles class="tiles-small" v-if="tiles" :tiles="tiles" :height="160"/>
         </v-container>
     </div>
@@ -24,10 +24,11 @@
   import Tiles from "../components/tiles/Tiles";
   import ContactForm from "../components/forms/ContactForm";
   import Tithly from "../components/page-elements/Tithly";
+  import BtnLiveStream from "../components/page-elements/BtnLiveStream";
 
   export default {
     name: 'page',
-    components: {Tithly, ContactForm, Tiles, PageHero, PostContent},
+    components: {BtnLiveStream, Tithly, ContactForm, Tiles, PageHero, PostContent},
     beforeRouteEnter(to, from, next) {
       store.dispatch('GET_PAGE', to.params.slug).then((page) => {
         store.dispatch('SET_PAGE_META', page);
@@ -41,6 +42,9 @@
       next();
     },
     computed: {
+      slug() {
+        return this.$route.params.slug;
+      },
       page() {
         return this.$store.getters.PAGE(this.$route.params.slug);
       },
