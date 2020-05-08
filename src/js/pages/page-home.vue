@@ -1,12 +1,12 @@
 <template>
-    <div v-if="page">
+    <div v-if="page" class="page page-home">
         <page-hero height="570px" :page="page">
             <v-row>
                 <v-col cols="12" md="10" lg="8" xl="7">
                     <div>
                         <blockquote class="mb-4" v-if="hero">
                             <p class="font-weight-light" :class="headingClass" v-html="hero.content"/>
-                            <cite class="headline" >{{hero.reference}}</cite>
+                            <cite class="headline">{{hero.reference}}</cite>
                         </blockquote>
                         <btn-live-stream/>
                     </div>

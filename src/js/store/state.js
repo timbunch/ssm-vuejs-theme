@@ -16,6 +16,7 @@ export default {
   },
   pages: {},
   ui: {
-    mobileMenu: false
+    mobileMenu: false,
+    showPage: false,
   }
 }

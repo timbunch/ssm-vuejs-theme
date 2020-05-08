@@ -1,0 +1,17 @@
+.wp-block-media-text {
+  margin-bottom: 1rem;
+
+  .wp-block-media-text__media {
+    > img {
+      display: block;
+      border-radius: 5px;
+      overflow: hidden;
+      max-width: 420px;
+      margin: 0 auto 1rem;
+
+      @media (min-width: 601px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
