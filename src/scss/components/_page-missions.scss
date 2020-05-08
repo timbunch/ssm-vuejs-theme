@@ -1,0 +1,8 @@
+.page-missions {
+  .post-content > div {
+    @media (min-width: 1904px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
