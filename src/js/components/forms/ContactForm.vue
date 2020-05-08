@@ -78,6 +78,7 @@
 </script>
 <style lang="scss" scoped>
     .contact-form {
+        max-width: 1161px;
         position: relative;
     }
 
