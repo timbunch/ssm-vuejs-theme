@@ -11,7 +11,7 @@
         </page-hero>
         <v-container>
             <post-content :content="page.content.rendered"/>
-            <contact-form v-if="['prayer-requests', 'contact-us', 'connect'].includes($route.params.slug)" />
+            <contact-form v-if="['prayer-requests', 'contact-us', 'connect', 'venue-hire'].includes($route.params.slug)" />
             <tiles class="tiles-small" v-if="tiles" :tiles="tiles" :height="160"/>
         </v-container>
     </div>
