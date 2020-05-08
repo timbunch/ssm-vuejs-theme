@@ -1,5 +1,5 @@
 <template>
-    <div v-if="page">
+    <div v-if="page" :class="`page-${$route.params.slug}`">
         <page-hero :page="page" height="300px">
             <v-row>
                 <v-col cols="12" md="10" lg="8" xl="7">
