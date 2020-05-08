@@ -5,7 +5,7 @@
                 <v-col cols="12" md="10" lg="8" xl="7">
                     <div>
                         <blockquote class="mb-4" v-if="hero">
-                            <p class="display-2 font-weight-light" v-html="hero.content"/>
+                            <p class="font-weight-light" :class="headingClass" v-html="hero.content"/>
                             <cite class="headline" >{{hero.reference}}</cite>
                         </blockquote>
                         <btn-live-stream/>
@@ -64,6 +64,9 @@
       },
       hero() {
         return this.$store.getters.PROP('homeHero');
+      },
+      headingClass() {
+        return this.$vuetify.breakpoint.smAndUp ? 'display-2' : 'display-1';
       }
     }
   }

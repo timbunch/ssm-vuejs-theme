@@ -3,7 +3,7 @@
         <page-hero :page="page" height="300px">
             <v-row>
                 <v-col cols="12" md="10" lg="8" xl="7">
-                    <h1 class="display-2 font-weight-light" v-html="page.title.rendered"/>
+                    <h1 class="font-weight-light" :class="headingClass" v-html="page.title.rendered"/>
                     <btn-live-stream v-if="slug === 'sundays'" class="mt-8"/>
                     <tithly class="mt-8" v-if="slug === 'giving'" label="Give Online"/>
                 </v-col>
@@ -51,6 +51,9 @@
       tiles() {
         return this.$store.getters.PROP_KEY({prop: 'menus', key: this.$route.params.slug})
       },
+      headingClass() {
+        return this.$vuetify.breakpoint.smAndUp ? 'display-2' : 'display-1';
+      }
     }
   }
 </script>
