@@ -1,7 +1,8 @@
 <template>
     <v-list-item
-            :to="item.parsedUrl.path"
-            :href="item.link"
+            :to="to"
+            :href="href"
+            :target="hrefTarget"
     >
         <v-list-item-icon v-if="item.classes">
             <nav-item-icon :item="item.classes"/>
@@ -22,6 +23,23 @@
       item: {
         type: Object,
         required: true
+      }
+    },
+    computed: {
+      to() {
+        return window.location.hostname === this.item.parsedUrl.host
+          ? this.item.parsedUrl.path
+          : undefined;
+      },
+      href() {
+        return window.location.hostname === this.item.parsedUrl.host
+          ? undefined
+          : this.item.url
+      },
+      hrefTarget() {
+        return this.target
+          ? this.target
+          : '_self'
       }
     }
   }

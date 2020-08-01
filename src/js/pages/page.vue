@@ -1,5 +1,5 @@
 <template>
-    <div v-if="page" class="page" :class="`page-${$route.params.slug}`">
+    <div v-if="page" class="page" :class="`page-${$route.params.slug}`" :key="$route.params.slug">
         <v-slide-y-transition mode="out-in">
             <page-hero v-if="page && showPage" :page="page" height="300px">
                 <v-row>

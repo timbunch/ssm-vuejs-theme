@@ -79,7 +79,7 @@
 </script>
 <style lang="scss">
     .page-footer {
-        background-image: url('http://rcc.simplysmartmedia.com/wp-content/uploads/2020/05/roofline-bg-light.svg');
+        background-image: url('https://rockawaychurch.com/wp-content/uploads/2020/05/roofline-bg-light.svg');
         background-repeat: no-repeat;
         background-position: top left;
         background-size: 100%;
