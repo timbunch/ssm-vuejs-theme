@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@mdi/font": "^4.9.95",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "moment": "^2.27.0",
     "moment-round": "^1.0.1",
     "node-sass": "^4.14.1",
