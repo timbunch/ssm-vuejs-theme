@@ -27,7 +27,7 @@
     "axios": "^0.21.2",
     "moment": "^2.29.1",
     "moment-round": "^1.0.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "vue": "^2.6.12",
     "vue-axios": "^2.1.5",
     "vue-infinite-scroll": "^2.0.2",
